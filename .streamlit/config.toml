@@ -18,10 +18,10 @@
 # asset CDN, which is out of scope for an incremental theme pass.
 [theme]
 base = "dark"
-primaryColor = "#2DD4BF"
-backgroundColor = "#0F172A"
-secondaryBackgroundColor = "#1E293B"
-textColor = "#E2E8F0"
+primaryColor = "#38BDF8"
+backgroundColor = "#0B0F19"
+secondaryBackgroundColor = "#131B2E"
+textColor = "#F1F5F9"
 
 [server]
 # Headless-friendly defaults. These don't change the UI but keep the

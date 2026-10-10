@@ -1,216 +1,156 @@
-# 🇮🇩 Glints Job Intel: Realita Pasar Kerja Profesi Data Indonesia
+# Analisis Pasar Kerja Profesi Data di Indonesia
 
-> **Analisis Empiris Berbasis 430 Lowongan Kerja Aktif Glints Indonesia**  
-> *Membongkar Mitos Kompensasi, Beban Kualifikasi Fresh Graduate, dan Realita Kerja Remote vs WFO.*
+Riset analitis terhadap 430 lowongan kerja aktif di sektor data (*Data Analyst, Data Engineer, Data Scientist, ML Engineer*) yang dikumpulkan langsung dari portal Glints Indonesia. 
 
----
+Proyek ini memetakan dinamika kompensasi, kesenjangan kualifikasi antara level pemula dan profesional berpengalaman, serta kebutuhan riil *tech stack* di industri teknologi dan korporasi Indonesia saat ini.
 
-## 🧭 Navigasi Cepat Proyek
-
-| Kebutuhan Anda | Tautan Langsung |
-|---|---|
-| 🚀 **Coba Dashboard Interaktif** | [Streamlit Dashboard](#-live-dashboard) (`streamlit run app/dashboard.py`) |
-| 📊 **Laporan Lengkap Mandiri (Bebas Server)** | [`eda_report.html`](eda_report.html) *(Buka langsung di browser apa pun)* |
-| 📓 **Notebook Analitis Terverifikasi** | [`eda.ipynb`](eda.ipynb) · [`clean.ipynb`](clean.ipynb) |
-| 🧩 **Babak 1: Beban Kualifikasi Fresh Graduate** | [Loncat ke Analisis Kualifikasi Entry-Level](#-babak-1-beban-kualifikasi-fresh-graduate) |
-| 🏖️ **Babak 2: Realita WFO & Premi Gaji Remote** | [Loncat ke Analisis Premi Gaji Remote](#-babak-2-realita-wfo--premi-gaji-kerja-remote) |
-| 🛠️ **Proof of Source & Reproduksi** | [Panduan Replikasi Pipeline](#-proof-of-source--metodologi-scraping) |
+- **Dashboard Interaktif:** Jalankan lokal via `streamlit run app/dashboard.py`
+- **Laporan Lengkap Mandiri:** [`eda_report.html`](eda_report.html) (dapat dibuka langsung di browser tanpa Python)
+- **Notebook Analisis:** [`eda.ipynb`](eda.ipynb) | **Pembersihan Data:** [`clean.ipynb`](clean.ipynb)
 
 ---
 
-## 🎯 Executive Summary & Hook Pembuka
+## Temuan Utama
 
-Di media sosial dan kursus daring, profesi data (*Data Analyst, Data Engineer, Data Scientist, ML Engineer*) sering digambarkan sebagai jalan pintas menuju *"gaji puluhan juta sambil kerja santai dari mana saja (WFH)"*. Di sisi lain, para *fresh graduate* kerap mengeluhkan syarat lowongan kerja pemula yang terasa mustahil dipenuhi.
+### 1. Disparitas Beban Kualifikasi pada Posisi Entry-Level
 
-**Apakah keluhan itu hanya perasaan subjektif, atau cerminan nyata bursa kerja kita?**
+Lowongan tingkat pemula (<1 tahun pengalaman kerja) mencatatkan proporsi tuntutan skill teoritis tertinggi dibanding jenjang mana pun: Python (70,6%), Statistik (58,8%), dan Machine Learning (47,1%). Namun, median kompensasi yang ditawarkan berada di level terendah bursa kerja, yaitu **Rp 4,2 juta/bulan**.
 
-Proyek portofolio ini menyajikan investigasi menyeluruh menggunakan **430 lowongan kerja aktif dari Glints Indonesia** yang telah melalui proses validasi ketat (*100% lokasi Indonesia, deduplikasi, dan parsing gaji riil tanpa data sintesis*). Hasil analisis ini memvalidasi dua paradoks besar industri:
+Sebaliknya, pada posisi dengan syarat pengalaman di atas 3 tahun (Mid/Senior), tuntutan Machine Learning justru menurun ke angka **29,8%**. Perusahaan beralih memprioritaskan integrasi sistem operasional riil: ETL (41,5%), Power BI/Tableau (35,1%), dan arsitektur Cloud (27,7%), dengan median kompensasi **Rp 9,0 – 15,0+ juta/bulan**.
 
-1. **Beban Kualifikasi Fresh Graduate:** Lowongan tingkat pemula (*fresh graduate* / pengalaman < 1 tahun) menuntut tumpukan skill akademis paling padat, namun ditawarkan dengan median gaji terendah (**Rp 4,2 Juta**).
-2. **Realita WFO & Premi Gaji Kerja Remote:** Lebih dari **90%** lowongan mewajibkan kerja On-site (WFO). Full Remote hanya tersedia di ~3,5% lowongan, namun menawarkan median kompensasi **Rp 12,5 Juta vs Rp 7,0 Juta (+78,6% premium)**.
-3. **Fondasi Nyata Industri:** **SQL** (428 kemunculan) dan **Excel** (246 kemunculan) adalah tulang punggung bursa kerja riil di Indonesia—jauh melampaui hype tools AI modern.
+![Perbandingan Beban Kualifikasi Skill](assets/charts/01_skill-burden-by-career-stage.png)
 
----
+Fenomena ini mencerminkan dinamika di mana organisasi yang baru mulai membangun inisiatif data kerap merekrut *single-person data team*—menuntut satu orang menyelesaikan seluruh siklus data dari analitik hingga machine learning—dengan alokasi anggaran staf pemula.
 
-## 🧩 Babak 1: Beban Kualifikasi Fresh Graduate
+Kurva regresi sebaran gaji terhadap pengalaman kerja memperlihatkan bahwa titik percepatan kompensasi riil baru terjadi setelah kandidat melewati batas 2–3 tahun pengalaman kerja:
 
-### *Ekspektasi Dewa, Budget UMR: Paradoks Kualifikasi Entry-Level*
-
-Ketika memetakan kebutuhan skill teknis berdasarkan kelompok pengalaman kerja, kita menemukan pola inversi yang kontradiktif antara jenjang pemula dan profesional berpengalaman:
-
-![Beban Skill per Jenjang Karir](assets/charts/01_skill-burden-by-career-stage.png)
-
-### 💡 Temuan Kunci Babak 1:
-- **Beban Akademis Ekstrem di Posisi Entry-Level:** Lowongan *Fresh Graduate* (< 1 tahun) mencatatkan proporsi tuntutan skill teoritis tertinggi: **Python (70,6%)**, **Statistik (58,8%)**, dan **Machine Learning (47,1%)**.
-- **Pergeseran Pragmatis di Posisi Mid/Senior:** Memasuki level pengalaman 3 tahun ke atas, tuntutan Machine Learning justru turun ke angka **29,8%**. Perusahaan beralih memprioritaskan integrasi sistem riil: **ETL (41,5%)**, **Power BI / Tableau (35,1%)**, dan arsitektur **Cloud (27,7%)**.
-- **The Reality Curve (Kurva Realitas Gaji):**
-
-![Kurva Realitas Gaji vs Pengalaman](assets/charts/02_salary-reality-curve.png)
-
-Median kompensasi posisi pemula tertekan di angka **Rp 4,2 Juta** (banyak di antaranya menawarkan Rp 1,5 – 3,5 Juta). Percepatan kompensasi riil baru melesat tajam setelah kandidat membuktikan masa kerja 2–3 tahun, di mana median gaji melonjak ke rentang **Rp 9,0 – 15,0+ Juta**.
-
-> **Mengapa Fenomena Ini Terjadi? (*The Business Logic*)**  
-> Perusahaan yang baru mulai mengadopsi data sering kali belum memahami diferensiasi peran data. Mereka mencari *one-person data team*—seorang kandidat yang bisa membersihkan database, membuat model prediktif, sekaligus membangun dashboard bisnis—namun hanya mengalokasikan anggaran gaji tingkat staf junior. Sebaliknya, korporasi matang yang siap membayar mahal merekrut spesialis yang berfokus pada efisiensi operasional dan infrastruktur data terapan.
+![Distribusi Gaji vs Pengalaman](assets/charts/02_salary-reality-curve.png)
 
 ---
 
-## 🏖️ Babak 2: Realita WFO & Premi Gaji Kerja Remote
+### 2. Ketersediaan Kerja Remote dan Disparitas Kompensasi
 
-### *Mitos vs Realita Fleksibilitas Kerja di Indonesia*
+Sebanyak **90,7%** lowongan kerja data di Indonesia mensyaratkan kehadiran fisik penuh di kantor (On-site / WFO). Skema Hybrid mencakup **5,8%**, dan opsi Full Remote hanya mencakup **3,5%** dari total lowongan aktif.
 
-Sektor data kerap diidentikkan dengan kebebasan bekerja jarak jauh. Namun, data empiris Glints Indonesia menunjukkan realita yang berbanding terbalik:
+Meskipun ketersediaannya sangat terbatas, lowongan remote menawarkan median kompensasi **Rp 12,5 juta**, berbanding On-site sebesar **Rp 7,0 juta** (premi sebesar +78,6%).
 
-![Ilusi Fleksibilitas WFH dan Komparasi Gaji](assets/charts/03_remote-luxury-comparison.png)
+![Porsi Model Kerja dan Median Gaji](assets/charts/03_remote-luxury-comparison.png)
 
-### 💡 Temuan Kunci Babak 2:
-- **90,7% Lowongan Mewajibkan On-site (WFO):** Mayoritas mutlak industri data di Indonesia mensyaratkan kehadiran fisik di kantor. Skema Hybrid hanya berada di angka **5,8%**, dan Full Remote hanya **3,5%**.
-- **Premi Gaji Remote (+78,6%):** Meskipun peluangnya langka, posisi Remote menawarkan median kompensasi **Rp 12,5 Juta**, dibandingkan On-site sebesar **Rp 7,0 Juta**.
-
-> **Kesimpulan Strategis:**  
-> Di bursa kerja Indonesia, model kerja Remote bukanlah fasilitas standar bagi entry-level. Model ini umumnya dialokasikan sebagai **opsi kompensasi bersyarat** untuk talenta spesialis berpengalaman atau korporasi skala regional dengan standar kompensasi tinggi.
+Di pasar tenaga kerja Indonesia, fasilitas kerja jarak jauh (remote) bukan benefit standar tempat kerja yang umum dinegosiasikan untuk jenjang pemula. Model remote berfungsi sebagai instrumen kompensasi untuk talenta spesialis senior atau perusahaan multinasional dan regional yang merekrut kandidat Indonesia.
 
 ---
 
-## 🛠️ Babak 3: Fondasi Nyata Tech Stack vs AI Hype
+### 3. Kebutuhan Tech Stack Industri: Fondasi vs Tren
 
-### *Apa yang Sebenarnya Dipakai Industri Sehari-hari?*
+Di tengah ramainya diskusi publik mengenai AI generatif dan model bahasa besar, kebutuhan operasional harian bursa kerja Indonesia tetap berpusat pada penarikan data dasar dan otomatisasi pelaporan:
 
-Di saat ruang diskusi publik dipenuhi topik *Large Language Models (LLM)* dan *Generative AI*, bursa kerja data Indonesia tetap bertumpu pada pondasi operasional dasar:
+![Kebutuhan Tech Stack Industri Data](assets/charts/04_real-tech-stack-landscape.png)
 
-![Lanskap Kebutuhan Tech Stack Nyata](assets/charts/04_real-tech-stack-landscape.png)
-
-- **Fondasi Abadi:** **SQL** memimpin mutlak dengan **428 kemunculan**, disusul **Excel** dengan **246 kemunculan**.
-- **AI Hype Gap:** Framework deep learning murni seperti PyTorch dan TensorFlow menempati urutan terbawah (< 30 kemunculan). Bisnis lokal memprioritaskan pembersihan data, standarisasi metrik bisnis, dan otomatisasi pelaporan operasional harian sebelum melangkah ke pemodelan kecerdasan buatan tingkat lanjut.
-
----
-
-## 🚀 Live Dashboard
-
-Dashboard interaktif dibangun menggunakan **Streamlit**, **Plotly**, dan **Folium**, memungkinkan pengguna memfilter data secara dinamis berdasarkan peran, kota, model kerja, rentang gaji, dan tahun pengalaman kerja.
-
-```bash
-# Menjalankan dashboard secara lokal
-streamlit run app/dashboard.py
-```
-
-Dashboard mencakup 6 tampilan:
-1. **Ringkasan Pasar:** Metrik KPI pasar, distribusi peran, dan model kerja.
-2. **Babak 1: Beban Kualifikasi Fresh Graduate:** Grafik beban skill per jenjang karir dan kurva realitas gaji (*The Reality Curve*).
-3. **Babak 2: Realita WFO & Premi Remote:** Analisis komparasi sebaran model kerja dan premi kompensasi Remote vs On-site.
-4. **Lanskap Tech Stack:** Analisis frekuensi tools teknis, heatmap ko-okurensi skill (Jaccard Index), dan premi gaji per skill.
-5. **Sebaran Wilayah:** Peta interaktif konsentrasi lowongan kerja data di kota-kota Indonesia.
-6. **Data Terfilter:** Eksplorasi tabel data terverifikasi dan fitur unduh CSV hasil filter.
+- **SQL** (428 kemunculan) dan **Excel** (246 kemunculan) merupakan syarat mutlak yang mendominasi hampir seluruh deskripsi pekerjaan.
+- **Python** (189 kemunculan) dan **ETL** (168 kemunculan) menjadi tulang punggung rekayasa dan pipeline data.
+- Framework deep learning murni seperti PyTorch dan TensorFlow hanya muncul pada ceruk riset spesifik (<30 kemunculan). Prioritas utama rekrutmen tetap bertumpu pada konsistensi metrik dan keandalan data operasional.
 
 ---
 
-## 🔬 Proof of Source & Metodologi Scraping
+## Metodologi dan Kualitas Data
 
-Kredibilitas sebuah proyek data ditentukan oleh keaslian dan kebersihan datanya. Proyek ini dibangun dari pipeline scraping dan transformasi mandiri:
+Data dikumpulkan melalui pipeline scraping berbasis Playwright dan Parsel yang dirancang khusus untuk portal Glints Indonesia.
 
 ```text
-Glints Listing Pages (Portal Glints Indonesia)
-         │
-         ▼
-Playwright + Parsel (Scraping Resumable via Chrome Session)
-         │
-         ├── data/raw/glints_jobs.csv    (7.324 tautan lowongan mentah)
-         └── data/raw/job_details.csv    (591 rincian lowongan mentah)
-         │
-         ▼
-Transformation Engine (src/glints_scraper/transform.py)
-         │
-         ├── Validasi Lokasi Ketat (100% Indonesia, membuang data luar negeri)
-         ├── Standarisasi Gaji IDR (salary_min, salary_max, salary_avg)
-         ├── Ekstraksi 32 Fitur Skill Flag
-         └── Normalisasi Pengalaman & Pendidikan
-         │
-         ▼
-data/processed/master_dataset_eda.csv (430 lowongan kerja data terverifikasi)
-         │
-         ├── eda.ipynb / eda_report.html
-         └── Streamlit Interactive Dashboard
+Glints Indonesia Portal
+       │
+       ▼
+Playwright Scraper (links & details)
+       │
+       ▼
+Data Cleaning & Feature Engineering (src/glints_scraper/transform.py)
+  ├── Filter Lokasi: 100% Indonesia (data luar negeri/regional dibuang)
+  ├── Parsing Gaji IDR (salary_min, salary_max, salary_avg)
+  ├── Deteksi 32 fitur boolean skill dari deskripsi & tag
+  └── Normalisasi pengalaman, pendidikan, dan model kerja
+       │
+       ▼
+data/processed/master_dataset_eda.csv (430 lowongan terverifikasi)
+       │
+       ├── eda_report.html & eda.ipynb
+       └── Streamlit Interactive Dashboard
 ```
 
-### Prinsip Keamanan & Etika Data:
-- **Zero Credential Leaks:** Kredensial sesi autentikasi browser (`secrets/auth.json`) dan sesi browser lokal sepenuhnya diabaikan oleh Git via `.gitignore`.
-- **Reproducible & Resumable:** Scraper dirancang bertahap dengan mekanisme checkpoint atomik sehingga dapat dilanjutkan kapan saja tanpa menduplikasi kueri.
-- **Strict Location Hygiene:** Menerapkan filter ketat wilayah Indonesia untuk mencegah distorsi analisis dari lowongan regional luar negeri (seperti Vietnam).
+- **Sampel Akhir:** 430 lowongan kerja data terverifikasi (162 Data Analyst, 127 Data Engineer, 103 Data Scientist, 38 Machine Learning).
+- **Transparansi Gaji:** 349 lowongan (81,2%) mencantumkan nominal estimasi gaji transparan. Analisis kompensasi dihitung langsung dari data terbuka tanpa imputasi sintetis.
+- **Higienitas Kredensial:** Seluruh sesi browser dan token lokal (`secrets/auth.json`) diabaikan oleh Git via `.gitignore`.
 
 ---
 
-## 💻 Panduan Menjalankan Proyek
+## Panduan Menjalankan Proyek
 
-### 1. Jalur Cepat (Tanpa Scraping — Direkomendasikan)
-Dataset bersih `data/processed/master_dataset_eda.csv` sudah tersedia di dalam repositori sehingga Anda dapat langsung menjalankan dashboard dan analisis:
+### 1. Menjalankan Dashboard (Tanpa Scraping)
+
+Dataset bersih sudah disertakan di dalam repositori sehingga Anda dapat langsung menjalankan dashboard secara lokal:
 
 ```bash
-# 1. Clone repositori
-git clone https://github.com/<your-username>/indonesia-data-job-market.git
+# Clone repositori
+git clone https://github.com/Hansiongs/indonesia-data-job-market.git
 cd indonesia-data-job-market
 
-# 2. Buat dan aktifkan virtual environment
+# Setup virtual environment
 python -m venv .venv
 source .venv/bin/activate        # macOS/Linux
 # .venv\Scripts\activate         # Windows
 
-# 3. Install dependensi
+# Pasang dependensi dan jalankan
 pip install -r requirements.txt
-
-# 4. Jalankan dashboard
 streamlit run app/dashboard.py
 ```
 
-Untuk melihat laporan analisis lengkap tanpa server Python, buka file **[`eda_report.html`](eda_report.html)** langsung di browser Anda.
+Dashboard akan terbuka di peramban pada alamat `http://localhost:8501`.
 
----
+### 2. Membuka Laporan Mandiri
 
-### 2. Jalur Reproduksi Scraping Mandiri (Opsional)
-Jika Anda ingin memperbarui dataset dari nol langsung dari Glints Indonesia:
+Laporan analitis mandiri telah diekspor ke file [`eda_report.html`](eda_report.html). File ini dapat dibuka langsung di peramban apa pun tanpa memerlukan instalasi Python.
+
+### 3. Replikasi Scraping Mandiri (Opsional)
+
+Jika ingin memperbarui dataset dari portal Glints secara mandiri:
 
 ```bash
-# 1. Install scraper dependencies & Playwright
 pip install -r requirements-scraper.txt
 pip install -e ".[scraper]"
 playwright install chromium
 
-# 2. Login ke akun Glints Anda melalui sesi browser lokal aman
+# Login sesi peramban lokal aman
 python scripts/login.py
 
-# 3. Jalankan pipeline scraping & data cleaning
+# Jalankan pipeline
 python -m glints_scraper.links
 python -m glints_scraper.details
 python -m glints_scraper.transform
-
-# 4. Eksekusi notebook & generate aset grafik
-jupyter nbconvert --execute --to notebook --inplace eda.ipynb
-jupyter nbconvert --to html eda.ipynb --output eda_report.html --embed-images
-python scripts/generate_assets.py
 ```
 
-Panduan lengkap mengenai parameter scraping dan opsi lanjutan tersedia di [docs/reproduce.md](docs/reproduce.md).
+Instruksi detail mengenai mekanisme jeda rate-limit dan checkpoint scraper dapat dilihat pada [docs/reproduce.md](docs/reproduce.md).
 
 ---
 
-## 🧪 Pengujian Unit & Kualitas Kode
+## Pengujian Unit
 
-Proyek ini dilengkapi dengan 166 pengujian otomatis (*unit tests & regression tests*) yang mencakup parser HTML, engine transformasi data, kalkulasi metrik analitis, dan pembuatan grafik:
+Proyek ini dilengkapi 166 unit test otomatis untuk memvalidasi parser HTML, normalisasi data, fungsi analitis, dan pembuatan grafik Plotly:
 
 ```bash
 pip install -r requirements-dev.txt
 pytest -v
 ```
 
-Hasil uji: **166 passed, 0 failures.**
+Hasil pengujian: **166 passed, 0 failures**.
 
 ---
 
-## 📁 Struktur Repositori
+## Struktur Direktori
 
 ```text
 ├── app/
-│   ├── charts.py            # Modul pembuatan grafik analitis Plotly
-│   ├── dashboard.py         # Aplikasi dashboard interaktif Streamlit
-│   ├── data.py              # Pemuatan data & fungsi kalkulasi metrik
+│   ├── charts.py            # Modul pembuatan grafik Plotly
+│   ├── dashboard.py         # Aplikasi dashboard Streamlit
+│   ├── data.py              # Pemuatan data & fungsi kalkulasi
 │   └── geo.py               # Pemetaan wilayah & visualisasi Folium
 ├── assets/
 │   └── charts/              # Cuplikan resolusi tinggi grafik analitis
@@ -218,25 +158,25 @@ Hasil uji: **166 passed, 0 failures.**
 │   ├── processed/           # Dataset bersih terverifikasi (master_dataset_eda.csv)
 │   └── raw/                 # Checkpoint scraping lokal (.gitignore)
 ├── docs/
-│   ├── reproduce.md         # Panduan detail scraping mandiri
+│   ├── reproduce.md         # Panduan detail replikasi scraping
 │   └── schema.md            # Dokumentasi skema kamus data
 ├── scripts/
 │   ├── generate_assets.py   # Script otomasi ekspor grafik PNG
-│   └── login.py             # Script login aman ke Glints
-├── src/glints_scraper/      # Paket pipeline scraping & transformasi
+│   └── login.py             # Script login sesi Chrome aman
+├── src/glints_scraper/      # Pipeline scraping & transformasi data
 │   ├── details.py           # Ekstraksi detail deskripsi lowongan
 │   ├── links.py             # Pengambilan tautan kartu lowongan
 │   ├── parsers.py           # Parser HTML Parsel
 │   └── transform.py         # Pembersihan, normalisasi & validasi data
-├── tests/                   # 166 unit tests komprehensif
-├── clean.ipynb              # Notebook walkthrough data cleaning
-├── eda.ipynb                # Notebook analisis empiris pasar data
-├── eda_report.html          # Laporan analitis mandiri interaktif
-└── requirements.txt         # Daftar dependensi utama proyek
+├── tests/                   # 166 unit test komprehensif
+├── clean.ipynb              # Notebook data cleaning & feature engineering
+├── eda.ipynb                # Notebook analisis data
+├── eda_report.html          # Laporan analitis interaktif mandiri
+└── requirements.txt         # Daftar dependensi utama
 ```
 
 ---
 
-## 📜 Lisensi & Etika
+## Lisensi
 
-Proyek ini dirilis di bawah lisensi [MIT](LICENSE). Seluruh data dikumpulkan dari lowongan kerja publik di Glints Indonesia untuk tujuan riset edukatif dan analisis pasar kerja profesional.
+Proyek ini dirilis di bawah lisensi [MIT](LICENSE). Data dikumpulkan dari lowongan kerja publik di Glints Indonesia untuk kepentingan riset analitis dan edukasi.

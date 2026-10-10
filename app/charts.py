@@ -28,26 +28,48 @@ from plotly.subplots import make_subplots
 # ---------------------------------------------------------------------------
 # Palette
 # ---------------------------------------------------------------------------
+# Palette & Theme
+# ---------------------------------------------------------------------------
 
-CATEGORICAL_PALETTE: Final[list[str]] = list(px.colors.qualitative.Set2)
-SEQUENTIAL_PALETTE: Final[str] = "Viridis"
+CATEGORICAL_PALETTE: Final[list[str]] = [
+    "#38BDF8",  # Sky
+    "#818CF8",  # Indigo
+    "#34D399",  # Emerald
+    "#FBBF24",  # Amber
+    "#F43F5E",  # Rose
+    "#A78BFA",  # Violet
+    "#64748B",  # Slate
+    "#2DD4BF",  # Teal
+]
+SEQUENTIAL_PALETTE: Final[str] = "Blues"
 
-# Reusable layout defaults so every chart looks like part of the same system.
-# ``plotly_dark`` matches the dark slate theme in ``.streamlit/config.toml``;
-# gridlines, axes, and labels are auto-themed so we don't have to override
-# them per chart.
 _BASE_LAYOUT: Final[dict[str, Any]] = {
     "template": "plotly_dark",
+    "paper_bgcolor": "rgba(0,0,0,0)",
+    "plot_bgcolor": "rgba(0,0,0,0)",
     "margin": {"l": 40, "r": 20, "t": 60, "b": 40},
-    "font": {"family": "Inter, system-ui, -apple-system, sans-serif", "size": 12},
+    "font": {
+        "family": "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+        "size": 12,
+        "color": "#CBD5E1",
+    },
     "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "right", "x": 1},
 }
 
 
 def _apply_base_layout(fig: go.Figure, height: int = 450, title: str | None = None) -> go.Figure:
     fig.update_layout(height=height, **_BASE_LAYOUT)
+    fig.update_xaxes(gridcolor="#1E293B", zerolinecolor="#334155")
+    fig.update_yaxes(gridcolor="#1E293B", zerolinecolor="#334155")
     if title:
-        fig.update_layout(title={"text": title, "x": 0.0, "xanchor": "left"})
+        fig.update_layout(
+            title={
+                "text": title,
+                "x": 0.0,
+                "xanchor": "left",
+                "font": {"size": 14, "color": "#F8FAFC", "family": "Inter, -apple-system, sans-serif"},
+            }
+        )
     return fig
 
 
@@ -537,11 +559,11 @@ def plot_skill_vs_salary(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
         y="skill",
         orientation="h",
         color="premium",
-        color_continuous_scale="RdYlGn",
+        color_continuous_scale=[[0.0, "#F43F5E"], [0.5, "#475569"], [1.0, "#34D399"]],
         color_continuous_midpoint=0,
         text="median_with",
-        labels={"premium": "Median salary premium (IDR)", "skill": "Skill", "median_with": "Median salary"},
-        title=f"Which Skills Pay More? Top {len(table)} by Median Salary Premium",
+        labels={"premium": "Premi Gaji Median (IDR)", "skill": "Keahlian", "median_with": "Median Gaji"},
+        title=f"Premi Median Gaji per Keahlian (Top {len(table)})",
         hover_data={"median_without": True, "count": True, "premium": False, "median_with": False},
     )
     fig.update_traces(
@@ -685,7 +707,7 @@ def plot_skill_burden_by_career_stage(df: pd.DataFrame) -> go.Figure:
         y="Persentase",
         color="Tier",
         barmode="group",
-        color_discrete_sequence=["#FF7F0E", "#1F77B4", "#2CA02C"],
+        color_discrete_sequence=["#F59E0B", "#38BDF8", "#10B981"],
         text="Persentase",
     )
     fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
@@ -724,9 +746,11 @@ def plot_salary_reality_curve(df: pd.DataFrame) -> go.Figure:
         opacity=0.75,
         trendline="ols" if (has_sm and len(sub) >= 3) else None,
     )
+    if has_sm and len(sub) >= 3:
+        fig.update_traces(line=dict(color="#F59E0B", width=2.5), selector=dict(mode="lines"))
     fig.update_xaxes(title="Syarat Pengalaman Minimum (Tahun)", dtick=1)
     fig.update_yaxes(title="Estimasi Gaji Rata-rata (Juta IDR / Bulan)")
-    return _apply_base_layout(fig, height=480, title="Kurva Realita: Kompensasi vs Pengalaman Kerja di Indonesia")
+    return _apply_base_layout(fig, height=480, title="Distribusi Gaji Aktual Berdasarkan Pengalaman Kerja")
 
 
 def plot_remote_luxury_comparison(df: pd.DataFrame) -> go.Figure:
@@ -742,6 +766,7 @@ def plot_remote_luxury_comparison(df: pd.DataFrame) -> go.Figure:
 
     types = ["On-site", "Hybrid", "Remote"]
     counts = [df["workplace_type"].value_counts(normalize=True).get(t, 0.0) * 100 for t in types]
+    palette_work = ["#64748B", "#38BDF8", "#10B981"]
 
     fig.add_trace(
         go.Bar(
@@ -749,7 +774,7 @@ def plot_remote_luxury_comparison(df: pd.DataFrame) -> go.Figure:
             y=counts,
             text=[f"{c:.1f}%" for c in counts],
             textposition="outside",
-            marker_color=["#4C78A8", "#F58518", "#E45756"],
+            marker_color=palette_work,
             name="Porsi Lowongan",
             showlegend=False,
         ),
@@ -769,7 +794,7 @@ def plot_remote_luxury_comparison(df: pd.DataFrame) -> go.Figure:
                 y=med_salaries,
                 text=[f"Rp {m:.1f} Jt" for m in med_salaries],
                 textposition="outside",
-                marker_color=["#4C78A8", "#F58518", "#E45756"],
+                marker_color=palette_work,
                 name="Median Gaji",
                 showlegend=False,
             ),
@@ -803,13 +828,13 @@ def plot_real_tech_stack_landscape(df: pd.DataFrame, top_n: int = 15) -> go.Figu
         orientation="h",
         text="Jumlah Lowongan",
         color="Jumlah Lowongan",
-        color_continuous_scale="Viridis",
+        color_continuous_scale="Blues",
     )
     fig.update_traces(textposition="outside")
     fig.update_layout(coloraxis_showscale=False)
     fig.update_xaxes(title="Jumlah Lowongan yang Menyebutkan Skill")
     fig.update_yaxes(title="")
-    return _apply_base_layout(fig, height=520, title="Peta Kebutuhan Tech Stack Riil: Fondasi SQL & Excel vs Hype AI")
+    return _apply_base_layout(fig, height=520, title="Kebutuhan Tech Stack Industri Data Indonesia")
 
 
 __all__ = [
