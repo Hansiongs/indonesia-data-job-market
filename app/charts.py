@@ -691,7 +691,7 @@ def plot_skill_burden_by_career_stage(df: pd.DataFrame) -> go.Figure:
     fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
     fig.update_yaxes(title="Proporsi Lowongan yang Menuntut Skill (%)", range=[0, 105])
     fig.update_xaxes(title="Keahlian / Tools")
-    return _apply_base_layout(fig, height=480, title="Inversi Ekspektasi: Tuntutan Keahlian Akademis per Jenjang Karir")
+    return _apply_base_layout(fig, height=480, title="Perbandingan Beban Kualifikasi Skill per Jenjang Karir")
 
 
 def plot_salary_reality_curve(df: pd.DataFrame) -> go.Figure:
@@ -779,7 +779,7 @@ def plot_remote_luxury_comparison(df: pd.DataFrame) -> go.Figure:
 
     fig.update_yaxes(title="Porsi Lowongan (%)", range=[0, 105], row=1, col=1)
     fig.update_yaxes(title="Gaji Rata-rata (Juta IDR)", row=1, col=2)
-    return _apply_base_layout(fig, height=450, title="Ilusi Fleksibilitas WFH: Dominasi On-Site & Gaji Premium Kerja Remote")
+    return _apply_base_layout(fig, height=450, title="Dominasi On-Site vs Premi Gaji Kerja Remote")
 
 
 def plot_real_tech_stack_landscape(df: pd.DataFrame, top_n: int = 15) -> go.Figure:

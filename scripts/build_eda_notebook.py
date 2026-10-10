@@ -32,8 +32,8 @@ Berbeda dengan asumsi umum atau mitos yang sering beredar di media sosial, anali
 
 > *Berdasarkan 430 lowongan kerja data terverifikasi di Indonesia (349 lowongan dengan keterbukaan gaji aktual).*
 
-1. **Inversi Ekspektasi / Unicorn Syndrome:** Lowongan tingkat pemula (*fresh graduate* / pengalaman < 1 tahun) menuntut tumpukan skill akademis dan teknis paling padat (Python 70,6%, Statistik 58,8%, Machine Learning 47,1%), namun median gaji yang ditawarkan berada di level terendah (**Rp 4,2 Juta**). Sebaliknya, posisi Mid/Senior (> 3 tahun) lebih terfokus pada integrasi tools industri (ETL, Power BI, SQL, Cloud) dengan median kompensasi **Rp 9,0 – 15,0+ Juta**.
-2. **Ilusi Fleksibilitas WFH (Remote Adalah Barang Mewah):** Lebih dari **90%** lowongan data di Indonesia mewajibkan kerja **On-site (WFO)**. Kesempatan Full Remote hanya dinikmati segelintir posisi (~3,5%), tetapi menawarkan kompensasi dengan median **Rp 12,5 Juta** berbanding On-site **Rp 7,0 Juta** (+78,6% salary premium). WFH di Indonesia bukan benefit standar pemula, melainkan instrumen retensi eksklusif bagi talenta spesialis bergaji tinggi.
+1. **Beban Kualifikasi Fresh Graduate:** Lowongan tingkat pemula (*fresh graduate* / pengalaman < 1 tahun) menuntut tumpukan skill akademis dan teknis paling padat (Python 70,6%, Statistik 58,8%, Machine Learning 47,1%), namun median gaji yang ditawarkan berada di level terendah (**Rp 4,2 Juta**). Sebaliknya, posisi Mid/Senior (> 3 tahun) lebih terfokus pada integrasi tools industri (ETL, Power BI, SQL, Cloud) dengan median kompensasi **Rp 9,0 – 15,0+ Juta**.
+2. **Realita WFO & Premi Gaji Kerja Remote:** Lebih dari **90%** lowongan data di Indonesia mewajibkan kerja **On-site (WFO)**. Kesempatan Full Remote hanya dinikmati segelintir posisi (~3,5%), tetapi menawarkan kompensasi dengan median **Rp 12,5 Juta** berbanding On-site **Rp 7,0 Juta** (+78,6% salary premium). Akses kerja remote di Indonesia masih terbatas dan umumnya dialokasikan untuk talenta spesialis atau perusahaan skala regional.
 3. **Tulang Punggung Nyata Industri:** **SQL** (428 kemunculan) dan **Excel** (246 kemunculan) mendominasi bursa kerja nyata. Tools berbasis AI hype seperti PyTorch dan TensorFlow hanya muncul di sebagian kecil lowongan riset spesifik (< 30 kemunculan).
 4. **Kesenjangan Karir Fresh Graduate:** Hanya **5,8%** lowongan yang secara eksplisit membuka pintu untuk kandidat dengan pengalaman 0 tahun (*fresh graduate* murni). Portofolio berbasis studi kasus nyata menjadi syarat wajib untuk menembus filter rekruiter."""))
 
@@ -87,9 +87,9 @@ print(f"[SALARY] Transparansi kompensasi: {disclosed_salaries:,} lowongan ({disc
     # Cell 4: Markdown - Babak 1 Intro
     cells.append(nbf.v4.new_markdown_cell("""---
 
-## 🧩 Babak 1: Fenomena Inversi Ekspektasi / "Unicorn Syndrome"
+## 🧩 Babak 1: Beban Kualifikasi Fresh Graduate
 
-### "Ekspektasi Dewa, Budget UMR"
+### "Ekspektasi Dewa, Budget UMR: Paradoks Kualifikasi Entry-Level"
 
 Banyak pencari kerja pemula mengeluhkan kualifikasi lowongan junior yang terasa tidak masuk akal. Apakah keluhan ini hanya persepsi subjektif, atau terbukti secara empiris di pasar kerja?
 
@@ -99,19 +99,19 @@ Grafik di bawah ini memetakan persentase tuntutan skill berat (*Python, Statisti
 - **Mid / Senior:** Pengalaman 3 tahun ke atas."""))
 
     # Cell 5: Code - Skill Burden Chart
-    cells.append(nbf.v4.new_code_cell("""# 1. Visualisasi Inversi Beban Skill per Jenjang Karir
+    cells.append(nbf.v4.new_code_cell("""# 1. Visualisasi Beban Kualifikasi Skill per Jenjang Karir
 fig_skill_burden = plot_skill_burden_by_career_stage(df)
 fig_skill_burden.show()"""))
 
     # Cell 6: Markdown - Skill Burden Insight
-    cells.append(nbf.v4.new_markdown_cell("""### 💡 Analisis Temuan: Mengapa Terjadi Inversi Ekspektasi?
+    cells.append(nbf.v4.new_markdown_cell("""### 💡 Analisis Temuan: Mengapa Kualifikasi Entry-Level Cenderung Berat?
 
 Data menunjukkan fenomena paradoks yang sangat mencolok:
 1. **Beban Akademis di Posisi Entry-Level:** Posisi *Fresh Graduate* justru memiliki proporsi tuntutan **Python (70,6%)**, **Statistik (58,8%)**, dan **Machine Learning (47,1%)** tertinggi dibanding jenjang mana pun.
 2. **Pergeseran Pragmatis di Level Senior:** Pada posisi Mid/Senior (>3 tahun), tuntutan Machine Learning justru turun ke angka **29,8%**. Sebaliknya, perusahaan memprioritaskan integrasi sistem nyata: **ETL (41,5%)**, **Power BI/Tableau (35,1%)**, dan arsitektur **Cloud (27,7%)**.
 
-**Akar Penyebab di Industri (Unicorn Syndrome):**
-Perusahaan yang baru mulai membangun divisi data kerap tidak memiliki pemahaman matang mengenai pembagian peran data. Mereka menginginkan *one-man data team*—seorang kandidat yang bisa membersihkan data, membangun pipeline, memodelkan machine learning, sekaligus membuat dashboard eksekutif—dengan anggaran gaji tingkat pemula."""))
+**Akar Penyebab: Tuntutan Multi-Role pada Lowongan Junior**
+Perusahaan yang baru mulai membangun divisi data kerap tidak memiliki pemahaman matang mengenai pembagian peran data. Mereka menginginkan *one-person data team*—seorang kandidat yang bisa membersihkan data, membangun pipeline, memodelkan machine learning, sekaligus membuat dashboard eksekutif—dengan anggaran gaji tingkat pemula."""))
 
     # Cell 7: Markdown - Salary Reality Curve Intro
     cells.append(nbf.v4.new_markdown_cell("""### Kurva Realitas Kompensasi (*The Salary Reality Curve*)
@@ -144,9 +144,9 @@ plot_education_distribution(df).show()"""))
     # Cell 13: Markdown - Babak 2 Intro
     cells.append(nbf.v4.new_markdown_cell("""---
 
-## 🏖️ Babak 2: Ilusi Fleksibilitas WFH — "Remote Adalah Barang Mewah"
+## 🏖️ Babak 2: Realita WFO & Premi Gaji Kerja Remote
 
-### Mitos Kerja Data dari Mana Saja
+### Mitos vs Realita Fleksibilitas Kerja di Indonesia
 
 Industri teknologi kerap diidentikkan dengan fleksibilitas kerja *Work from Home* (WFH) atau *Work from Anywhere* (WFA). Apakah lowongan data di Indonesia benar-benar menawarkan kebebasan tersebut?"""))
 
@@ -156,13 +156,13 @@ fig_remote_luxury = plot_remote_luxury_comparison(df)
 fig_remote_luxury.show()"""))
 
     # Cell 15: Markdown - Remote Luxury Insight
-    cells.append(nbf.v4.new_markdown_cell("""### 💡 Pembongkaran Mitos: Realita On-Site vs Remote Luxury
+    cells.append(nbf.v4.new_markdown_cell("""### 💡 Realita On-Site vs Premi Gaji Kerja Remote
 
 1. **Dominasi Mutlak WFO:** Lebih dari **90,7%** lowongan data di Indonesia mewajibkan kerja **On-site (WFO)**. Opsi Hybrid berada di angka **5,8%**, sementara lowongan yang menawarkan **Full Remote hanya 3,5%**.
 2. **Premi Gaji Remote (+78,6%):** Meskipun porsinya sangat kecil, posisi Remote menawarkan median gaji **Rp 12,5 Juta**, dibandingkan posisi On-site sebesar **Rp 7,0 Juta** (+78,6% premium).
 
 **Kesimpulan Strategis:**
-Kerja remote di sektor data Indonesia bukanlah fasilitas umum atau opsi gaya hidup bagi entry-level. Remote adalah **instrumen kompensasi premium** yang diberikan perusahaan kepada talenta spesialis senior atau perusahaan multinasional yang merekrut talenta Indonesia dengan standar kompensasi regional."""))
+Kerja remote di sektor data Indonesia masih sangat terbatas (~3,5% lowongan). Model kerja remote bukanlah fasilitas standar bagi entry-level, melainkan opsi kompensasi bersyarat yang diberikan kepada talenta spesialis atau perusahaan skala regional dengan daya tawar tinggi."""))
 
     # Cell 16: Code - Workplace & Remote Premium
     cells.append(nbf.v4.new_code_cell("""# 5. Rincian Distribusi Workplace Type & Premi Remote
@@ -232,7 +232,7 @@ plot_top_companies(df, top_n=15).show()"""))
 - **Bersiap untuk On-site di Pusat Bisnis:** Pahami bahwa kesempatan kerja jarak jauh (Remote) sangat langka untuk jenjang awal. Mayoritas kesempatan berpusat pada model On-site di kota-kota industri utama (khususnya wilayah Jabodetabek dan Bandung).
 
 ### 2. Untuk Rekruiter & Hiring Manager
-- **Hindari "Unicorn Job Description":** Menuntut penguasaan *full data stack* (arsitektur pipeline data + riset machine learning + analisis bisnis) untuk lowongan tingkat pemula dengan standar kompensasi UMR hanya menciptakan *mismatch* ekspektasi dan memperpanjang proses rekrutmen.
+- **Hindari Tuntutan Multi-Role yang Tidak Realistis:** Menuntut penguasaan *full data stack* (arsitektur pipeline data + riset machine learning + analisis bisnis) untuk lowongan tingkat pemula dengan standar kompensasi UMR hanya menciptakan *mismatch* ekspektasi dan memperpanjang proses rekrutmen.
 - **Spesifikasikan Kebutuhan Riil:** Definisikan masalah operasional utama yang ingin diselesaikan: apakah perusahaan membutuhkan pembersihan & integrasi data (Data Engineer), atau pelaporan metrik bisnis harian (Data Analyst)."""))
 
     nb.cells = cells

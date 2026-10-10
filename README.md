@@ -1,7 +1,7 @@
 # 🇮🇩 Glints Job Intel: Realita Pasar Kerja Profesi Data Indonesia
 
 > **Analisis Empiris Berbasis 430 Lowongan Kerja Aktif Glints Indonesia**  
-> *Membongkar Mitos Kompensasi, "Unicorn Syndrome" pada Fresh Graduate, dan Ilusi Fleksibilitas WFH.*
+> *Membongkar Mitos Kompensasi, Beban Kualifikasi Fresh Graduate, dan Realita Kerja Remote vs WFO.*
 
 ---
 
@@ -12,8 +12,8 @@
 | 🚀 **Coba Dashboard Interaktif** | [Streamlit Dashboard](#-live-dashboard) (`streamlit run app/dashboard.py`) |
 | 📊 **Laporan Lengkap Mandiri (Bebas Server)** | [`eda_report.html`](eda_report.html) *(Buka langsung di browser apa pun)* |
 | 📓 **Notebook Analitis Terverifikasi** | [`eda.ipynb`](eda.ipynb) · [`clean.ipynb`](clean.ipynb) |
-| 🧩 **Babak 1: Inversi Ekspektasi** | [Loncat ke Analisis Unicorn Syndrome](#-babak-1-inversi-ekspektasi--unicorn-syndrome) |
-| 🏖️ **Babak 2: Ilusi Fleksibilitas WFH** | [Loncat ke Analisis Remote Luxury](#-babak-2-ilusi-fleksibilitas-wfh--remote-adalah-barang-mewah) |
+| 🧩 **Babak 1: Beban Kualifikasi Fresh Graduate** | [Loncat ke Analisis Kualifikasi Entry-Level](#-babak-1-beban-kualifikasi-fresh-graduate) |
+| 🏖️ **Babak 2: Realita WFO & Premi Gaji Remote** | [Loncat ke Analisis Premi Gaji Remote](#-babak-2-realita-wfo--premi-gaji-kerja-remote) |
 | 🛠️ **Proof of Source & Reproduksi** | [Panduan Replikasi Pipeline](#-proof-of-source--metodologi-scraping) |
 
 ---
@@ -26,15 +26,15 @@ Di media sosial dan kursus daring, profesi data (*Data Analyst, Data Engineer, D
 
 Proyek portofolio ini menyajikan investigasi menyeluruh menggunakan **430 lowongan kerja aktif dari Glints Indonesia** yang telah melalui proses validasi ketat (*100% lokasi Indonesia, deduplikasi, dan parsing gaji riil tanpa data sintesis*). Hasil analisis ini memvalidasi dua paradoks besar industri:
 
-1. **Inversi Ekspektasi (*Unicorn Syndrome*):** Makin murah gajinya, makin rakus tuntutan skill-nya. Lowongan *fresh graduate* (< 1 tahun) menuntut skill akademis paling berat, namun dibayar dengan median **Rp 4,2 Juta**.
-2. **Ilusi Fleksibilitas WFH (*Remote Luxury*):** Lebih dari **90%** lowongan mewajibkan kerja On-site (WFO). Full Remote adalah barang mewah yang hanya dinikmati segelintir talenta (~3,5%), namun menawarkan median kompensasi **Rp 12,5 Juta vs Rp 7,0 Juta (+78,6% premium)**.
+1. **Beban Kualifikasi Fresh Graduate:** Lowongan tingkat pemula (*fresh graduate* / pengalaman < 1 tahun) menuntut tumpukan skill akademis paling padat, namun ditawarkan dengan median gaji terendah (**Rp 4,2 Juta**).
+2. **Realita WFO & Premi Gaji Kerja Remote:** Lebih dari **90%** lowongan mewajibkan kerja On-site (WFO). Full Remote hanya tersedia di ~3,5% lowongan, namun menawarkan median kompensasi **Rp 12,5 Juta vs Rp 7,0 Juta (+78,6% premium)**.
 3. **Fondasi Nyata Industri:** **SQL** (428 kemunculan) dan **Excel** (246 kemunculan) adalah tulang punggung bursa kerja riil di Indonesia—jauh melampaui hype tools AI modern.
 
 ---
 
-## 🧩 Babak 1: Inversi Ekspektasi — "Unicorn Syndrome"
+## 🧩 Babak 1: Beban Kualifikasi Fresh Graduate
 
-### *Ekspektasi Dewa, Budget UMR: Mengapa Lowongan Pemula Menuntut Segalanya?*
+### *Ekspektasi Dewa, Budget UMR: Paradoks Kualifikasi Entry-Level*
 
 Ketika memetakan kebutuhan skill teknis berdasarkan kelompok pengalaman kerja, kita menemukan pola inversi yang kontradiktif antara jenjang pemula dan profesional berpengalaman:
 
@@ -54,9 +54,9 @@ Median kompensasi posisi pemula tertekan di angka **Rp 4,2 Juta** (banyak di ant
 
 ---
 
-## 🏖️ Babak 2: Ilusi Fleksibilitas WFH — "Remote Adalah Barang Mewah"
+## 🏖️ Babak 2: Realita WFO & Premi Gaji Kerja Remote
 
-### *Mitos Kerja dari Mana Saja vs Realita On-Site di Indonesia*
+### *Mitos vs Realita Fleksibilitas Kerja di Indonesia*
 
 Sektor data kerap diidentikkan dengan kebebasan bekerja jarak jauh. Namun, data empiris Glints Indonesia menunjukkan realita yang berbanding terbalik:
 
@@ -67,7 +67,7 @@ Sektor data kerap diidentikkan dengan kebebasan bekerja jarak jauh. Namun, data 
 - **Premi Gaji Remote (+78,6%):** Meskipun peluangnya langka, posisi Remote menawarkan median kompensasi **Rp 12,5 Juta**, dibandingkan On-site sebesar **Rp 7,0 Juta**.
 
 > **Kesimpulan Strategis:**  
-> Di bursa kerja Indonesia, model kerja Remote bukanlah fasilitas umum atau gaya hidup yang dapat dinegosiasikan oleh lulusan baru. Remote adalah **instrumen kompensasi mewah (*luxury benefit*)** yang diberikan perusahaan kepada talenta spesialis senior atau perusahaan multinasional yang merekrut talenta Indonesia dengan standar kompensasi regional.
+> Di bursa kerja Indonesia, model kerja Remote bukanlah fasilitas standar bagi entry-level. Model ini umumnya dialokasikan sebagai **opsi kompensasi bersyarat** untuk talenta spesialis berpengalaman atau korporasi skala regional dengan standar kompensasi tinggi.
 
 ---
 
@@ -95,8 +95,8 @@ streamlit run app/dashboard.py
 
 Dashboard mencakup 6 tampilan:
 1. **Ringkasan Pasar:** Metrik KPI pasar, distribusi peran, dan model kerja.
-2. **Babak 1: Inversi Ekspektasi:** Grafik beban skill per jenjang karir dan kurva realitas gaji (*The Reality Curve*).
-3. **Babak 2: Ilusi WFH:** Analisis komparasi sebaran model kerja dan premi kompensasi Remote vs On-site.
+2. **Babak 1: Beban Kualifikasi Fresh Graduate:** Grafik beban skill per jenjang karir dan kurva realitas gaji (*The Reality Curve*).
+3. **Babak 2: Realita WFO & Premi Remote:** Analisis komparasi sebaran model kerja dan premi kompensasi Remote vs On-site.
 4. **Lanskap Tech Stack:** Analisis frekuensi tools teknis, heatmap ko-okurensi skill (Jaccard Index), dan premi gaji per skill.
 5. **Sebaran Wilayah:** Peta interaktif konsentrasi lowongan kerja data di kota-kota Indonesia.
 6. **Data Terfilter:** Eksplorasi tabel data terverifikasi dan fitur unduh CSV hasil filter.

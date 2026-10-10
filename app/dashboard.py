@@ -352,8 +352,8 @@ st.markdown("")
 tab_overview, tab_act1, tab_act2, tab_act3, tab_geo, tab_data = st.tabs(
     [
         "Ringkasan Pasar",
-        "Babak 1: Inversi Ekspektasi",
-        "Babak 2: Ilusi WFH",
+        "Babak 1: Beban Kualifikasi Fresh Graduate",
+        "Babak 2: Realita WFO & Premi Remote",
         "Lanskap Tech Stack",
         "Sebaran Wilayah",
         "Data Terfilter",
@@ -412,20 +412,20 @@ with tab_overview:
     )
 
 
-# ---- Babak 1: Inversi Ekspektasi ------------------------------------------
+# ---- Babak 1: Beban Kualifikasi Fresh Graduate ---------------------------
 with tab_act1:
     st.markdown(
         "<div class='gji-callout'>"
-        "<strong>Temuan Empiris Babak 1 (Unicorn Syndrome):</strong><br>"
+        "<strong>Temuan Empiris Babak 1 (Beban Kualifikasi Entry-Level):</strong><br>"
         "Posisi <em>Fresh Graduate</em> (< 1 tahun) justru menanggung tuntutan skill akademis paling padat "
-        "(Python 70,6%, Statistik 58,8%, Machine Learning 47,1%) dengan median gaji terendah <strong>Rp 4,2 Juta</strong>. "
+        "(Python 70,6%, Statistik 58,8%, Machine Learning 47,1%) dengan median gaji <strong>Rp 4,2 Juta</strong>. "
         "Sebaliknya, posisi Mid/Senior (> 3 tahun) lebih terfokus pada integrasi pipeline terapan (ETL 41,5%, "
         "Power BI/Tableau 35,1%, Cloud 27,7%) dengan kompensasi berlipat ganda (<strong>Rp 9,0 – 15,0+ Juta</strong>)."
         "</div>",
         unsafe_allow_html=True,
     )
 
-    st.subheader("Inversi Beban Skill: Fresh Graduate vs Mid/Senior")
+    st.subheader("Beban Kualifikasi Skill: Fresh Graduate vs Mid/Senior")
     st.caption(
         "Persentase lowongan yang menuntut skill teoritis berat (Python, Stats, ML) vs tools integrasi praktis (ETL, BI, Cloud) "
         "berdasarkan kelompok jenjang pengalaman kerja."
@@ -450,20 +450,20 @@ with tab_act1:
         st.plotly_chart(plot_education_distribution(fdf), use_container_width=True)
 
 
-# ---- Babak 2: Ilusi WFH ---------------------------------------------------
+# ---- Babak 2: Realita WFO & Premi Remote ----------------------------------
 with tab_act2:
     st.markdown(
         "<div class='gji-callout'>"
-        "<strong>Temuan Empiris Babak 2 (Remote Luxury):</strong><br>"
+        "<strong>Temuan Empiris Babak 2 (Disparitas Kompensasi Kerja Remote):</strong><br>"
         "Lebih dari <strong>90,7%</strong> lowongan data di Indonesia mewajibkan kerja <strong>On-site (WFO)</strong>. "
         "Full Remote hanya tersedia di 3,5% lowongan. Namun, posisi remote menawarkan median gaji <strong>Rp 12,5 Juta</strong> "
-        "vs On-site <strong>Rp 7,0 Juta</strong> (+78,6% premium). Remote di Indonesia bukan hak fleksibel pemula, "
-        "melainkan kompensasi mewah bagi talenta senior berkemampuan langka."
+        "vs On-site <strong>Rp 7,0 Juta</strong> (+78,6% premium). Akses kerja remote di Indonesia masih sangat terbatas "
+        "dan umumnya dialokasikan untuk talenta spesialis berpengalaman atau korporasi skala regional."
         "</div>",
         unsafe_allow_html=True,
     )
 
-    st.subheader("Ilusi Fleksibilitas WFH: Distribusi Model Kerja vs Median Gaji")
+    st.subheader("Distribusi Model Kerja vs Median Gaji (Premi Remote)")
     st.caption(
         "Perbandingan langsung antara pangsa pasar model kerja dan besaran kompensasi yang ditawarkan."
     )
