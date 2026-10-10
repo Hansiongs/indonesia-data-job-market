@@ -145,8 +145,8 @@ Dataset bersih `data/processed/master_dataset_eda.csv` sudah tersedia di dalam r
 
 ```bash
 # 1. Clone repositori
-git clone https://github.com/<your-username>/glints-job-intel.git
-cd glints-job-intel
+git clone https://github.com/<your-username>/indonesia-data-job-market.git
+cd indonesia-data-job-market
 
 # 2. Buat dan aktifkan virtual environment
 python -m venv .venv
