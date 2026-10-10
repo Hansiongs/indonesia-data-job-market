@@ -1,19 +1,19 @@
 """Glints Job Intel — Interactive Dashboard.
 
-This is the Streamlit entry point for the Phase 4 deliverable. Run it
-with::
+Aplikasi dashboard Streamlit untuk analisis bursa kerja profesi data Indonesia.
+Dijalankan dengan perintah::
 
     streamlit run app/dashboard.py
 
-The app loads the cleaned master dataset produced by the upstream
-pipeline, exposes sidebar filters (role, city, workplace type, experience,
-salary, free-text search), and renders five tabs: Overview, Salary,
-Skills & Market, Geography, and Data.
-
-All heavy lifting — data loading, filtering, chart building, geographic
-visualisation — lives in sibling modules. This file is intentionally
-thin: it wires the UI controls to the helpers and handles a few
-empty-state edge cases.
+Dashboard memuat dataset bersih hasil scraping Glints Indonesia, menyediakan
+filter interaktif (peran, kota, tipe kerja, pengalaman, gaji, kata kunci),
+dan menyajikan analisis dalam 6 tab:
+1. Ringkasan Pasar
+2. Babak 1: Inversi Ekspektasi (Unicorn Syndrome)
+3. Babak 2: Ilusi WFH (Remote Luxury)
+4. Lanskap Tech Stack & AI Hype
+5. Sebaran Wilayah
+6. Data Terfilter
 """
 from __future__ import annotations
 
@@ -23,47 +23,30 @@ from __future__ import annotations
 import streamlit as st
 
 st.set_page_config(
-    page_title="Glints Job Intel — Indonesian Data Job Market",
+    page_title="Glints Job Intel — Realita Pasar Kerja Data Indonesia",
     page_icon="🇮🇩",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
 # ---------------------------------------------------------------------------
-# Custom CSS (must be defined before the first st.markdown that injects it).
+# Custom CSS
 # ---------------------------------------------------------------------------
-#
-# ``<style>`` blocks survive Streamlit's HTML sanitiser; inline
-# ``style="..."`` attributes on most elements (including ``<span>``)
-# get stripped, which is why the eyebrow can't just be written as
-# ``<span style="color:#5EEAD4">``. Instead, every styled element gets
-# a class and the rule lives here. Injected below right after the
-# constants are defined.
-
 _CUSTOM_CSS: str = (
     "<style>"
-    # Eyebrow above the hero number. Bigger than default body text,
-    # wide-tracked so it reads as a typographic eyebrow.
     ".gji-eyebrow{font-size:0.95rem;letter-spacing:0.14em;"
     "text-transform:uppercase;color:#5EEAD4;font-weight:600;"
     "display:block;}"
-    # Footer band — clearly darker than the canvas so the bottom of the
-    # page reads as a distinct section. ``#020617`` is two stops darker
-    # than the slate-900 body, and we add a 3px teal top-border so the
-    # band has a visible edge even if the colour difference is subtle.
     ".gji-footer{background:#020617;border-top:3px solid #2DD4BF;"
     "border-radius:8px;padding:1.25rem 1.4rem;margin-top:1.25rem;}"
+    ".gji-callout{background:#0f172a;border-left:4px solid #2DD4BF;"
+    "padding:0.9rem 1.2rem;border-radius:4px;margin-bottom:1rem;color:#e2e8f0;}"
     "</style>"
 )
-
-# Inject custom CSS once at module load so every Streamlit rerun
-# reapplies the styles (Streamlit re-runs the whole script on
-# interaction). Has to come right after ``set_page_config`` since
-# that must be the first Streamlit call.
 st.markdown(_CUSTOM_CSS, unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
-# Imports (kept after page_config per Streamlit docs).
+# Imports
 # ---------------------------------------------------------------------------
 import os  # noqa: E402
 from typing import Final  # noqa: E402
@@ -71,11 +54,16 @@ from typing import Final  # noqa: E402
 import pandas as pd  # noqa: E402
 
 from app.charts import (  # noqa: E402
+    plot_education_distribution,
     plot_experience_distribution,
+    plot_real_tech_stack_landscape,
+    plot_remote_luxury_comparison,
     plot_remote_premium,
     plot_role_distribution,
     plot_salary_distribution,
+    plot_salary_reality_curve,
     plot_salary_vs_experience,
+    plot_skill_burden_by_career_stage,
     plot_skill_cooccurrence_heatmap,
     plot_skill_vs_salary,
     plot_top_companies,
@@ -92,10 +80,7 @@ from app.data import (  # noqa: E402
 )
 from app.geo import city_summary, plot_geo_map  # noqa: E402
 
-# ``streamlit-folium`` is an optional dependency that gives us a nicer
-# component binding for Folium maps. If it isn't installed we fall back
-# to raw ``st.components.v1.html`` rendering.
-try:  # pragma: no cover - exercised only when streamlit-folium is missing
+try:  # pragma: no cover
     from streamlit_folium import st_folium as _st_folium
 except ImportError:  # pragma: no cover
     _st_folium = None
@@ -112,8 +97,6 @@ _DATA_TAB_COLUMNS: Final[list[str]] = [
     "job_education_clean",
 ]
 
-# Public-facing metadata for the methodology links + footer. Replace this
-# placeholder before publishing the repository or deploying the app.
 _REPO_URL: Final[str] = os.getenv("GJI_REPO_URL", "")
 _REPO_BLOB_URL: Final[str] = f"{_REPO_URL}/blob/main"
 
@@ -127,136 +110,95 @@ def _render_map(m: object) -> None:
 
 
 def _format_salary_label(m_idr: float) -> str:
-    return f"Rp {m_idr:,.1f}M"
+    return f"Rp {m_idr:,.1f} Juta"
 
 
 def _format_skill_label(name: str) -> str:
-    """Format a canonical skill name without exposing column conventions."""
     return pretty_skill_label(f"skill_{name}")
 
 
 def _round_up_to(value: float, step: int) -> int:
-    """Round ``value`` up to the nearest multiple of ``step``.
-
-    Used to size the salary slider ceiling so it always lands on a clean
-    M-IDR boundary instead of e.g. 47M.
-    """
     if step <= 0:
         raise ValueError("step must be positive")
     return int((int(value) + step - 1) // step * step)
 
 
 def _format_delta(curr: float, base: float) -> str | None:
-    """Return a delta string vs the unfiltered baseline, or None when base is zero.
-
-    Streamlit's ``st.metric`` treats ``None`` as "no delta to show" so we
-    return ``None`` when the baseline is zero to avoid a ``NaN%`` arrow.
-    """
     if base == 0:
         return None
     diff = (curr - base) / base * 100.0
     arrow = "▲" if diff >= 0 else "▼"
-    return f"{arrow} {abs(diff):.1f}% vs all jobs"
+    return f"{arrow} {abs(diff):.1f}% vs total"
 
 
 def _render_hero(fdf: pd.DataFrame, df: pd.DataFrame) -> None:
-    """Render the hero band: eyebrow, hero number, supporting meta line.
-
-    The hero number is the most important single fact in the dashboard
-    (filtered job count) — giving it space sets a clear focal point so
-    the reader knows where to look first. The eyebrow surfaces when the
-    dataset was last scraped so the reader knows how fresh the numbers
-    are; the meta line surfaces the filtering ratio.
-
-    Implementation note: the previous version used inline HTML ``<div>``s
-    for the right-rail cards, which Streamlit's HTML sanitiser will
-    quietly strip on some installs, leaving an empty white strip. The
-    current version uses ``st.container(border=True)`` for the cards —
-    it's a native primitive that survives sanitisation and picks up
-    the theme's secondaryBackgroundColor automatically.
-    """
     stats = compute_summary_stats(fdf)
-
-    # Hero number + tagline side-by-side on wide layouts, stacked on narrow.
-    # ``[1, 1]`` keeps the left text column narrower than the right cards
-    # so the hero number doesn't get stretched out and lose its impact.
     left, right = st.columns([1, 1], vertical_alignment="center")
     with left:
-        # Eyebrow uses the ``gji-eyebrow`` class declared in
-        # ``_CUSTOM_CSS`` — inline ``style="..."`` attributes on
-        # ``<span>`` get stripped by Streamlit's HTML sanitiser on
-        # some installs, so the rule has to live in a ``<style>`` block
-        # applied via ``class=``.
         st.markdown(
             "<span class='gji-eyebrow'>"
-            "Glints Job Intel · Portfolio snapshot"
+            "Glints Job Intel · Riset Pasar Kerja Data Indonesia"
             "</span>",
             unsafe_allow_html=True,
-            help="Cleaned Indonesian data-job postings from a Glints snapshot.",
+            help="Analisis berbasis dataset lowongan kerja Glints Indonesia terverifikasi.",
         )
-        # Native ``#`` heading — Streamlit's h1 picks up the theme's
-        # heading font size without us touching inline styles (which the
-        # HTML sanitiser can silently strip on some installs).
         st.markdown(f"# {stats['total_jobs']:,}")
-        st.caption("jobs hiring now")
+        st.caption("lowongan kerja aktif")
         if len(fdf) != len(df):
             st.caption(
-                f"Filtered from {len(df):,} total postings · "
-                f"{len(fdf) / len(df) * 100:.0f}% of dataset"
+                f"Hasil filter dari {len(df):,} total lowongan · "
+                f"{len(fdf) / len(df) * 100:.0f}% dataset"
             )
         else:
-            st.caption(f"Pulled from {len(df):,} total postings")
+            st.caption(f"Dari total {len(df):,} lowongan terverifikasi")
 
     with right:
         with st.container(border=True):
-            st.caption("Median salary")
+            st.caption("Median Gaji Pasar")
             st.markdown(
                 f"### {_format_salary_label(stats['median_salary_idr'] / 1_000_000)}"
             )
 
         with st.container(border=True):
-            st.caption("Top role · Top city")
+            st.caption("Peran Dominan · Kota Terbanyak")
             st.markdown(f"### {stats['top_role']} · {stats['top_city']}")
 
 
 def _render_context(df: pd.DataFrame) -> None:
-    """Set expectations for the snapshot and give first-time readers a path."""
     insights = compute_market_insights(df)
     with st.container(border=True):
-        st.markdown("**How to read this dashboard**")
+        st.markdown("**Panduan Membaca Dashboard & Sumber Data**")
         st.caption(
-            "Start with the overview, then use Salary, Skills & Hiring, and Location "
-            "to investigate a specific question. Filters in the sidebar update every "
-            "chart at once."
+            "Gunakan tab narasi untuk menyelami temuan kunci: Babak 1 (Inversi Ekspektasi), "
+            "Babak 2 (Ilusi Fleksibilitas WFH), dan Lanskap Tech Stack. Filter di sidebar akan "
+            "memperbarui seluruh grafik secara interaktif."
         )
         st.caption(
-            f"This dashboard uses a cleaned portfolio snapshot. "
-            f"{insights['salary_disclosure_pct']:.0f}% of rows disclose salary in "
-            "the current view; salary charts exclude rows without a value, while "
-            "those rows remain available in the Data tab."
+            f"Analisis berbasis data riil Glints Indonesia (100% berbasis di Indonesia). "
+            f"{insights['salary_disclosure_pct']:.0f}% lowongan mencantumkan nominal gaji transparan. "
+            "Grafik analisis kompensasi berfokus pada data yang terbuka tanpa imputasi sintesis."
         )
 
 
 def _render_insight_cards(df: pd.DataFrame) -> None:
-    """Show three plain-language takeaways above the detailed charts."""
     insights = compute_market_insights(df)
     top_skill = insights["top_skill"]
     top_skill_label = _format_skill_label(top_skill) if top_skill != "n/a" else "n/a"
     cards = [
         (
-            "Most-mentioned skill",
+            "Tuntutan Skill Teratas",
             f"{top_skill_label} · {insights['top_skill_share_pct']:.0f}%",
-            "Share of filtered postings mentioning the leading skill.",
+            "Proporsi lowongan yang mensyaratkan skill ini.",
         ),
         (
-            "Largest job hub",
-            f"{insights['top_city_share_pct']:.0f}% of postings",
-            "Share belonging to the most common city in this view.",
+            "Pusat Karir Terbesar",
+            f"{insights['top_city_share_pct']:.0f}% lowongan",
+            "Pangsa lowongan di kota perekrut nomor satu.",
         ),
         (
-            "Fresh-graduate postings",
+            "Porsi Fresh Graduate",
             f"{insights['fresh_graduate_share_pct']:.0f}%",
-            "Postings with a minimum experience requirement of zero years.",
+            "Lowongan dengan syarat pengalaman kerja 0 tahun.",
         ),
     ]
     columns = st.columns(3)
@@ -271,17 +213,15 @@ def _render_insight_cards(df: pd.DataFrame) -> None:
 # Data loading (cached)
 # ---------------------------------------------------------------------------
 
-with st.spinner("Loading data..."):
+with st.spinner("Memuat dataset..."):
     try:
         raw_df = load_master_dataset()
         df, skill_cols = build_skill_columns(raw_df)
     except FileNotFoundError as exc:
         st.error(
-            f"**Dataset not found.**\n\n"
+            f"**Dataset tidak ditemukan.**\n\n"
             f"{exc}\n\n"
-            "The repository includes a demo snapshot, so this usually means the "
-            "data file was moved or deleted. Restore it from the repository, or "
-            "run `make pipeline` after preparing a raw scrape."
+            "Pastikan dataset olahan tersedia di `data/processed/master_dataset_eda.csv`."
         )
         st.stop()
 
@@ -289,48 +229,43 @@ with st.spinner("Loading data..."):
 # ---------------------------------------------------------------------------
 # Sidebar filters
 # ---------------------------------------------------------------------------
-#
-# Filters are grouped into three expanders so the sidebar isn't a wall of
-# controls on first paint. The "Match" expander is open by default
-# (free-text search is the lowest-friction entry point); the two
-# "Refine" expanders are collapsed.
 
 with st.sidebar:
-    st.header("Filters")
+    st.header("Filter Analisis")
 
     role_options: list[str] = sorted(df["keyword"].dropna().astype(str).unique().tolist()) if "keyword" in df.columns else []
     city_options: list[str] = sorted(df["city_clean"].dropna().astype(str).unique().tolist()) if "city_clean" in df.columns else []
     work_options: list[str] = sorted(df["workplace_type"].dropna().astype(str).unique().tolist()) if "workplace_type" in df.columns else []
 
-    with st.expander("Match", expanded=True):
+    with st.expander("Pencarian Kata Kunci", expanded=True):
         search = st.text_input(
-            "Search job title or company",
+            "Cari posisi atau nama perusahaan",
             value="",
-            placeholder="e.g. data engineer, Gojek",
-            help="Case-insensitive substring match across title and company.",
+            placeholder="contoh: data analyst, Gojek, BCA",
+            help="Pencarian substring pada judul lowongan dan nama perusahaan.",
         )
 
-    with st.expander("Refine by segment", expanded=False):
+    with st.expander("Filter Segmen & Wilayah", expanded=False):
         role_filter = st.multiselect(
-            "Role",
+            "Peran / Bidang Data",
             options=role_options,
             default=None,
-            help="Filter by job family (keyword).",
+            help="Filter berdasarkan rumpun profesi (Data Analyst, Engineer, Scientist, ML).",
         )
         city_filter = st.multiselect(
-            "City",
+            "Kota / Wilayah",
             options=city_options,
             default=None,
-            help="Filter by city.",
+            help="Filter berdasarkan kota penempatan.",
         )
         work_filter = st.multiselect(
-            "Workplace Type",
+            "Model Kerja",
             options=work_options,
             default=None,
             help="On-site / Remote / Hybrid.",
         )
 
-    with st.expander("Refine by experience & pay", expanded=False):
+    with st.expander("Filter Pengalaman & Gaji", expanded=False):
         experience_values = (
             pd.to_numeric(df["exp_min_years"], errors="coerce").dropna()
             if "exp_min_years" in df.columns
@@ -340,17 +275,14 @@ with st.sidebar:
         exp_max = int(experience_values.max()) if not experience_values.empty else 10
         exp_slider_max = max(exp_max, exp_min + 1)
         exp_filter = st.slider(
-            "Min experience (years)",
+            "Pengalaman Minimal (Tahun)",
             min_value=exp_min,
             max_value=exp_slider_max,
             value=(exp_min, exp_slider_max),
             step=1,
-            help="Inclusive range applied to the minimum-experience field.",
+            help="Rentang tahun pengalaman kerja minimal yang disyaratkan.",
         )
 
-        # Salary slider ceiling comes from the data so users don't silently
-        # lose postings that pay above the old hardcoded 50M cap. We round
-        # up to the nearest 5M for a clean slider step boundary.
         salary_cap_m = 50
         salary_values = (
             pd.to_numeric(df["salary_avg"], errors="coerce").dropna()
@@ -362,16 +294,16 @@ with st.sidebar:
             salary_cap_m = max(5, int(_round_up_to(max_salary_m, 5)))
 
         salary_range = st.slider(
-            "Salary range (M IDR / month)",
+            "Rentang Gaji (Juta IDR / Bulan)",
             min_value=0,
             max_value=salary_cap_m,
             value=(0, salary_cap_m),
             step=1,
-            help=f"Inclusive range in millions of IDR per month. Upper bound set to Rp {salary_cap_m}M based on the dataset's max.",
+            help=f"Rentang kompensasi dalam juta Rupiah. Batas atas diatur hingga Rp {salary_cap_m} Juta.",
         )
 
     st.divider()
-    st.caption(f"Loaded {len(df):,} rows · {len(skill_cols)} skill flags.")
+    st.caption(f"Termuat {len(df):,} baris data · {len(skill_cols)} skill tags terdeteksi.")
 
 
 # ---------------------------------------------------------------------------
@@ -387,9 +319,6 @@ fdf = filter_dataframe(
     search_query=search,
 )
 
-# Salary range filter is applied separately so the slider's M-IDR units
-# are explicit at the call site (no implicit unit conversion inside the
-# helper).
 if (
     "salary_avg" in fdf.columns
     and not fdf.empty
@@ -401,179 +330,222 @@ if (
 
 
 # ---------------------------------------------------------------------------
-# Header
+# Header & Navigation
 # ---------------------------------------------------------------------------
 
 if fdf.empty:
     st.warning(
-        "No jobs match the current filters. Try widening the salary range, "
-        "clearing the role/city selections, or removing the search term."
+        "Tidak ada lowongan yang sesuai dengan kriteria filter saat ini. "
+        "Coba perluas rentang gaji, hilangkan seleksi kota/peran, atau ubah kata kunci pencarian."
     )
     st.stop()
 
 _render_hero(fdf, df)
 _render_context(df)
-st.markdown("")  # breathing room before the tabs row
+st.markdown("")
 
 
 # ---------------------------------------------------------------------------
 # Tabs
 # ---------------------------------------------------------------------------
 
-tab_overview, tab_salary, tab_skills, tab_geo, tab_data = st.tabs(
-    ["Overview", "Salary", "Skills & Hiring", "Location", "Data"]
+tab_overview, tab_act1, tab_act2, tab_act3, tab_geo, tab_data = st.tabs(
+    [
+        "Ringkasan Pasar",
+        "Babak 1: Inversi Ekspektasi",
+        "Babak 2: Ilusi WFH",
+        "Lanskap Tech Stack",
+        "Sebaran Wilayah",
+        "Data Terfilter",
+    ]
 )
 
-# ---- Overview ------------------------------------------------------------
+# ---- Ringkasan Pasar ------------------------------------------------------
 with tab_overview:
     stats = compute_summary_stats(fdf)
     base_stats = compute_summary_stats(df)
 
-    st.subheader("Market at a glance")
+    st.subheader("Ikhtisar Pasar Kerja")
     _render_insight_cards(fdf)
     st.caption(
-        "These takeaways describe the selected postings. Clear the sidebar filters "
-        "to return to the full snapshot."
+        "Metrik di atas dihitung secara dinamis dari lowongan yang memenuhi kriteria filter."
     )
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric(
-        "Total Jobs",
+        "Total Lowongan",
         f"{stats['total_jobs']:,}",
         delta=_format_delta(stats["total_jobs"], base_stats["total_jobs"]) or None,
     )
     c2.metric(
-        "Unique Companies",
+        "Perusahaan Unik",
         f"{stats['unique_companies']:,}",
         delta=_format_delta(stats["unique_companies"], base_stats["unique_companies"]) or None,
     )
     c3.metric(
-        "Median Salary",
+        "Median Gaji",
         _format_salary_label(stats["median_salary_idr"] / 1_000_000),
         delta=_format_delta(stats["median_salary_idr"], base_stats["median_salary_idr"]) or None,
     )
     c4.metric(
-        "Remote Share",
-        f"{stats['remote_share_pct']:.0f}%",
+        "Porsi Remote",
+        f"{stats['remote_share_pct']:.1f}%",
         delta=_format_delta(stats["remote_share_pct"], base_stats["remote_share_pct"]) or None,
     )
 
-    st.subheader("Where the opportunities are")
+    st.subheader("Distribusi Peluang Karir")
     st.caption(
-        "Role mix, workplace type, and experience requirements provide the quickest "
-        "overview of the market shape."
+        "Komposisi bidang peran dan model kerja memperlihatkan struktur penyerapan tenaga kerja saat ini."
     )
     col_a, col_b = st.columns(2)
     with col_a:
-        st.subheader("Jobs by Role")
+        st.subheader("Lowongan Berdasarkan Peran")
         st.plotly_chart(plot_role_distribution(fdf), use_container_width=True)
     with col_b:
-        st.subheader("Jobs by Workplace Type")
+        st.subheader("Lowongan Berdasarkan Model Kerja")
         st.plotly_chart(plot_workplace_type_distribution(fdf), use_container_width=True)
 
-    st.subheader("Jobs by Minimum Experience")
-    st.plotly_chart(plot_experience_distribution(fdf), use_container_width=True)
-
-# ---- Salary --------------------------------------------------------------
-with tab_salary:
-    st.caption(
-        "Salary is shown in IDR per month and is calculated only for postings with a "
-        "disclosed salary range."
+    st.subheader("Distribusi Gaji per Rumpun Profesi")
+    st.plotly_chart(
+        plot_salary_distribution(fdf, by="keyword"),
+        use_container_width=True,
     )
-    c1, c2 = st.columns(2)
-    with c1:
-        st.subheader("Salary Distribution by Role")
-        st.plotly_chart(
-            plot_salary_distribution(fdf, by="keyword"),
-            use_container_width=True,
-        )
-    with c2:
-        st.subheader("Salary Distribution by Workplace Type")
-        st.plotly_chart(
-            plot_salary_distribution(fdf, by="workplace_type"),
-            use_container_width=True,
-        )
 
-    st.subheader("Salary vs. Experience")
-    st.plotly_chart(plot_salary_vs_experience(fdf), use_container_width=True)
 
-# ---- Skills & Market -----------------------------------------------------
-# Skills and Market Intel are merged: together they answer the single
-# recruiter question "what should I learn / who is hiring / does remote pay
-# better?". Splitting them across two tabs forces extra clicks without
-# surfacing any extra insight.
-
-with tab_skills:
-    st.caption(
-        "Skills are keyword mentions in job descriptions and tags, not verified "
-        "requirements."
+# ---- Babak 1: Inversi Ekspektasi ------------------------------------------
+with tab_act1:
+    st.markdown(
+        "<div class='gji-callout'>"
+        "<strong>Temuan Empiris Babak 1 (Unicorn Syndrome):</strong><br>"
+        "Posisi <em>Fresh Graduate</em> (< 1 tahun) justru menanggung tuntutan skill akademis paling padat "
+        "(Python 70,6%, Statistik 58,8%, Machine Learning 47,1%) dengan median gaji terendah <strong>Rp 4,2 Juta</strong>. "
+        "Sebaliknya, posisi Mid/Senior (> 3 tahun) lebih terfokus pada integrasi pipeline terapan (ETL 41,5%, "
+        "Power BI/Tableau 35,1%, Cloud 27,7%) dengan kompensasi berlipat ganda (<strong>Rp 9,0 – 15,0+ Juta</strong>)."
+        "</div>",
+        unsafe_allow_html=True,
     )
-    st.subheader("Top Skills in Demand")
-    st.plotly_chart(plot_top_skills_bar(fdf, top_n=20), use_container_width=True)
 
-    st.subheader("Skill Co-occurrence")
+    st.subheader("Inversi Beban Skill: Fresh Graduate vs Mid/Senior")
     st.caption(
-        "Jaccard similarity between the top 12 most-requested skills. "
-        "Higher values mean the two skills tend to appear together in postings."
+        "Persentase lowongan yang menuntut skill teoritis berat (Python, Stats, ML) vs tools integrasi praktis (ETL, BI, Cloud) "
+        "berdasarkan kelompok jenjang pengalaman kerja."
+    )
+    st.plotly_chart(plot_skill_burden_by_career_stage(fdf), use_container_width=True)
+
+    st.subheader("The Reality Curve: Sebaran Gaji Aktual vs Tahun Pengalaman")
+    st.caption(
+        "Kurva realitas gaji menunjukkan kompensasi pemula yang tertekan di kisaran UMR (< Rp 4,5 Juta) "
+        "sebelum melonjak tajam setelah melewati masa kerja 2–3 tahun."
+    )
+    st.plotly_chart(plot_salary_reality_curve(fdf), use_container_width=True)
+
+    st.subheader("Hambatan Masuk (Barrier to Entry): Pengalaman & Standar Akademis")
+    st.caption(
+        "Hanya sebagian kecil lowongan yang menerima pengalaman 0 tahun; mayoritas mensyaratkan ijazah S1."
+    )
+    col_exp, col_edu = st.columns(2)
+    with col_exp:
+        st.plotly_chart(plot_experience_distribution(fdf), use_container_width=True)
+    with col_edu:
+        st.plotly_chart(plot_education_distribution(fdf), use_container_width=True)
+
+
+# ---- Babak 2: Ilusi WFH ---------------------------------------------------
+with tab_act2:
+    st.markdown(
+        "<div class='gji-callout'>"
+        "<strong>Temuan Empiris Babak 2 (Remote Luxury):</strong><br>"
+        "Lebih dari <strong>90,7%</strong> lowongan data di Indonesia mewajibkan kerja <strong>On-site (WFO)</strong>. "
+        "Full Remote hanya tersedia di 3,5% lowongan. Namun, posisi remote menawarkan median gaji <strong>Rp 12,5 Juta</strong> "
+        "vs On-site <strong>Rp 7,0 Juta</strong> (+78,6% premium). Remote di Indonesia bukan hak fleksibel pemula, "
+        "melainkan kompensasi mewah bagi talenta senior berkemampuan langka."
+        "</div>",
+        unsafe_allow_html=True,
+    )
+
+    st.subheader("Ilusi Fleksibilitas WFH: Distribusi Model Kerja vs Median Gaji")
+    st.caption(
+        "Perbandingan langsung antara pangsa pasar model kerja dan besaran kompensasi yang ditawarkan."
+    )
+    st.plotly_chart(plot_remote_luxury_comparison(fdf), use_container_width=True)
+
+    st.subheader("Rincian Model Kerja & Premi Gaji Remote")
+    col_w1, col_w2 = st.columns(2)
+    with col_w1:
+        st.plotly_chart(plot_workplace_type_distribution(fdf), use_container_width=True)
+    with col_w2:
+        st.plotly_chart(plot_remote_premium(fdf), use_container_width=True)
+
+
+# ---- Lanskap Tech Stack ---------------------------------------------------
+with tab_act3:
+    st.markdown(
+        "<div class='gji-callout'>"
+        "<strong>Temuan Empiris Babak 3 (Fondasi Riil vs AI Hype):</strong><br>"
+        "<strong>SQL</strong> (428 mentions) dan <strong>Excel</strong> (246 mentions) adalah fondasi nyata "
+        "industri bisnis Indonesia. Tools berbasis AI canggih (PyTorch, TensorFlow) hanya menempati jajaran bawah "
+        "(< 30 mentions). Perusahaan memprioritaskan otomatisasi pelaporan dan konsistensi data sebelum kecerdasan buatan."
+        "</div>",
+        unsafe_allow_html=True,
+    )
+
+    st.subheader("Lanskap Kebutuhan Tech Stack Nyata")
+    st.caption(
+        "Frekuensi kemunculan kata kunci tools teknis di seluruh deskripsi lowongan kerja data di Indonesia."
+    )
+    st.plotly_chart(plot_real_tech_stack_landscape(fdf), use_container_width=True)
+
+    st.subheader("Klasterisasi Hubungan Antar-Skill (Jaccard Co-occurrence)")
+    st.caption(
+        "Korelasi kemunculan bersama antar 12 skill teratas memperlihatkan klaster Analis (SQL/Excel/BI), "
+        "Data Science (Python/Stats/ML), dan Data Engineering (SQL/ETL/Cloud)."
     )
     st.plotly_chart(plot_skill_cooccurrence_heatmap(fdf, top_n=12), use_container_width=True)
 
-    st.subheader("Which Skills Pay More?")
-    st.caption(
-        "Salary premium per skill: median salary of postings that *require* the skill "
-        "vs. postings that don't. Positive (green) means the skill correlates with higher pay; "
-        "negative (red) means the skill is associated with lower-tier postings."
-    )
-    st.plotly_chart(plot_skill_vs_salary(fdf, top_n=15), use_container_width=True)
+    st.subheader("Premi Kompensasi per Skill & Perusahaan Perekrut")
+    c_sk1, c_sk2 = st.columns(2)
+    with c_sk1:
+        st.caption("Premi gaji per skill (selisih median lowongan yang mensyaratkan vs yang tidak).")
+        st.plotly_chart(plot_skill_vs_salary(fdf, top_n=15), use_container_width=True)
+    with c_sk2:
+        st.caption("Perusahaan dengan volume perekrutan data terbanyak.")
+        st.plotly_chart(plot_top_companies(fdf, top_n=15), use_container_width=True)
 
-    st.subheader("Top Companies Hiring Data Talent")
-    st.plotly_chart(plot_top_companies(fdf, top_n=15), use_container_width=True)
 
-    st.subheader("Remote Work Premium")
-    st.caption(
-        "Median salary by workplace type. The colour shows the percentage premium vs. "
-        "the On-site baseline. **Note:** premium can be negative for Remote roles when "
-        "remote postings are dominated by junior or contract positions."
-    )
-    st.plotly_chart(plot_remote_premium(fdf), use_container_width=True)
-
-# ---- Geography -----------------------------------------------------------
+# ---- Sebaran Wilayah -----------------------------------------------------
 with tab_geo:
-    st.subheader("Jobs Across Indonesia")
+    st.subheader("Peta Persebaran Peluang Kerja di Indonesia")
     st.caption(
-        "Locations are normalised from the scraped location text. Cities without a "
-        "reference coordinate are included in the table but not plotted on the map."
+        "Lokasi dinormalisasi dari teks alamat penempatan kerja pada data Glints. "
+        "Jakarta dan wilayah Jabodetabek memegang konsentrasi lowongan kerja data tertinggi."
     )
-
-    # Map gets the full width — the previous [1, 2] split cramped the
-    # city summary dataframe and truncated the median-salary column on
-    # narrow viewports. Stack them instead: map up top, table below.
     _render_map(plot_geo_map(fdf))
 
-    st.markdown("**City summary**")
+    st.markdown("**Ringkasan Lowongan per Kota**")
     st.caption(
-        "One row per city. Click a column header to sort; use the sidebar "
-        "filters to drill into a single city."
+        "Tabel agregasi data per kota. Klik judul kolom untuk mengurutkan data."
     )
     st.dataframe(
         city_summary(fdf),
         use_container_width=True,
         hide_index=True,
         column_config={
-            "count": st.column_config.NumberColumn("Jobs", format="%d"),
+            "count": st.column_config.NumberColumn("Jumlah Lowongan", format="%d"),
             "median_salary": st.column_config.NumberColumn(
-                "Median Salary", format="Rp %.1fM"
+                "Median Gaji", format="Rp %.1f Jt"
             ),
-            "remote_pct": st.column_config.NumberColumn("Remote %", format="%.0f%%"),
+            "remote_pct": st.column_config.NumberColumn("Porsi Remote", format="%.1f%%"),
+            "top_role": st.column_config.TextColumn("Peran Terbanyak"),
         },
     )
 
-# ---- Data ----------------------------------------------------------------
+
+# ---- Data Terfilter ------------------------------------------------------
 with tab_data:
-    st.subheader("Filtered Dataset")
+    st.subheader("Dataset Hasil Filter")
     st.caption(
-        "This table contains the cleaned fields used by the charts. Download the "
-        "current filtered view for further exploration."
+        "Tabel data terverifikasi yang digunakan dalam visualisasi. "
+        "Anda dapat mengunduh data dalam format CSV untuk analisis lanjutan."
     )
     present_cols = [c for c in _DATA_TAB_COLUMNS if c in fdf.columns]
     table_df = fdf[present_cols].sort_values(
@@ -585,76 +557,59 @@ with tab_data:
         use_container_width=True,
         hide_index=True,
         column_config={
+            "job_title": st.column_config.TextColumn("Judul Posisi"),
+            "company_name": st.column_config.TextColumn("Perusahaan"),
+            "city_clean": st.column_config.TextColumn("Kota"),
+            "keyword": st.column_config.TextColumn("Peran"),
+            "workplace_type": st.column_config.TextColumn("Tipe Kerja"),
             "salary_avg": st.column_config.NumberColumn(
-                "Salary (IDR / month)", format="Rp %.0f"
+                "Estimasi Gaji (IDR / Bulan)", format="Rp %.0f"
             ),
-            "exp_min_years": st.column_config.NumberColumn("Min exp (y)", format="%d"),
+            "exp_min_years": st.column_config.NumberColumn("Min Pengalaman (Thn)", format="%d"),
+            "job_education_clean": st.column_config.TextColumn("Pendidikan"),
         },
     )
 
     csv_bytes = fdf.to_csv(index=False).encode("utf-8")
     st.download_button(
-        label="Download filtered CSV",
+        label="Unduh CSV Terfilter",
         data=csv_bytes,
-        file_name="glints_filtered.csv",
+        file_name="glints_data_jobs_filtered.csv",
         mime="text/csv",
-        help="Saves the currently-filtered view as a CSV file.",
+        help="Simpan tampilan data saat ini ke dalam file CSV.",
     )
 
 
 # ---------------------------------------------------------------------------
 # Footer
 # ---------------------------------------------------------------------------
-# The ``gji-footer`` styling lives in ``_CUSTOM_CSS`` (injected once at
-# module load) — we only need to emit the wrapper div here.
 
 with st.container():
     st.markdown('<div class="gji-footer">', unsafe_allow_html=True)
 
-    # Methodology expander — collapsed by default so the dashboard doesn't end
-    # with a wall of text, but always reachable for a recruiter who wants to
-    # verify how the numbers were produced. The notebooks linked here are the
-    # single biggest credibility signal in the project: they show the
-    # decisions a recruiter can't see in a polished chart.
-    with st.expander("Methodology & data provenance", expanded=False):
+    with st.expander("Metodologi & Validasi Data (Data Provenance)", expanded=False):
         st.markdown(
-            "**Pipeline.** This dashboard is the last step of a four-stage "
-            "pipeline:\n\n"
-            "1. **Scrape** links & details from Glints Indonesia with Playwright + parsel.\n"
-            "2. **Clean** raw postings — parse IDR salary strings, normalise "
-            "city names, detect 32 skill flags.\n"
-            "3. **EDA** in Jupyter to surface the five headline findings.\n"
-            "4. **Serve** this filtered view via Streamlit + Plotly + Folium.\n\n"
-            "Read `clean.ipynb` and `eda.ipynb` in the repository for the full "
-            "reproducible analysis."
+            "**Pipeline Scraping & Pembersihan Data:**\n\n"
+            "1. **Scraping Terstruktur:** Mengambil data tautan dan detail lowongan kerja dari portal Glints Indonesia "
+            "menggunakan Playwright + Parsel dengan teknik bypassing bot yang higienis.\n"
+            "2. **Standardisasi & Validasi:** Memfilter 100% lowongan kerja berbasis di Indonesia (membuang data regional luar negeri), "
+            "mengurai nominal gaji Rupiah ke format numerik standar, serta mengekstrak 32 tag kompetensi teknis.\n"
+            "3. **Analisis Lanjutan:** Disajikan secara interaktif menggunakan Streamlit, Plotly, dan Folium.\n\n"
+            "Seluruh langkah eksplorasi dan replikasi dapat dilihat pada notebook `clean.ipynb` dan `eda.ipynb`."
         )
         source_text = (
-            "**Source & repo.** Data scraped from [Glints Indonesia]"
-            "(https://glints.com/id). Code, notebooks, and the schema doc live "
-            "in the public repository."
+            "**Sumber Data:** Data lowongan aktif dari [Glints Indonesia](https://glints.com/id). "
+            "Seluruh kode sumber dan dataset tersedia di repositori publik."
         )
         if _REPO_URL:
             source_text = source_text.replace(
-                "the public repository", f"the [public repo]({_REPO_URL})"
+                "repositori publik", f"[repositori publik]({_REPO_URL})"
             )
         st.markdown(source_text)
-        st.markdown(
-            "**Known limitations.** Single-source bias (Glints only); "
-            "salary figures are conditional on disclosure; skill detection is "
-            "substring-based so it counts mentions, not requirements."
-        )
 
-    # Keep repository links optional so a local clone does not show broken
-    # links before the owner configures GJI_REPO_URL.
-    footer = "Built with Streamlit, Plotly, and Folium"
+    footer = "Dibuat dengan Streamlit, Plotly, dan Folium"
     if _REPO_URL:
-        footer += (
-            f" · [repo]({_REPO_URL}) · "
-            f"[clean.ipynb]({_REPO_BLOB_URL}/clean.ipynb) · "
-            f"[eda.ipynb]({_REPO_BLOB_URL}/eda.ipynb)"
-        )
-    else:
-        footer += " · repository links are configured for the deployed app"
+        footer += f" · [Repositori]({_REPO_URL})"
     st.caption(footer)
 
     st.markdown("</div>", unsafe_allow_html=True)

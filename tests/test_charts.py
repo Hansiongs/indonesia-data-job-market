@@ -111,3 +111,49 @@ def test_top_skills_bar_uses_pretty_labels() -> None:
     for label in ticktext:
         assert not label.startswith("skill_"), f"raw column leaked: {label!r}"
         assert not label.startswith("is_"), f"raw column leaked: {label!r}"
+
+
+def test_new_showcase_charts_return_figures() -> None:
+    """The 4 showcase charts must return valid Plotly Figure objects."""
+    from app.charts import (
+        plot_real_tech_stack_landscape,
+        plot_remote_luxury_comparison,
+        plot_salary_reality_curve,
+        plot_skill_burden_by_career_stage,
+    )
+    import pandas as pd
+
+    df = pd.DataFrame(
+        {
+            "keyword": ["data analyst", "data scientist", "data engineer"],
+            "job_title": ["Data Analyst", "Data Scientist", "Data Engineer"],
+            "company_name": ["Co A", "Co B", "Co C"],
+            "city_clean": ["Jakarta", "Bandung", "Remote"],
+            "salary_avg": [6_000_000.0, 12_000_000.0, 8_000_000.0],
+            "exp_min_years": [0, 3, 2],
+            "workplace_type": ["On-site", "Remote", "Hybrid"],
+            "skill_python": [True, True, True],
+            "skill_sql": [True, True, True],
+            "skill_statistics": [True, False, False],
+            "skill_machine_learning": [True, True, False],
+            "skill_deep_learning": [False, True, False],
+            "skill_excel": [True, False, False],
+            "skill_power_bi": [True, False, True],
+            "skill_tableau": [False, True, False],
+            "skill_etl": [False, False, True],
+            "skill_aws": [False, True, True],
+        }
+    )
+
+    fig1 = plot_skill_burden_by_career_stage(df)
+    assert isinstance(fig1, go.Figure)
+
+    fig2 = plot_salary_reality_curve(df)
+    assert isinstance(fig2, go.Figure)
+
+    fig3 = plot_remote_luxury_comparison(df)
+    assert isinstance(fig3, go.Figure)
+
+    fig4 = plot_real_tech_stack_landscape(df)
+    assert isinstance(fig4, go.Figure)
+

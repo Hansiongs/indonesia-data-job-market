@@ -28,8 +28,13 @@ if str(_REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT))
 
 from app.charts import (  # noqa: E402
+    plot_education_distribution,
+    plot_real_tech_stack_landscape,
+    plot_remote_luxury_comparison,
     plot_role_distribution,
     plot_salary_distribution,
+    plot_salary_reality_curve,
+    plot_skill_burden_by_career_stage,
     plot_skill_cooccurrence_heatmap,
     plot_top_skills_bar,
 )
@@ -387,3 +392,66 @@ def test_city_summary_still_works_with_legacy_is_remote_column(
     summary = city_summary(df)
     assert not summary.empty
     assert "remote_pct" in summary.columns
+
+
+def test_chart_skill_burden_by_career_stage_returns_figure(
+    sample_with_skills: tuple[pd.DataFrame, list[str]],
+) -> None:
+    """Skill burden by career stage should return a valid Plotly figure."""
+    df, _ = sample_with_skills
+    fig = plot_skill_burden_by_career_stage(df)
+    assert isinstance(fig, go.Figure)
+    assert len(fig.data) >= 1
+
+
+def test_chart_salary_reality_curve_returns_figure(
+    sample_with_skills: tuple[pd.DataFrame, list[str]],
+) -> None:
+    """Salary reality curve should return a valid Plotly figure."""
+    df, _ = sample_with_skills
+    fig = plot_salary_reality_curve(df)
+    assert isinstance(fig, go.Figure)
+    assert len(fig.data) >= 1
+
+
+def test_chart_remote_luxury_comparison_returns_figure(
+    sample_with_skills: tuple[pd.DataFrame, list[str]],
+) -> None:
+    """Remote luxury comparison should return a valid Plotly figure."""
+    df, _ = sample_with_skills
+    fig = plot_remote_luxury_comparison(df)
+    assert isinstance(fig, go.Figure)
+    assert len(fig.data) >= 1
+
+
+def test_chart_real_tech_stack_landscape_returns_figure(
+    sample_with_skills: tuple[pd.DataFrame, list[str]],
+) -> None:
+    """Real tech stack landscape should return a valid Plotly figure."""
+    df, _ = sample_with_skills
+    fig = plot_real_tech_stack_landscape(df)
+    assert isinstance(fig, go.Figure)
+    assert len(fig.data) >= 1
+
+
+def test_chart_education_distribution_returns_figure(
+    sample_with_skills: tuple[pd.DataFrame, list[str]],
+) -> None:
+    """Education distribution chart should return a valid Plotly figure."""
+    df, _ = sample_with_skills
+    fig = plot_education_distribution(df)
+    assert isinstance(fig, go.Figure)
+    assert len(fig.data) >= 1
+
+
+def test_dashboard_processed_dataset_loads_and_has_valid_schema() -> None:
+    """Verify that the production processed dataset loads and passes pipeline checks."""
+    df = load_master_dataset()
+    assert isinstance(df, pd.DataFrame)
+    assert not df.empty
+    assert len(df) == 430
+    df, skill_cols = build_skill_columns(df)
+    assert len(skill_cols) >= 30
+    stats = compute_summary_stats(df)
+    assert stats["total_jobs"] == 430
+

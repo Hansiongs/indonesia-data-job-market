@@ -70,10 +70,14 @@ def load_data() -> pd.DataFrame:
 def main() -> list[Path]:
     """Generate chart previews from the dashboard chart builders."""
     from app.charts import (
+        plot_real_tech_stack_landscape,
+        plot_remote_luxury_comparison,
         plot_remote_premium,
         plot_role_distribution,
         plot_salary_distribution,
+        plot_salary_reality_curve,
         plot_salary_vs_experience,
+        plot_skill_burden_by_career_stage,
         plot_skill_cooccurrence_heatmap,
         plot_skill_vs_salary,
         plot_top_companies,
@@ -84,6 +88,13 @@ def main() -> list[Path]:
     df, _ = build_skill_columns(load_data())
     written: list[Path] = []
 
+    # 4 Primary Showcase Charts for README
+    written.append(_write(plot_skill_burden_by_career_stage(df), OUT_DIR / "01_skill-burden-by-career-stage.png"))
+    written.append(_write(plot_salary_reality_curve(df), OUT_DIR / "02_salary-reality-curve.png"))
+    written.append(_write(plot_remote_luxury_comparison(df), OUT_DIR / "03_remote-luxury-comparison.png"))
+    written.append(_write(plot_real_tech_stack_landscape(df), OUT_DIR / "04_real-tech-stack-landscape.png"))
+
+    # Additional Detailed Previews
     written.append(_write(plot_top_skills_bar(df, top_n=15), OUT_DIR / "01_top-skills.png"))
     written.append(_write(plot_salary_distribution(df, by="keyword"), OUT_DIR / "02_salary-by-role.png"))
     written.append(_write(plot_skill_cooccurrence_heatmap(df, top_n=12), OUT_DIR / "03_skill-cooccurrence-heatmap.png"))
@@ -91,12 +102,6 @@ def main() -> list[Path]:
     written.append(_write(plot_top_companies(df, top_n=15), OUT_DIR / "05_top-companies.png"))
     written.append(_write(plot_remote_premium(df), OUT_DIR / "06_median-salary-by-workplace.png"))
     written.append(_write(plot_skill_vs_salary(df, top_n=15), OUT_DIR / "07_skill-vs-salary.png"))
-
-    fig_money = plot_salary_vs_experience(df)
-    fig_money.update_layout(title="Salary vs. Experience — Money Plot")
-    written.append(_write(fig_money, OUT_DIR / "08_experience-vs-salary-money-plot.png"))
-    written.append(_write(plot_salary_distribution(df, by="keyword"), OUT_DIR / "09_role-vs-salary.png"))
-    written.append(_write(plot_role_distribution(df), OUT_DIR / "10_company-vs-remote.png"))
 
     print(f"[INFO] wrote {len(written)} PNGs to {OUT_DIR}")
     return written

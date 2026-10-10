@@ -274,6 +274,10 @@ def detect_skills(description: str | float, skill_tags: str | float) -> dict[str
 #: inside :func:`_extract_city`.
 _CITY_ALIASES: Final[dict[str, str]] = {
     "jakarta": "Jakarta",
+    "tangerang": "Tangerang",
+    "bekasi": "Bekasi",
+    "depok": "Depok",
+    "bogor": "Bogor",
     "bandung": "Bandung",
     "surabaya": "Surabaya",
     "yogyakarta": "Yogyakarta",
@@ -284,19 +288,46 @@ _CITY_ALIASES: Final[dict[str, str]] = {
     "makassar": "Makassar",
     "denpasar": "Denpasar",
     "bali": "Denpasar",
+    "malang": "Malang",
+    "batam": "Batam",
+    "balikpapan": "Balikpapan",
+    "palembang": "Palembang",
+    "solo": "Surakarta",
+    "surakarta": "Surakarta",
+    "samarinda": "Samarinda",
     "remote": "Remote",
 }
+
+#: Explicit foreign location markers to exclude from the Indonesian dataset.
+FOREIGN_LOCATION_MARKERS: Final[tuple[str, ...]] = (
+    "vietnam",
+    "singapore",
+    "philippines",
+    "malaysia",
+    "thailand",
+    "taiwan",
+    "quận",
+    "hà nội",
+    "hồ chí minh",
+    "da nang",
+    "manila",
+    "kuala lumpur",
+    "bangkok",
+)
 
 
 def extract_city(raw: str | float) -> str | None:
     """Map a raw ``job_location`` string to one of the canonical cities.
 
-    Returns ``None`` if no canonical city is recognised — the caller can
-    decide whether to drop or recategorise the row.
+    Returns ``None`` if no canonical city is recognised or if the location
+    matches an explicit foreign location pattern.
     """
     if not isinstance(raw, str):
         return None
     text = raw.lower()
+    for marker in FOREIGN_LOCATION_MARKERS:
+        if marker in text:
+            return None
     for needle, canonical in _CITY_ALIASES.items():
         if needle in text:
             return canonical
@@ -364,8 +395,13 @@ def transform(df: pd.DataFrame) -> pd.DataFrame:
         for title, desc in zip(work["job_title"].fillna(""), work["job_description"].fillna(""), strict=False)
     ]
 
-    # 8. City extraction (best-effort; keeps raw location for transparency).
-    work["city_clean"] = work["job_location"].apply(extract_city) if "job_location" in work.columns else None
+    # 8. City extraction and strict Indonesia location filter.
+    if "job_location" in work.columns:
+        work["city_clean"] = work["job_location"].apply(extract_city)
+        # Filter out foreign or unrecognised locations to ensure Indonesia-only dataset
+        work = work.loc[work["city_clean"].notna()].reset_index(drop=True)
+    else:
+        work["city_clean"] = None
 
     # Drop redundant raw columns the master schema does not need.
     drop_cols = [

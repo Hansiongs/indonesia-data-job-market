@@ -237,13 +237,16 @@ def scrape_job_links(
     with sync_playwright() as p:  # type: ignore[assignment]
         playwright: Playwright = p  # type: ignore[assignment]
         browser: Browser = playwright.chromium.launch(
+            channel="chrome",
             headless=settings.headless,
             slow_mo=0,
+            args=["--disable-blink-features=AutomationControlled"],
         )
         try:
             context: BrowserContext = browser.new_context(
                 storage_state=str(auth_path),
                 viewport=_VIEWPORT,
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             )
             page: Page = context.new_page()
 
@@ -287,4 +290,8 @@ __all__ = [
 
 
 if __name__ == "__main__":  # pragma: no cover
+    from glints_scraper.utils import setup_logging
+
+    setup_logging()
     scrape_job_links()
+

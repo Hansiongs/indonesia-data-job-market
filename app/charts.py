@@ -23,6 +23,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 # ---------------------------------------------------------------------------
 # Palette
@@ -630,15 +631,200 @@ def _empty_figure(message: str) -> go.Figure:
     return _apply_base_layout(fig, height=400)
 
 
+def plot_skill_burden_by_career_stage(df: pd.DataFrame) -> go.Figure:
+    """Grouped bar chart showing percentage demand for heavy/advanced skills across career stages."""
+    if df.empty or "exp_min_years" not in df.columns:
+        return _empty_figure("Tidak ada data pengalaman untuk ditampilkan")
+
+    def _exp_tier(y: Any) -> str:
+        if pd.isna(y):
+            return "Tidak Disebutkan"
+        try:
+            val = float(y)
+            if val == 0:
+                return "Fresh Grad (< 1 Thn)"
+            if val <= 2:
+                return "Junior (1-2 Thn)"
+            return "Mid/Senior (3+ Thn)"
+        except (ValueError, TypeError):
+            return "Tidak Disebutkan"
+
+    work = df.copy()
+    work["tier"] = work["exp_min_years"].apply(_exp_tier)
+    tiers = ["Fresh Grad (< 1 Thn)", "Junior (1-2 Thn)", "Mid/Senior (3+ Thn)"]
+    valid_work = work[work["tier"].isin(tiers)]
+    if valid_work.empty:
+        return _empty_figure("Data pengalaman tidak memadai")
+
+    focus_skills = [
+        ("skill_python", "Python"),
+        ("skill_statistics", "Statistika"),
+        ("skill_machine_learning", "Machine Learning"),
+        ("skill_deep_learning", "Deep Learning"),
+        ("skill_sql", "SQL"),
+        ("skill_excel", "Excel"),
+    ]
+
+    records = []
+    for tier in tiers:
+        sub = valid_work[valid_work["tier"] == tier]
+        n_tier = len(sub)
+        if n_tier == 0:
+            continue
+        for col, label in focus_skills:
+            pct = (sub[col].sum() / n_tier * 100) if col in sub.columns else 0.0
+            records.append({"Tier": tier, "Skill": label, "Persentase": round(pct, 1)})
+
+    chart_df = pd.DataFrame(records)
+    if chart_df.empty:
+        return _empty_figure("Katalog skill tidak ditemukan")
+
+    fig = px.bar(
+        chart_df,
+        x="Skill",
+        y="Persentase",
+        color="Tier",
+        barmode="group",
+        color_discrete_sequence=["#FF7F0E", "#1F77B4", "#2CA02C"],
+        text="Persentase",
+    )
+    fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
+    fig.update_yaxes(title="Proporsi Lowongan yang Menuntut Skill (%)", range=[0, 105])
+    fig.update_xaxes(title="Keahlian / Tools")
+    return _apply_base_layout(fig, height=480, title="Inversi Ekspektasi: Tuntutan Keahlian Akademis per Jenjang Karir")
+
+
+def plot_salary_reality_curve(df: pd.DataFrame) -> go.Figure:
+    """Scatter and trendline of real salary distribution vs years of experience."""
+    if df.empty or "salary_avg" not in df.columns or "exp_min_years" not in df.columns:
+        return _empty_figure("Data gaji atau pengalaman tidak ditemukan")
+
+    sub = df.dropna(subset=["salary_avg", "exp_min_years"]).copy()
+    sub = sub[sub["exp_min_years"] <= 12]
+    if sub.empty:
+        return _empty_figure("Tidak ada data gaji yang dicantumkan")
+
+    sub["salary_juta"] = sub["salary_avg"] / 1_000_000.0
+
+    has_sm = False
+    try:
+        import statsmodels  # noqa: F401
+        has_sm = True
+    except ImportError:
+        pass
+
+    color_col = "keyword" if "keyword" in sub.columns else None
+    fig = px.scatter(
+        sub,
+        x="exp_min_years",
+        y="salary_juta",
+        color=color_col,
+        color_discrete_sequence=CATEGORICAL_PALETTE,
+        hover_data={c: True for c in ["job_title", "company_name", "salary_juta", "exp_min_years"] if c in sub.columns},
+        opacity=0.75,
+        trendline="ols" if (has_sm and len(sub) >= 3) else None,
+    )
+    fig.update_xaxes(title="Syarat Pengalaman Minimum (Tahun)", dtick=1)
+    fig.update_yaxes(title="Estimasi Gaji Rata-rata (Juta IDR / Bulan)")
+    return _apply_base_layout(fig, height=480, title="Kurva Realita: Kompensasi vs Pengalaman Kerja di Indonesia")
+
+
+def plot_remote_luxury_comparison(df: pd.DataFrame) -> go.Figure:
+    """Side-by-side comparison of workplace distribution and median salary premium."""
+    if df.empty or "workplace_type" not in df.columns:
+        return _empty_figure("Data model kerja tidak ditemukan")
+
+    fig = make_subplots(
+        rows=1,
+        cols=2,
+        subplot_titles=("Distribusi Model Kerja (%)", "Median Gaji (Juta IDR / Bulan)"),
+    )
+
+    types = ["On-site", "Hybrid", "Remote"]
+    counts = [df["workplace_type"].value_counts(normalize=True).get(t, 0.0) * 100 for t in types]
+
+    fig.add_trace(
+        go.Bar(
+            x=types,
+            y=counts,
+            text=[f"{c:.1f}%" for c in counts],
+            textposition="outside",
+            marker_color=["#4C78A8", "#F58518", "#E45756"],
+            name="Porsi Lowongan",
+            showlegend=False,
+        ),
+        row=1,
+        col=1,
+    )
+
+    if "salary_avg" in df.columns and df["salary_avg"].notna().any():
+        med_salaries = []
+        for t in types:
+            s = df[df["workplace_type"] == t]["salary_avg"].dropna()
+            med_salaries.append((s.median() / 1_000_000.0) if not s.empty else 0.0)
+
+        fig.add_trace(
+            go.Bar(
+                x=types,
+                y=med_salaries,
+                text=[f"Rp {m:.1f} Jt" for m in med_salaries],
+                textposition="outside",
+                marker_color=["#4C78A8", "#F58518", "#E45756"],
+                name="Median Gaji",
+                showlegend=False,
+            ),
+            row=1,
+            col=2,
+        )
+
+    fig.update_yaxes(title="Porsi Lowongan (%)", range=[0, 105], row=1, col=1)
+    fig.update_yaxes(title="Gaji Rata-rata (Juta IDR)", row=1, col=2)
+    return _apply_base_layout(fig, height=450, title="Ilusi Fleksibilitas WFH: Dominasi On-Site & Gaji Premium Kerja Remote")
+
+
+def plot_real_tech_stack_landscape(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
+    """Horizontal bar chart showing the real ranking of required tools across data professions."""
+    skill_cols = [c for c in df.columns if c.startswith("skill_")]
+    if not skill_cols or df.empty:
+        return _empty_figure("Data skill tidak ditemukan")
+
+    sums = df[skill_cols].sum().sort_values(ascending=False).head(top_n)
+    labels = [pretty_skill_label(c) for c in sums.index]
+
+    chart_df = pd.DataFrame({
+        "Skill": labels,
+        "Jumlah Lowongan": sums.values,
+    }).sort_values("Jumlah Lowongan", ascending=True)
+
+    fig = px.bar(
+        chart_df,
+        x="Jumlah Lowongan",
+        y="Skill",
+        orientation="h",
+        text="Jumlah Lowongan",
+        color="Jumlah Lowongan",
+        color_continuous_scale="Viridis",
+    )
+    fig.update_traces(textposition="outside")
+    fig.update_layout(coloraxis_showscale=False)
+    fig.update_xaxes(title="Jumlah Lowongan yang Menyebutkan Skill")
+    fig.update_yaxes(title="")
+    return _apply_base_layout(fig, height=520, title="Peta Kebutuhan Tech Stack Riil: Fondasi SQL & Excel vs Hype AI")
+
+
 __all__ = [
     "CATEGORICAL_PALETTE",
     "SEQUENTIAL_PALETTE",
     "plot_education_distribution",
     "plot_experience_distribution",
+    "plot_real_tech_stack_landscape",
+    "plot_remote_luxury_comparison",
     "plot_remote_premium",
     "plot_role_distribution",
     "plot_salary_distribution",
+    "plot_salary_reality_curve",
     "plot_salary_vs_experience",
+    "plot_skill_burden_by_career_stage",
     "plot_skill_cooccurrence_heatmap",
     "plot_skill_vs_salary",
     "plot_top_companies",
@@ -646,3 +832,4 @@ __all__ = [
     "plot_workplace_type_distribution",
     "pretty_skill_label",
 ]
+

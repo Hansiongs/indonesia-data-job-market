@@ -366,3 +366,15 @@ def test_transform_works_on_empty_frame() -> None:
     assert out.empty
     # Canonical columns should still be present even if empty.
     assert "skill_python" in out.columns
+
+
+def test_transform_drops_foreign_locations() -> None:
+    raw = _build_raw_frame()
+    foreign_row = raw.iloc[[0]].copy()
+    foreign_row["job_location"] = "Quận Cầu Giấy , Vietnam"
+    foreign_row["company_name"] = "Vietnam Co"
+    raw_with_foreign = pd.concat([raw, foreign_row], ignore_index=True)
+    out = transform(raw_with_foreign)
+    assert len(out) == 3
+    assert "Vietnam Co" not in out["company_name"].values
+
