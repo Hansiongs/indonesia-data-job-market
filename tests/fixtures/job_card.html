@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Glints Job Cards Fixture</title>
+</head>
+<body>
+  <!-- Card 1: complete record, all fields populated cleanly. -->
+  <div class="CompactJobCard" data-testid="card-1">
+    <a class="JobCardTitle" href="/id/opportunities/jobs/12345/data-analyst-pt-abc">
+      Data Analyst
+    </a>
+    <a class="CompanyLinkResolver" aria-label="Job card company name: PT ABC Tech">
+      PT ABC Tech
+    </a>
+    <div class="CardJobLocation">
+      <div>Jakarta</div>
+    </div>
+  </div>
+
+  <!-- Card 2: title with stray whitespace and a company link missing the
+       aria-label (some cards render only the inner text). -->
+  <div class="CompactJobCard" data-testid="card-2">
+    <a class="JobCardTitle" href="https://glints.com/id/opportunities/jobs/67890/backend-engineer-pt-xyz">
+      Backend Engineer
+    </a>
+    <a class="CompanyLinkResolver">
+      PT XYZ Indonesia
+    </a>
+    <div class="CardJobLocation">
+      <div>Bandung</div>
+    </div>
+  </div>
+
+  <!-- Card 3: multi-line location spread across several <div> nodes. -->
+  <div class="CompactJobCard" data-testid="card-3">
+    <a class="JobCardTitle" href="/id/opportunities/jobs/24680/frontend-developer-cv-makmur">
+      Frontend Developer
+    </a>
+    <a class="CompanyLinkResolver" aria-label="Job card company name: CV Makmur Jaya">
+      CV Makmur Jaya
+    </a>
+    <div class="CardJobLocation">
+      <div>Jakarta</div>
+      <div>Selatan</div>
+    </div>
+  </div>
+
+  <!-- Card 4: missing location entirely (covers defensive empty-string case). -->
+  <div class="CompactJobCard" data-testid="card-4">
+    <a class="JobCardTitle" href="/id/opportunities/jobs/13579/devops-pt-remote">
+      DevOps Engineer
+    </a>
+    <a class="CompanyLinkResolver" aria-label="Job card company name: PT Remote Indo">
+      PT Remote Indo
+    </a>
+  </div>
+</body>
+</html>

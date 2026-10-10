@@ -1,0 +1,8 @@
+# Optional dependencies for collecting a fresh Glints snapshot and rebuilding
+# the complete analysis outputs. Install this only for the advanced path.
+-r requirements.txt
+parsel>=1.9,<2.0
+playwright>=1.48,<2.0
+jupyter>=1.0
+nbconvert>=7.16
+kaleido>=0.2,<1.0

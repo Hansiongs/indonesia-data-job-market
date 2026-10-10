@@ -1,0 +1,217 @@
+# ============================================================
+# Byte-compiled / optimized / DLL files
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ============================================================
+# Distribution / packaging
+# ============================================================
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+# ============================================================
+# Virtual environments
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================================
+# Environment variables & secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# Authentication & credential files
+# ============================================================
+auth.json
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+
+# ============================================================
+# Local secrets directory (keep README and .gitkeep)
+# ============================================================
+/secrets/*
+!/secrets/.gitkeep
+!/secrets/README.md
+
+# ============================================================
+# Raw scraped data (CSVs from scrapers)
+# ============================================================
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.parquet
+!data/raw/.gitkeep
+
+# ============================================================
+# Processed / cleaned datasets
+# ============================================================
+data/processed/*.csv
+data/processed/*.json
+data/processed/*.parquet
+!data/processed/.gitkeep
+
+# Public demo snapshot used by the dashboard and Streamlit deployment.
+# The cleaned snapshot is intentionally versioned; raw and regenerated
+# pipeline outputs remain ignored unless explicitly allow-listed here.
+!/data/processed/master_dataset_eda.csv
+
+# Local copies of the old root-level scrape outputs.
+/*.csv
+
+# ============================================================
+# Jupyter Notebook
+# ============================================================
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Notebook backups
+*.ipynb.bak
+*.ipynb_checkpoints
+
+# ============================================================
+# IDEs and editors
+# ============================================================
+# VS Code — keep shared team config files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Emacs / Sublime
+*.swp
+*.swo
+*~
+.\#*
+\#*\#
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================
+# Operating system files
+# ============================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+
+# ============================================================
+# Testing, coverage, and caching
+# ============================================================
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+coverage/
+htmlcov/
+.tox/
+.nox/
+.cache
+nosetests.xml
+*.cover
+
+# Linters / type checkers / formatters
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.pyright/
+.bandit/
+.pylint.d/
+
+# Logs
+*.log
+logs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================================
+# Playwright
+# ============================================================
+playwright/.cache/
+playwright-report/
+test-results/
+.playwright/
+
+# ============================================================
+# Streamlit
+# ============================================================
+.streamlit/secrets.toml
+
+# ============================================================
+# Misc / project-specific
+# ============================================================
+# Local debug / scratch files
+scratch.py
+scratch.ipynb
+debug_*.py
+debug_*.ipynb
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.orig
+
+# Large local artifacts
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Local development sessions and agent metadata
+.chrome_login_session/
+.superpowers/
+

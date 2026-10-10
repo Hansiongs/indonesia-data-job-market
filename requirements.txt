@@ -1,0 +1,8 @@
+# Glints Job Intel — dashboard dependencies
+# Install: pip install -r requirements.txt
+# Python 3.11+
+pandas>=2.2,<3.0
+streamlit>=1.39,<2.0
+plotly>=5.24,<7.0
+folium>=0.17,<1.0
+streamlit-folium>=0.21,<1.0

@@ -1,0 +1,61 @@
+keyword,job_title,company_name,city_clean,salary_avg,exp_min_years,workplace_type,job_education_clean,skill_python,skill_sql,skill_r,skill_tableau,skill_power_bi,skill_excel,skill_aws,skill_gcp,skill_azure,skill_spark,skill_hadoop,skill_kafka,skill_tensorflow,skill_pytorch,skill_scikit_learn,skill_pandas,skill_numpy,skill_etl,skill_airflow,skill_dbt,skill_postgres,skill_mongodb,skill_redis,skill_docker,skill_kubernetes,skill_git,skill_statistics,skill_machine_learning,skill_deep_learning,skill_nlp,skill_computer_vision,skill_data_visualization
+data analyst,Junior Data Scientist,COMPANY_EE081B,Surabaya,4400000.0,3,Hybrid,S1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,1,1,0,0,0,1,0
+data analyst,Junior Data Scientist,COMPANY_6284C2,Jakarta,3000000.0,3,On-site,S1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0
+data analyst,Data Engineer,COMPANY_EE081B,Bandung,4500000.0,1,On-site,S1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+data analyst,Senior Data Analyst,COMPANY_3E54B3,Jakarta,2400000.0,2,On-site,S2,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1
+data analyst,Data Engineer,COMPANY_5E147B,Jakarta,5200000.0,1,Hybrid,S1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0
+data analyst,Junior Data Scientist,COMPANY_3B55C1,Semarang,4300000.0,1,Hybrid,S1,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1
+data analyst,Data Analyst,COMPANY_E388AC,Jakarta,4200000.0,3,Hybrid,S1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+data analyst,Data Engineer,COMPANY_EE081B,Jakarta,3000000.0,4,Hybrid,S2,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,1,0,0,0,0
+data analyst,ML Engineer,COMPANY_9A2AAB,Jakarta,3400000.0,2,On-site,S1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0
+data analyst,Lead Data Analyst,COMPANY_E388AC,Jakarta,1500000.0,1,On-site,S1,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,0,0
+data analyst,Lead Data Analyst,COMPANY_3E54B3,Jakarta,11300000.0,1,On-site,S1,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+data analyst,Data Scientist,COMPANY_EE081B,Jakarta,17200000.0,3,On-site,S1,0,1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0
+data analyst,ML Engineer,COMPANY_3B55C1,Jakarta,10000000.0,1,Hybrid,S1,1,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+data analyst,Junior Data Scientist,COMPANY_FF8A76,Surabaya,5000000.0,2,Hybrid,S2,0,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,1,1,1,0,0,0,0,0,1
+data analyst,Lead Data Analyst,COMPANY_9A2AAB,Jakarta,1700000.0,2,Remote,S1,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1
+data engineer,Junior Data Scientist,COMPANY_3E54B3,Bandung,5600000.0,4,Remote,D3,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1
+data engineer,Lead Data Analyst,COMPANY_9A2AAB,Surabaya,4900000.0,2,On-site,S1,0,1,0,1,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1
+data engineer,Data Engineer,COMPANY_3B55C1,Jakarta,3900000.0,5,On-site,S1,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1
+data engineer,Data Analyst,COMPANY_E388AC,Jakarta,4500000.0,3,On-site,S1,0,1,1,0,0,0,0,1,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+data engineer,Data Scientist,COMPANY_953E01,Jakarta,3400000.0,4,On-site,S1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,1,0,1,0
+data engineer,Data Scientist,COMPANY_3E54B3,Jakarta,5500000.0,5,On-site,D3,0,1,1,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,1,1,1,1,0,0,0,0,1,1,0,0,0,0
+data engineer,Data Scientist,COMPANY_FF8A76,Jakarta,3800000.0,2,On-site,S1,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0
+data engineer,Lead Data Analyst,COMPANY_420B6C,Jakarta,5600000.0,3,On-site,S1,1,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,1,1,0,0,0,1,1,0,0,0,0,1,0
+data engineer,ML Engineer,COMPANY_9A2AAB,Jakarta,5900000.0,5,On-site,S2,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,0
+data engineer,ML Engineer,COMPANY_65BB42,Jakarta,2000000.0,2,Hybrid,S1,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0
+data engineer,Junior Data Scientist,COMPANY_65BB42,Yogyakarta,3500000.0,2,On-site,S2,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,0
+data engineer,Data Engineer,COMPANY_6284C2,Jakarta,6700000.0,5,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0
+data engineer,ML Engineer,COMPANY_65BB42,Jakarta,6600000.0,4,Hybrid,S1,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0
+data engineer,Data Scientist,COMPANY_9A2AAB,Medan,3800000.0,2,Remote,S1,1,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+data engineer,ML Engineer,COMPANY_6284C2,Semarang,8800000.0,1,On-site,S1,0,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1
+data scientist,Data Engineer,COMPANY_2513BD,Jakarta,6700000.0,1,On-site,S1,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0,1,0,1,1,0,1,1,0,0,1,0,1,1
+data scientist,Junior Data Scientist,COMPANY_E388AC,Jakarta,3400000.0,4,Hybrid,S1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0
+data scientist,ML Engineer,COMPANY_3B55C1,Jakarta,13000000.0,7,On-site,S1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+data scientist,Data Engineer,COMPANY_65BB42,Jakarta,6200000.0,3,On-site,S1,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+data scientist,Lead Data Analyst,COMPANY_3E54B3,Bandung,4700000.0,2,Hybrid,S2,0,0,1,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+data scientist,Data Engineer,COMPANY_6284C2,Jakarta,3000000.0,4,Hybrid,S1,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+data scientist,Junior Data Scientist,COMPANY_65BB42,Jakarta,6700000.0,4,On-site,S1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,1,1,1,0
+data scientist,Data Engineer,COMPANY_420B6C,Jakarta,3900000.0,7,Hybrid,S2,0,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1
+data scientist,Senior Data Analyst,COMPANY_953E01,Yogyakarta,5300000.0,1,On-site,S1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0,1,1,0
+data scientist,Data Analyst,COMPANY_E388AC,Jakarta,3200000.0,3,Hybrid,S2,0,1,0,1,0,0,1,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1
+data scientist,Senior Data Analyst,COMPANY_3B55C1,Jakarta,6200000.0,1,On-site,S1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,0,0,0,1,0,0,0
+data scientist,Data Engineer,COMPANY_3B55C1,Yogyakarta,7100000.0,2,On-site,S1,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,1,1,1,0,0,1,0,1,0,1
+data scientist,Data Analyst,COMPANY_953E01,Surabaya,4100000.0,4,On-site,S1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+data scientist,ML Engineer,COMPANY_420B6C,Jakarta,2700000.0,7,On-site,S1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,1,0,1,1
+data scientist,Data Analyst,COMPANY_420B6C,Jakarta,3800000.0,4,On-site,S1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0
+machine learning,Lead Data Analyst,COMPANY_953E01,Yogyakarta,5500000.0,5,On-site,S1,0,0,1,0,0,0,1,0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,1,1,1,1,0
+machine learning,Data Analyst,COMPANY_2513BD,Medan,3000000.0,3,On-site,D3,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1
+machine learning,Senior Data Analyst,COMPANY_EE081B,Jakarta,1500000.0,3,Hybrid,D3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1
+machine learning,Lead Data Analyst,COMPANY_E388AC,Semarang,3700000.0,2,On-site,S1,0,0,1,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0
+machine learning,ML Engineer,COMPANY_9A2AAB,Jakarta,6800000.0,5,Remote,S2,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1
+machine learning,Junior Data Scientist,COMPANY_6284C2,Denpasar,2800000.0,4,On-site,S1,1,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0
+machine learning,Data Scientist,COMPANY_EE081B,Jakarta,2800000.0,3,On-site,S1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,1,1,1
+machine learning,Data Scientist,COMPANY_3E54B3,Jakarta,17500000.0,5,Hybrid,S1,1,0,0,0,0,1,1,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+machine learning,Data Engineer,COMPANY_953E01,Jakarta,9100000.0,3,Hybrid,S1,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+machine learning,Data Scientist,COMPANY_FF8A76,Surabaya,6100000.0,3,Remote,S1,1,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0
+machine learning,Data Analyst,COMPANY_2513BD,Jakarta,2300000.0,3,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,1,1,1,1,0
+machine learning,Data Analyst,COMPANY_65BB42,Jakarta,5400000.0,3,Remote,S1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1
+machine learning,Senior Data Analyst,COMPANY_9A2AAB,Jakarta,3800000.0,4,Hybrid,S1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+machine learning,Data Scientist,COMPANY_2513BD,Makassar,13900000.0,3,On-site,S1,1,0,0,0,1,0,1,1,0,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+machine learning,Junior Data Scientist,COMPANY_420B6C,Semarang,7400000.0,2,On-site,SMA/SMK,1,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0

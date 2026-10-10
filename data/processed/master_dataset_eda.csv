@@ -1,0 +1,1248 @@
+keyword,job_title,company_name,city_clean,salary_avg,exp_min_years,workplace_type,job_education_clean,skill_python,skill_sql,skill_r,skill_tableau,skill_power_bi,skill_excel,skill_aws,skill_gcp,skill_azure,skill_spark,skill_hadoop,skill_kafka,skill_tensorflow,skill_pytorch,skill_scikit_learn,skill_pandas,skill_numpy,skill_etl,skill_airflow,skill_dbt,skill_postgres,skill_mongodb,skill_redis,skill_docker,skill_kubernetes,skill_git,skill_statistics,skill_machine_learning,skill_deep_learning,skill_nlp,skill_computer_vision,skill_data_visualization
+data engineer,Junior Data Scientist,Traveloka,Jakarta,3790090,2,On-site,S1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0
+data engineer,Junior Data Scientist,Gojek,Jakarta,2713878,5,On-site,D3,1,1,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0
+data engineer,Senior Data Analyst,OVO,Jakarta,2827443,1,Remote,S1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0
+machine learning,ML Engineer,Traveloka,Surabaya,5559618,2,Hybrid,S1,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1
+data analyst,Data Analyst,Shopee,Surabaya,2572301,2,On-site,S1,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,1,0,0,1,1,1,0,0,0,0,1
+machine learning,Junior Data Scientist,Traveloka,Denpasar,6703422,0,On-site,S1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1
+machine learning,Lead Data Analyst,Gojek,Jakarta,1504111,5,Hybrid,S1,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,1,0
+data analyst,Data Scientist,Bukalapak,Jakarta,16555650,5,Remote,S2,1,0,1,0,1,0,1,0,1,1,0,1,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0
+data engineer,Data Engineer,OVO,Jakarta,2366867,4,On-site,S1,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0
+machine learning,Lead Data Analyst,Traveloka,Jakarta,3644311,7,Remote,S1,1,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,1,0,0
+machine learning,Senior Data Analyst,Blibli,Bandung,3811098,2,On-site,S1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+data engineer,ML Engineer,Dana,Makassar,12972816,1,Remote,S1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,1,1,0,0,0,1,0,0,0,0,1,1
+data analyst,Data Scientist,Bukalapak,Jakarta,5366340,1,Hybrid,S1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,1,0,0,0,0,0,0
+data analyst,Data Analyst,Bank BRI,Jakarta,2842867,3,On-site,S1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+data analyst,ML Engineer,Shopee,Jakarta,5161406,3,On-site,S1,0,1,1,0,1,0,0,0,0,1,1,0,0,1,0,1,1,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0
+machine learning,Lead Data Analyst,Telkomsel,Yogyakarta,5536535,5,On-site,S1,0,0,1,0,0,0,1,0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,1,1,1,1,0
+data analyst,Lead Data Analyst,OVO,Jakarta,6797703,3,On-site,S1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,1,1,0,1,1,0,0,0,0
+data analyst,Senior Data Analyst,Bank BRI,Makassar,2794530,1,Hybrid,S1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0
+machine learning,Data Analyst,Bukalapak,Jakarta,9163208,5,On-site,S2,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,1,0,1,1,1,0,0,1,1,0,1,0,0,1,0,0,0
+data analyst,Senior Data Analyst,PT Tokopedia,Bandung,5826982,2,Remote,S1,0,0,0,0,1,0,1,0,1,0,1,1,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1
+data scientist,Data Scientist,Bank Mandiri,Jakarta,12994981,7,Hybrid,SMA/SMK,0,0,0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0,0
+data analyst,ML Engineer,Gojek,Semarang,4856868,3,Remote,S1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,1,1,0,1,1,1,1,1,0,1
+data analyst,Data Engineer,Traveloka,Jakarta,5151118,1,Hybrid,S1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0
+data engineer,Lead Data Analyst,Dana,Jakarta,4879619,5,On-site,S1,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,0,0,0,0,0,1,0,1,0,1
+machine learning,Data Scientist,OVO,Jakarta,11421417,5,On-site,S1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1
+data engineer,Junior Data Scientist,Bank Mandiri,Jakarta,8128637,2,On-site,SMA/SMK,1,1,1,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0
+data scientist,Data Scientist,Bank BRI,Jakarta,3475734,0,Hybrid,S1,0,0,0,0,0,1,0,1,0,1,0,0,1,1,1,1,0,1,1,0,0,0,0,1,1,0,0,0,1,1,0,0
+data analyst,Data Engineer,Bank BCA,Jakarta,26835696,0,Hybrid,S1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0
+data engineer,Data Engineer,Bank BRI,Denpasar,3667907,2,On-site,S1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0
+data engineer,Junior Data Scientist,Gojek,Surabaya,3933024,4,On-site,S2,0,0,0,0,0,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0
+data scientist,Junior Data Scientist,Gojek,Surabaya,9609738,2,On-site,S1,0,1,1,1,0,0,0,0,0,1,1,0,1,0,1,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+data analyst,Data Analyst,Traveloka,Bandung,4894727,0,On-site,S1,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1
+data engineer,Senior Data Analyst,OVO,Jakarta,2822421,5,On-site,S1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0
+data analyst,Data Scientist,Traveloka,Jakarta,11289671,7,On-site,S1,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+data scientist,Data Analyst,Bukalapak,Jakarta,17920983,2,Hybrid,S1,1,1,0,1,1,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,1,0,1,0,0
+data scientist,Junior Data Scientist,Dana,Medan,2913704,1,Hybrid,S1,1,0,1,1,1,0,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1
+data analyst,Data Analyst,Shopee,Jakarta,11236470,2,On-site,S1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,1,0
+data scientist,Data Scientist,Shopee,Bandung,4006645,5,Remote,S1,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0
+machine learning,Senior Data Analyst,Bank BCA,Jakarta,1545437,3,Hybrid,D3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1
+data engineer,Data Engineer,PT Tokopedia,Jakarta,7969055,2,Hybrid,D3,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0
+machine learning,Data Scientist,OVO,Makassar,1753502,2,On-site,S1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,1,1,0
+machine learning,Senior Data Analyst,OVO,Jakarta,3477726,1,On-site,S1,0,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,0,1,0,0,0,0
+data scientist,Data Engineer,Gojek,Surabaya,4569821,2,On-site,S1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,1,0,1,1,0
+data scientist,Lead Data Analyst,Bank BRI,Bandung,5284322,3,On-site,S1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,1,0,1,0,1,0,1,0
+data analyst,Lead Data Analyst,Bank Mandiri,Makassar,10385221,4,On-site,S1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,1
+machine learning,Lead Data Analyst,Bukalapak,Semarang,3730256,2,On-site,S1,0,0,1,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0
+data engineer,ML Engineer,Bank BCA,Jakarta,12452998,7,Remote,S1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+data analyst,Data Scientist,Bank BRI,Jakarta,5101758,3,On-site,S1,0,1,1,0,0,1,0,1,0,0,1,1,0,0,0,0,0,1,1,0,0,1,0,0,0,1,0,1,1,0,0,0
+data analyst,Lead Data Analyst,Telkomsel,Yogyakarta,2808836,2,On-site,S1,0,0,1,1,0,1,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0
+data analyst,Junior Data Scientist,Blibli,Jakarta,7698689,3,On-site,S2,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,0,1,0,1,0
+data scientist,Data Scientist,Bank BCA,Jakarta,15872306,1,Hybrid,S1,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,1,0,1,1,0,1
+data scientist,Junior Data Scientist,Telkomsel,Jakarta,4088403,1,On-site,S1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1
+data analyst,Senior Data Analyst,Traveloka,Jakarta,2880750,2,On-site,S1,1,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,1,1,1,0
+data scientist,Data Analyst,Dana,Jakarta,3813396,0,On-site,S1,1,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0
+data scientist,Data Analyst,Gojek,Bandung,1901384,2,On-site,S1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0
+data analyst,Senior Data Analyst,Blibli,Bandung,6475144,4,On-site,S1,1,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1
+data engineer,Data Scientist,Bank BRI,Bandung,2123681,5,On-site,S1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,1,1,0,1,0,0,1,1,0,0,0,0
+data engineer,Data Scientist,Bukalapak,Denpasar,7920161,3,On-site,S1,0,1,0,0,0,1,0,0,1,0,0,1,1,0,1,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0
+data scientist,Junior Data Scientist,OVO,Jakarta,4593611,4,On-site,S2,0,1,1,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1
+data engineer,Data Scientist,Traveloka,Jakarta,8172468,5,Hybrid,S1,0,1,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,1,1,0,0,0,0,1,0,1,0,0,0
+data engineer,ML Engineer,Bank Mandiri,Jakarta,4603331,4,On-site,S1,0,1,0,1,0,1,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+data scientist,Junior Data Scientist,Blibli,Medan,7213021,2,On-site,S1,0,0,1,1,0,0,1,1,0,1,0,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0
+data engineer,Data Analyst,Gojek,Jakarta,2979965,3,On-site,S1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0
+data scientist,Lead Data Analyst,PT Tokopedia,Jakarta,6371778,2,On-site,S1,0,0,0,0,1,1,0,0,0,1,0,1,0,1,0,1,1,1,0,0,1,0,0,0,1,0,1,0,1,1,1,1
+machine learning,ML Engineer,Bank BCA,Jakarta,3634925,3,Hybrid,S1,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0
+data analyst,Data Scientist,Bank BRI,Medan,7769905,2,On-site,S1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+data engineer,Lead Data Analyst,PT Tokopedia,Medan,4943588,2,Remote,S1,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0
+data analyst,Data Analyst,Blibli,Surabaya,10442197,1,On-site,S1,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1
+data analyst,Lead Data Analyst,Gojek,Jakarta,4633619,3,On-site,S1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,1,1,0,0,1,0,1
+data scientist,Junior Data Scientist,Bukalapak,Jakarta,3439694,4,Hybrid,S1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0
+data engineer,Data Scientist,Gojek,Jakarta,5846176,3,Remote,S1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+data engineer,Junior Data Scientist,Bank BCA,Jakarta,22003808,1,On-site,S1,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0
+machine learning,Data Scientist,Telkomsel,Jakarta,10287508,7,On-site,SMA/SMK,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+data engineer,Senior Data Analyst,Dana,Jakarta,3332294,0,On-site,S1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1,0
+data engineer,Data Analyst,Gojek,Jakarta,5378367,7,On-site,S1,1,0,1,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+data scientist,Data Scientist,Telkomsel,Bandung,3614964,4,Remote,SMA/SMK,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,1
+data analyst,Data Engineer,OVO,Yogyakarta,3196523,1,On-site,S1,1,0,0,1,1,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+machine learning,Data Engineer,Bukalapak,Jakarta,5436625,1,On-site,S2,0,1,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0
+data engineer,Lead Data Analyst,OVO,Semarang,4615637,2,Hybrid,S1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1
+data engineer,Lead Data Analyst,OVO,Jakarta,2886019,7,On-site,S1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,0,1,1,0,0,0,0,0,1,1,0
+machine learning,Junior Data Scientist,Bukalapak,Jakarta,3630389,7,On-site,S1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+data scientist,Data Scientist,Bank BRI,Jakarta,5566628,1,On-site,D3,0,0,0,1,0,1,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0
+data engineer,Lead Data Analyst,Bank BRI,Denpasar,3809783,2,On-site,S1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,1,0
+data engineer,Senior Data Analyst,Bukalapak,Jakarta,5340344,1,Remote,S1,0,0,0,0,1,0,1,1,0,1,0,1,0,0,1,1,1,0,1,1,0,0,1,0,1,0,0,0,1,0,0,1
+machine learning,Junior Data Scientist,OVO,Medan,3544398,2,On-site,SMA/SMK,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+data analyst,Data Scientist,OVO,Jakarta,7137290,7,Remote,S1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+data engineer,Lead Data Analyst,Gojek,Yogyakarta,3569324,7,On-site,S1,1,1,0,0,1,0,1,1,0,0,0,0,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+data engineer,Lead Data Analyst,Blibli,Jakarta,7885153,3,Hybrid,S1,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0
+data analyst,Data Engineer,Bank BCA,Bandung,4522191,1,On-site,S1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+data engineer,Data Analyst,Bukalapak,Makassar,1487386,3,Remote,S2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,0,1,0,1,0,0,0,0,0,0,1,0
+data analyst,Lead Data Analyst,Traveloka,Semarang,4600261,2,Hybrid,S1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,1,1,0,1
+data scientist,Senior Data Analyst,Blibli,Surabaya,7297458,7,On-site,S1,1,0,0,1,0,1,1,0,1,1,0,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0,0
+data analyst,Data Scientist,Blibli,Jakarta,3868496,5,On-site,S1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,1,0,0,1,0,0
+data analyst,Lead Data Analyst,OVO,Jakarta,4791267,2,Remote,D3,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+data engineer,Data Engineer,Shopee,Surabaya,7839590,0,Hybrid,S1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,1
+data engineer,Lead Data Analyst,Blibli,Jakarta,13415653,7,On-site,S1,0,1,1,1,0,0,1,1,1,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+machine learning,Lead Data Analyst,OVO,Bandung,10769169,4,Hybrid,S1,0,1,1,0,0,1,1,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0
+data engineer,Data Analyst,Bank BCA,Jakarta,5753390,2,On-site,S2,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+data engineer,Data Engineer,Shopee,Jakarta,7540729,2,Hybrid,S1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1
+data analyst,Junior Data Scientist,OVO,Jakarta,5689118,0,On-site,S2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,1,1,0,0,1,0,0,0
+data scientist,Senior Data Analyst,Traveloka,Jakarta,2188455,1,On-site,S1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,1,1,1,0,1,1,0,1,1,0,0,1,0,0
+data engineer,Junior Data Scientist,Bukalapak,Jakarta,11521467,0,On-site,S1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0
+data analyst,ML Engineer,Bukalapak,Jakarta,11871046,3,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0,1,0,0,0,0,1,0
+machine learning,Data Scientist,Blibli,Jakarta,1971414,4,Remote,S1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,0,1,1
+machine learning,Junior Data Scientist,PT Tokopedia,Bandung,4284382,4,On-site,S1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0
+data scientist,Data Analyst,Gojek,Jakarta,13534028,1,Hybrid,S1,0,0,0,1,0,0,1,1,0,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+data scientist,Senior Data Analyst,PT Tokopedia,Semarang,6147257,1,On-site,S1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0
+data scientist,Lead Data Analyst,OVO,Jakarta,2959088,4,On-site,S1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1
+data analyst,Lead Data Analyst,Shopee,Bandung,11194436,3,Hybrid,D3,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0
+data engineer,Senior Data Analyst,Dana,Jakarta,5778428,5,On-site,S2,0,1,0,0,0,0,1,1,0,1,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0
+data analyst,Lead Data Analyst,Shopee,Jakarta,11725852,3,On-site,S1,0,0,0,0,0,0,1,0,1,1,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+machine learning,Lead Data Analyst,Dana,Jakarta,5672845,2,On-site,S1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1
+machine learning,ML Engineer,Telkomsel,Jakarta,1479357,3,On-site,S1,1,0,0,1,0,1,0,1,1,0,1,0,0,1,1,0,1,1,0,1,0,0,0,0,0,1,1,0,1,1,0,1
+data engineer,ML Engineer,Shopee,Surabaya,15937049,5,On-site,S1,1,1,0,0,0,0,1,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+data scientist,Data Scientist,Bank BRI,Surabaya,2773325,0,On-site,S1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,1,0,0,0
+machine learning,Junior Data Scientist,OVO,Jakarta,4146166,7,Hybrid,S1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1
+data scientist,Data Scientist,OVO,Bandung,11079574,4,Hybrid,S1,1,0,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,0,1,0,1,1,0,1,1,1,0,1,0,0
+data analyst,Junior Data Scientist,Shopee,Jakarta,21177270,7,On-site,S1,0,1,0,0,0,0,0,1,1,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0
+data scientist,Junior Data Scientist,OVO,Surabaya,5180886,7,On-site,S1,1,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0
+data analyst,Lead Data Analyst,OVO,Jakarta,6679884,1,Hybrid,S1,0,1,1,1,0,1,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,1
+data engineer,Senior Data Analyst,Gojek,Jakarta,2646188,3,Remote,S1,1,1,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0
+data scientist,Junior Data Scientist,Gojek,Bandung,4564935,3,On-site,S1,1,0,0,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+data engineer,Data Scientist,Blibli,Medan,10413826,3,On-site,S1,0,0,0,0,1,0,0,0,0,1,0,1,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0
+data scientist,Data Scientist,Gojek,Jakarta,6483350,0,On-site,S1,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+machine learning,ML Engineer,PT Tokopedia,Jakarta,15263172,7,On-site,S1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1
+data engineer,Senior Data Analyst,PT Tokopedia,Jakarta,2331698,7,On-site,S1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,0,0,0,1,0,0,0
+data scientist,Data Engineer,PT Tokopedia,Jakarta,2274200,4,On-site,S1,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,1,0,1,0,0
+data engineer,Data Engineer,Traveloka,Bandung,3573990,1,On-site,S1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,1,0,1,0,0,0
+data scientist,Data Analyst,Bukalapak,Jakarta,3679006,5,Hybrid,S1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,1,1,1,0,1,1,1,0,0,0,1,0,0
+data analyst,ML Engineer,Shopee,Medan,9569085,4,On-site,S2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1
+data engineer,Data Analyst,Bank Mandiri,Bandung,4212192,3,On-site,S1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1
+machine learning,Senior Data Analyst,Bukalapak,Semarang,2658563,1,On-site,S1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+data engineer,Lead Data Analyst,Gojek,Jakarta,6840827,1,On-site,S1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,1,0,0
+data analyst,Data Engineer,Bank BCA,Jakarta,3398221,3,Hybrid,S1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0
+data analyst,Lead Data Analyst,Dana,Jakarta,2796428,1,On-site,S1,1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0
+machine learning,Data Engineer,Dana,Jakarta,10181512,4,On-site,S2,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,1,0,1,0
+data analyst,Data Engineer,Telkomsel,Semarang,11714885,1,Hybrid,S1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0
+machine learning,Data Analyst,Gojek,Yogyakarta,9696917,7,Hybrid,S1,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+data scientist,Lead Data Analyst,OVO,Jakarta,3266900,7,On-site,S1,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+data analyst,Data Scientist,Blibli,Bandung,3784340,2,On-site,S1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0
+data scientist,Data Analyst,Telkomsel,Semarang,7469548,1,Hybrid,D3,1,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,1,0,0,1,0,1,1,0,0,0,0,1
+data scientist,Lead Data Analyst,Bukalapak,Yogyakarta,8412985,3,Remote,S2,0,1,0,1,1,1,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,1,0,1,0,1
+data analyst,Data Engineer,Telkomsel,Bandung,4695630,2,Remote,S2,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,1,1,0,0,1,0
+machine learning,ML Engineer,Gojek,Jakarta,11106548,1,Remote,S1,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1
+machine learning,ML Engineer,Traveloka,Jakarta,1579567,3,On-site,S1,0,0,1,1,0,1,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+machine learning,Junior Data Scientist,PT Tokopedia,Bandung,3822292,7,On-site,S1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0
+data analyst,Lead Data Analyst,Bank BRI,Surabaya,20363583,1,On-site,D3,0,0,0,0,1,0,1,0,1,1,0,1,1,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,1,0,0,1
+data scientist,Data Analyst,Blibli,Jakarta,5344066,2,On-site,S1,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0
+data engineer,Junior Data Scientist,Bank BCA,Jakarta,4046582,3,On-site,D3,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0
+data engineer,Junior Data Scientist,PT Tokopedia,Surabaya,7163792,5,On-site,S1,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,1,1,1,0,1,1,0,1,0,0,0
+data analyst,Data Analyst,Bukalapak,Bandung,3036482,0,On-site,S1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,1
+data engineer,Junior Data Scientist,Dana,Jakarta,1330705,4,On-site,S1,0,0,0,0,1,0,1,0,1,1,1,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+data scientist,Senior Data Analyst,PT Tokopedia,Jakarta,32656272,1,On-site,S1,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0
+data engineer,Data Analyst,OVO,Jakarta,3219401,5,On-site,S2,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+machine learning,Junior Data Scientist,Shopee,Jakarta,6159034,4,On-site,S1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0,0,0,0,1,0
+data scientist,Junior Data Scientist,Shopee,Jakarta,5981840,2,On-site,S1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0,1,0,0,0,0,1,0
+data analyst,Data Analyst,Bukalapak,Makassar,7254449,5,On-site,S1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0
+data analyst,Data Engineer,Telkomsel,Bandung,3347849,4,Hybrid,S1,1,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0,0
+machine learning,Junior Data Scientist,Dana,Yogyakarta,1145328,4,Remote,S1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1
+data engineer,Data Scientist,Bukalapak,Jakarta,3637327,2,On-site,SMA/SMK,1,1,0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,1,0,1,0,0,0,0,1,0,1,0,0,1,0
+data analyst,Data Engineer,PT Tokopedia,Bandung,5489446,3,On-site,S1,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,0,1,1,0,1,0,0,0,0,1,1,1
+data analyst,Data Scientist,Dana,Jakarta,5731827,1,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,1,0,0,1,1,0
+data scientist,Data Engineer,Bank BCA,Jakarta,13767229,5,Remote,S1,0,1,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0
+data scientist,Lead Data Analyst,Bank BRI,Jakarta,4545096,3,On-site,S1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1
+data scientist,Data Engineer,Bukalapak,Jakarta,6106998,5,Hybrid,S1,0,0,0,0,1,1,0,0,0,1,1,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,1,0
+data scientist,Senior Data Analyst,Dana,Jakarta,3350235,1,Hybrid,S2,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,1,0,1,1,0,0,0,1,1
+data analyst,Junior Data Scientist,Bank BCA,Jakarta,3764600,1,Hybrid,S1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,1,1,1,0
+data scientist,Lead Data Analyst,Bank BCA,Bandung,17932155,4,Remote,S1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0
+machine learning,Data Scientist,Blibli,Jakarta,3511206,0,On-site,SMA/SMK,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+machine learning,Data Engineer,Bank BRI,Surabaya,4294607,1,On-site,D3,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+data scientist,Data Engineer,OVO,Jakarta,10339097,7,Hybrid,S1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,1,0,1,1,1,1,1,0
+data scientist,Data Scientist,Shopee,Jakarta,16913198,1,Hybrid,S1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+data engineer,Lead Data Analyst,Bank BCA,Jakarta,8764340,2,Hybrid,D3,0,1,0,1,0,0,1,1,1,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+data scientist,Senior Data Analyst,Bank BRI,Semarang,8780969,7,Hybrid,S2,0,0,0,1,0,0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+data analyst,Data Scientist,Traveloka,Semarang,2542702,0,Hybrid,D3,0,0,1,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0
+machine learning,Senior Data Analyst,Dana,Jakarta,7340028,2,Remote,S1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0
+machine learning,Lead Data Analyst,Bank BRI,Bandung,4481866,5,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0
+data analyst,Senior Data Analyst,Telkomsel,Makassar,7157614,7,On-site,S1,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0
+data scientist,ML Engineer,Bukalapak,Denpasar,4558261,4,Hybrid,S1,1,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,1
+data engineer,Senior Data Analyst,Bank BRI,Jakarta,3825865,7,On-site,D3,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0
+machine learning,ML Engineer,PT Tokopedia,Jakarta,2246770,0,On-site,S1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+data engineer,Junior Data Scientist,Shopee,Bandung,5126299,1,Hybrid,S1,0,0,0,1,1,0,0,1,0,1,0,1,1,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+machine learning,Data Analyst,Traveloka,Jakarta,5975245,4,On-site,S1,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0,0,0,0
+data engineer,Senior Data Analyst,Bank BCA,Surabaya,1539906,4,On-site,S1,1,0,0,1,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0
+machine learning,Data Scientist,Shopee,Jakarta,3730181,3,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,1,0,0,1,1,1,0,1,0
+data engineer,ML Engineer,PT Tokopedia,Jakarta,4598899,4,On-site,S1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0
+data scientist,Lead Data Analyst,Shopee,Jakarta,7602238,5,Hybrid,S1,1,0,0,0,0,0,1,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0
+data scientist,Lead Data Analyst,Shopee,Jakarta,3782956,3,On-site,S1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,0
+data analyst,Data Analyst,Blibli,Jakarta,7858912,7,Hybrid,S1,0,0,0,0,1,0,1,1,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0
+data analyst,Junior Data Scientist,Gojek,Semarang,6377802,4,On-site,S1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+data engineer,Data Analyst,PT Tokopedia,Jakarta,9079895,3,On-site,S1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,1,0,0,1,1,0,0
+data engineer,Senior Data Analyst,Bank BRI,Jakarta,3921644,2,On-site,S1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,1,0,0,0,1,0,0,1,1,1,0
+machine learning,Data Scientist,PT Tokopedia,Jakarta,4549701,4,On-site,S2,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0
+data analyst,Senior Data Analyst,Blibli,Jakarta,7588752,3,Hybrid,S1,0,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0,1,1,0,0,1,0,0,0,1,0
+data analyst,Data Engineer,Shopee,Jakarta,2921590,5,On-site,S1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0
+machine learning,Data Analyst,Dana,Surabaya,5178456,5,On-site,S1,0,0,0,0,1,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+data engineer,Data Engineer,Gojek,Medan,9762622,3,On-site,S1,1,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1
+data analyst,Data Engineer,Telkomsel,Jakarta,3612708,7,Hybrid,S1,1,1,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,1,1,0,0,0,1,0,1,0,1,0,0,0
+data engineer,ML Engineer,Blibli,Jakarta,6562121,4,Hybrid,S1,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0
+data scientist,Lead Data Analyst,Traveloka,Jakarta,5384026,1,Hybrid,S2,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,1,0
+data engineer,Data Engineer,Gojek,Jakarta,13007754,3,On-site,S1,0,1,1,1,1,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0
+data scientist,Data Analyst,OVO,Jakarta,5660735,1,On-site,S1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,1,1,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,0
+data scientist,Data Analyst,Gojek,Jakarta,7424035,3,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,1,1,0
+machine learning,Data Scientist,Shopee,Jakarta,4875758,5,Remote,S1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+machine learning,Senior Data Analyst,Dana,Jakarta,3950022,5,Hybrid,S1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0
+data scientist,Data Scientist,Blibli,Jakarta,6174624,4,On-site,S1,0,1,1,0,1,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0
+machine learning,Data Scientist,Gojek,Jakarta,3834274,5,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,1,0,0,0,0,0,0
+data analyst,Lead Data Analyst,Bank Mandiri,Jakarta,10022952,3,On-site,S1,0,0,1,0,1,1,1,0,0,0,1,0,0,1,0,1,0,1,1,0,1,0,0,1,0,1,0,1,0,0,0,1
+data analyst,Senior Data Analyst,Blibli,Jakarta,10913831,3,On-site,S1,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,1
+data engineer,Data Analyst,Telkomsel,Jakarta,5627605,5,Hybrid,S1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1,1,1
+data scientist,ML Engineer,Traveloka,Jakarta,4135945,3,On-site,S1,0,0,1,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0
+data engineer,Lead Data Analyst,Bank BRI,Jakarta,6178513,2,On-site,S1,0,0,1,1,0,1,0,0,1,1,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+data scientist,Data Engineer,Gojek,Jakarta,2508924,5,On-site,S1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1
+data scientist,ML Engineer,PT Tokopedia,Jakarta,3422162,0,Hybrid,S1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1,1,0,0,0,0,1,1
+data engineer,Data Engineer,Traveloka,Denpasar,2800384,7,Remote,S1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0
+data engineer,Senior Data Analyst,Blibli,Surabaya,3453019,2,On-site,S1,0,0,0,1,1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,1
+data engineer,Senior Data Analyst,Bukalapak,Surabaya,3730358,3,On-site,S1,0,0,1,0,1,1,0,1,0,1,0,1,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+data engineer,Data Scientist,PT Tokopedia,Jakarta,2491831,4,On-site,S1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0
+data analyst,Junior Data Scientist,OVO,Makassar,4594207,1,On-site,S1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0
+data scientist,Junior Data Scientist,Gojek,Bandung,4799572,5,On-site,S1,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1
+machine learning,Senior Data Analyst,Bank Mandiri,Jakarta,7600099,3,On-site,S1,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,1,1,0,0,0
+data scientist,Data Engineer,Bank BRI,Jakarta,5742100,2,Hybrid,S1,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+data analyst,Junior Data Scientist,Gojek,Jakarta,12576735,5,On-site,S2,0,1,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+data scientist,ML Engineer,Dana,Jakarta,7673680,3,On-site,S1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+data analyst,Lead Data Analyst,OVO,Surabaya,21969131,5,On-site,SMA/SMK,0,1,1,1,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,1
+data scientist,ML Engineer,Gojek,Jakarta,2703400,7,On-site,S1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,1,0,1,1
+data analyst,ML Engineer,Bank Mandiri,Bandung,9805423,1,On-site,S1,1,0,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0
+machine learning,Junior Data Scientist,Dana,Jakarta,2103242,4,On-site,S1,0,0,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,1,1,1,0,1,0,0,0,0
+machine learning,Lead Data Analyst,Bank BCA,Semarang,10180127,4,On-site,D3,1,0,1,0,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+machine learning,ML Engineer,Bank Mandiri,Jakarta,6784082,5,Remote,S2,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1
+machine learning,Data Scientist,Blibli,Denpasar,4705857,2,On-site,S1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1
+data analyst,Junior Data Scientist,Blibli,Jakarta,6114703,5,On-site,S1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0
+data scientist,ML Engineer,Bank BCA,Jakarta,4014586,3,Hybrid,S1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0
+machine learning,Data Engineer,Bank Mandiri,Jakarta,3793137,1,On-site,S1,0,1,0,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,1,0
+machine learning,Data Scientist,OVO,Jakarta,7007778,0,On-site,S1,0,0,0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,1,0,1,1,1,0,0,1
+data scientist,Lead Data Analyst,Bank BRI,Surabaya,2039158,3,On-site,S1,1,0,0,0,0,0,1,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0
+data scientist,Data Scientist,OVO,Jakarta,6567807,5,On-site,S2,0,0,1,0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0
+data engineer,Junior Data Scientist,Bank Mandiri,Jakarta,4998808,2,On-site,S1,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,1
+data scientist,Data Scientist,Blibli,Jakarta,4429853,5,On-site,S1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+data scientist,Senior Data Analyst,Bank Mandiri,Jakarta,4011646,3,On-site,S1,0,0,1,1,1,1,1,0,1,0,0,0,0,1,1,0,0,0,1,0,1,0,0,0,1,1,0,1,1,0,0,0
+data scientist,Data Scientist,Telkomsel,Jakarta,6210480,0,On-site,D3,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,0,1,0,0,0,1,0,0,1
+data engineer,Data Engineer,Bukalapak,Jakarta,10009947,7,Remote,S1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+data scientist,Lead Data Analyst,Shopee,Denpasar,20520993,3,Remote,S1,1,0,1,0,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0
+data analyst,Junior Data Scientist,PT Tokopedia,Medan,10554941,4,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+machine learning,Junior Data Scientist,Blibli,Yogyakarta,8876146,1,On-site,S1,0,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,0
+data analyst,ML Engineer,Bank Mandiri,Jakarta,3359443,2,On-site,S1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0
+data engineer,Lead Data Analyst,Shopee,Jakarta,3767760,3,On-site,S1,0,0,0,0,0,0,1,0,1,1,0,0,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1
+data engineer,Senior Data Analyst,Bank BCA,Jakarta,5375089,5,On-site,S1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,0,1,0,0,1,0
+data engineer,ML Engineer,OVO,Jakarta,7034741,1,Hybrid,S1,1,0,0,1,0,0,0,1,0,0,1,1,1,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+data engineer,Data Analyst,Bank BCA,Jakarta,4107797,5,On-site,S1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,1,0,0,0
+data engineer,Senior Data Analyst,Bank Mandiri,Jakarta,10977597,3,On-site,D3,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+machine learning,Lead Data Analyst,Dana,Medan,3601578,3,Hybrid,S1,0,0,1,1,0,1,1,1,1,1,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,0,1,0
+data scientist,Data Engineer,OVO,Bandung,2531532,5,On-site,S1,1,1,0,0,1,0,0,0,0,0,1,0,1,0,0,1,1,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0
+data analyst,Senior Data Analyst,Bukalapak,Denpasar,10037399,1,On-site,S1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,1,1,1,0,1,0,0,0
+data analyst,Data Scientist,Bank Mandiri,Jakarta,6210164,7,On-site,S2,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+data scientist,Senior Data Analyst,Bank Mandiri,Jakarta,4537220,5,On-site,S1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+data engineer,Data Scientist,Telkomsel,Surabaya,2367767,2,Remote,S1,1,0,0,0,1,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,0,1
+data scientist,ML Engineer,Bukalapak,Jakarta,9731054,2,On-site,S1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,1,1,0,0,0,0,1,0,1,0,0
+data engineer,Senior Data Analyst,Bukalapak,Jakarta,22459962,0,On-site,S1,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,0,0
+machine learning,Senior Data Analyst,Blibli,Surabaya,7252492,3,On-site,D3,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0
+data analyst,Data Engineer,OVO,Jakarta,3681016,3,On-site,S1,0,0,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,1,0
+data analyst,Data Analyst,Traveloka,Medan,6215595,7,On-site,S1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+machine learning,Senior Data Analyst,Bukalapak,Jakarta,7554643,2,Remote,S1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0
+machine learning,ML Engineer,Gojek,Medan,7267276,3,Hybrid,S1,0,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0
+data engineer,Data Scientist,Bukalapak,Jakarta,3309125,4,On-site,S1,1,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+data scientist,ML Engineer,Shopee,Jakarta,3980704,3,Hybrid,S1,1,1,0,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+data engineer,Lead Data Analyst,Bank BCA,Jakarta,3442930,1,On-site,S1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0
+data engineer,Junior Data Scientist,Bank Mandiri,Jakarta,6728681,1,Remote,S1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,1,0,1,1,1,0,1,1,0,0
+data analyst,Junior Data Scientist,Bank BRI,Jakarta,5186978,1,On-site,S1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1
+data engineer,Data Engineer,Shopee,Yogyakarta,10754194,1,Remote,S1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,1,0
+data scientist,Junior Data Scientist,PT Tokopedia,Surabaya,6251040,2,Hybrid,D3,1,1,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,1,0,1,1,0
+data engineer,Senior Data Analyst,Traveloka,Jakarta,8263520,4,On-site,S1,1,0,1,0,1,1,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0
+data analyst,Lead Data Analyst,PT Tokopedia,Jakarta,4587471,1,On-site,S1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,1,0,1,1,0
+data scientist,Data Analyst,Shopee,Jakarta,1823722,5,On-site,S1,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+data scientist,Data Analyst,Traveloka,Jakarta,12090335,2,On-site,S1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+data analyst,Senior Data Analyst,OVO,Bandung,5810819,3,On-site,D3,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+data analyst,Data Analyst,Bank BCA,Jakarta,6905841,3,On-site,S2,1,0,0,1,1,1,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+data engineer,ML Engineer,PT Tokopedia,Semarang,8798664,1,On-site,S1,0,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1
+data analyst,Data Scientist,Dana,Jakarta,6290919,2,On-site,S1,1,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+machine learning,Senior Data Analyst,Bukalapak,Jakarta,1769422,2,On-site,SMA/SMK,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0
+data analyst,Junior Data Scientist,Bank BCA,Surabaya,4364117,3,Hybrid,S1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,1,1,0,0,0,1,0
+machine learning,Data Scientist,Shopee,Jakarta,4037435,5,Hybrid,S1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,1,1,0
+data analyst,Data Analyst,Bank BRI,Jakarta,4118524,7,Remote,D3,0,0,0,1,0,1,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,1,0,1
+machine learning,Data Engineer,PT Tokopedia,Jakarta,4761169,1,On-site,S1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,0,0,1,1
+machine learning,Lead Data Analyst,Bank BCA,Jakarta,5572227,7,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,1,0,1,0
+data analyst,Data Scientist,Bank BCA,Jakarta,17156448,3,On-site,S1,0,1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0
+data scientist,Lead Data Analyst,Blibli,Jakarta,7378255,2,Hybrid,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,1,0,0,0,0,0,0,1,1
+data scientist,Lead Data Analyst,Blibli,Jakarta,8304128,2,On-site,S1,0,0,1,1,0,1,1,0,1,0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,1,1
+machine learning,Data Engineer,Dana,Jakarta,4071124,1,On-site,S2,0,0,1,0,0,0,0,1,1,0,0,1,0,1,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0
+data scientist,ML Engineer,Gojek,Jakarta,13157275,3,Hybrid,S1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,1,0
+data analyst,Data Engineer,Traveloka,Medan,5841462,7,Hybrid,S1,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1,1,1,0,0,0,0,0,1,0,0
+machine learning,Data Scientist,OVO,Jakarta,5341168,1,On-site,S1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+data engineer,Data Scientist,Bukalapak,Jakarta,1843052,2,On-site,D3,1,0,1,1,1,1,0,1,0,0,0,1,1,0,1,0,0,1,0,0,0,1,0,1,1,1,0,0,1,0,1,0
+machine learning,Senior Data Analyst,Traveloka,Jakarta,8242685,1,On-site,S1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0
+data engineer,Junior Data Scientist,Bukalapak,Jakarta,9425331,1,Remote,S1,0,0,1,1,0,1,0,0,0,0,1,1,1,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1
+data engineer,Data Engineer,Bank BCA,Jakarta,9263312,5,On-site,S1,0,0,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1
+machine learning,ML Engineer,PT Tokopedia,Surabaya,2322051,2,Remote,S1,1,0,1,1,0,1,1,0,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+data engineer,Senior Data Analyst,Gojek,Jakarta,9470708,1,Remote,S2,0,1,1,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+data scientist,Senior Data Analyst,Bank Mandiri,Jakarta,4471672,7,Hybrid,S1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0
+data engineer,ML Engineer,Shopee,Jakarta,2535499,2,Hybrid,S1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0
+data scientist,Senior Data Analyst,OVO,Jakarta,19669443,0,Remote,S1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,0,0,0,0,1,1
+machine learning,ML Engineer,Dana,Jakarta,13359001,4,On-site,S1,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+data engineer,Data Analyst,Gojek,Jakarta,7968837,3,On-site,S1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,1
+data engineer,Senior Data Analyst,Bank BRI,Medan,7381352,4,Hybrid,S1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+data scientist,Data Scientist,OVO,Jakarta,13791976,3,On-site,S1,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,1,0,0,0
+data scientist,Data Analyst,PT Tokopedia,Jakarta,4022894,2,On-site,S1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,1,0,0,0,1,0,1,0,0
+machine learning,Senior Data Analyst,PT Tokopedia,Bandung,23905102,1,On-site,S1,0,1,1,0,1,1,0,1,1,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,1,0,1,1,1,0,0
+machine learning,ML Engineer,Telkomsel,Makassar,5527892,5,On-site,S1,0,0,1,1,0,1,0,0,1,1,1,0,0,1,0,0,0,1,1,0,0,1,0,0,0,1,0,0,1,0,0,0
+data engineer,Data Analyst,Dana,Bandung,9794925,1,On-site,S1,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1
+data analyst,Junior Data Scientist,Telkomsel,Medan,7448327,7,On-site,S1,0,0,1,1,0,0,0,1,0,1,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
+data engineer,Data Analyst,Bank Mandiri,Yogyakarta,2947169,1,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,1,0,0,0,1,1,0,0,0
+data engineer,Data Scientist,OVO,Jakarta,5454916,5,On-site,D3,0,1,1,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,1,1,1,1,0,0,0,0,1,1,0,0,0,0
+machine learning,Senior Data Analyst,Blibli,Jakarta,13130683,5,Remote,S1,0,1,1,0,1,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,1
+machine learning,Senior Data Analyst,Dana,Jakarta,3389450,2,On-site,S1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,1,0
+data engineer,ML Engineer,Bukalapak,Jakarta,12185291,2,On-site,S1,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0
+data scientist,Data Analyst,Gojek,Jakarta,8027524,4,On-site,S1,0,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,1,1
+machine learning,Data Scientist,Telkomsel,Semarang,2456052,3,Remote,S1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0,1,0,0,0,0,1,1,0,1,0,0,0,1,1
+data engineer,ML Engineer,OVO,Jakarta,5389096,3,On-site,D3,0,1,0,1,0,0,0,0,0,1,1,0,1,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,1
+data analyst,Junior Data Scientist,Blibli,Yogyakarta,5231442,3,On-site,SMA/SMK,0,0,0,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,1,0,0,1,1,1,0,0,1,0,0,0,0
+data engineer,ML Engineer,Gojek,Bandung,2922636,3,On-site,S1,0,0,0,0,0,1,0,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0
+data analyst,Data Scientist,Dana,Jakarta,6455520,1,On-site,S1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,1,0,0,1
+data analyst,Senior Data Analyst,Bank BCA,Medan,2388204,0,On-site,S1,1,0,1,1,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1
+data analyst,Data Scientist,Bank BRI,Surabaya,9125342,2,Hybrid,S1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+data engineer,Senior Data Analyst,Bukalapak,Jakarta,3163137,2,On-site,S1,0,0,0,1,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+machine learning,Data Engineer,Bank BRI,Yogyakarta,4467792,7,On-site,S1,1,0,0,0,1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,1,1
+data scientist,Data Analyst,Shopee,Jakarta,5380642,2,On-site,S1,1,1,0,0,1,0,1,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0
+data scientist,Data Scientist,Bukalapak,Bandung,13386621,2,On-site,SMA/SMK,0,1,1,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,1,0,0,0
+data engineer,Junior Data Scientist,Bank Mandiri,Jakarta,2522451,4,On-site,S1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+data engineer,Junior Data Scientist,Gojek,Yogyakarta,3985866,1,On-site,S1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
+data analyst,Lead Data Analyst,Bank Mandiri,Bandung,5911818,5,Hybrid,S1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,1,1,0,1,1,0
+machine learning,ML Engineer,Gojek,Jakarta,5184412,2,On-site,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,0,0,0
+data engineer,Senior Data Analyst,Gojek,Jakarta,5756448,7,Hybrid,S1,1,0,1,0,0,0,0,1,0,0,0,1,1,1,0,1,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,1
+data scientist,Data Analyst,Gojek,Jakarta,4766684,2,On-site,S1,0,0,1,0,0,0,0,1,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+data engineer,Junior Data Scientist,Bank BRI,Bandung,6374516,2,Hybrid,S1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0
+machine learning,Data Analyst,Bank BCA,Jakarta,1662408,4,On-site,S1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,1
+machine learning,Data Scientist,Gojek,Makassar,12606667,3,On-site,S1,0,0,0,0,1,0,1,0,0,0,1,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1
+data engineer,ML Engineer,Blibli,Semarang,5165622,4,Remote,S1,1,0,0,0,0,0,1,0,1,1,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,1,1,0,1,0,0
+data engineer,Junior Data Scientist,Bukalapak,Jakarta,27134950,2,On-site,S1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,1,1,1
+machine learning,Data Scientist,Dana,Jakarta,4401714,2,On-site,S1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+machine learning,ML Engineer,Bank BCA,Medan,10028120,3,Remote,S1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,1
+data analyst,Data Engineer,Bank BRI,Surabaya,3445009,1,On-site,S1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1
+data engineer,Data Scientist,Bukalapak,Jakarta,5529276,1,Hybrid,S1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+data engineer,Lead Data Analyst,PT Tokopedia,Jakarta,2951673,5,On-site,S1,0,1,1,1,0,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+data engineer,Senior Data Analyst,Blibli,Denpasar,4450793,4,On-site,S1,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,0,0,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0
+data scientist,Data Scientist,Bank Mandiri,Jakarta,3473987,7,On-site,S1,0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0
+data analyst,Data Scientist,OVO,Semarang,7259930,3,Hybrid,S1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,1,1,1,1,0,0,0,1
+machine learning,Junior Data Scientist,Bank BCA,Makassar,14529194,2,On-site,S2,0,0,0,0,1,1,0,1,1,1,1,0,1,0,1,0,1,1,0,1,1,1,0,0,0,0,1,0,0,1,0,0
+data analyst,Lead Data Analyst,OVO,Jakarta,7063769,1,On-site,S2,0,1,1,1,1,1,0,1,0,0,1,1,0,1,0,1,0,1,0,0,1,0,0,0,1,1,1,1,0,0,0,0
+data scientist,Data Engineer,Gojek,Makassar,30156695,5,On-site,S1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,1,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0
+data analyst,Junior Data Scientist,Traveloka,Jakarta,8236230,2,On-site,D3,0,0,1,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,1,0,0,1,1,1,0,0,1,0,0,0,0
+data scientist,Data Engineer,Telkomsel,Jakarta,3078942,3,Remote,D3,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1
+data analyst,Junior Data Scientist,Telkomsel,Jakarta,23105793,2,On-site,D3,1,0,0,0,0,0,1,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,0,1
+data analyst,Data Scientist,Dana,Jakarta,9310157,3,Remote,S1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0
+data analyst,ML Engineer,OVO,Jakarta,2337568,5,On-site,S2,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0
+data engineer,Data Engineer,Bank BRI,Jakarta,5321787,4,On-site,S1,0,0,0,0,0,1,0,1,1,1,1,0,1,1,0,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0
+machine learning,Data Engineer,Blibli,Jakarta,8729029,7,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0
+data analyst,ML Engineer,Bank Mandiri,Jakarta,7559004,3,Remote,S1,0,0,0,0,1,0,0,0,0,1,1,1,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0
+data engineer,Data Analyst,Dana,Surabaya,8712847,3,On-site,S1,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0
+data engineer,Lead Data Analyst,PT Tokopedia,Jakarta,9925420,0,Remote,S1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0
+data engineer,Data Engineer,Bank BRI,Surabaya,3758245,2,On-site,D3,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0,0
+data scientist,Data Engineer,Shopee,Jakarta,7301247,7,Hybrid,D3,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1
+data analyst,ML Engineer,Shopee,Jakarta,6127754,2,Hybrid,D3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,1,0,1,0,0,0,1,0,0,1
+machine learning,ML Engineer,Bank BRI,Jakarta,4630638,4,On-site,S2,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,1,1,0,1,1,0,1,0,0,1
+data analyst,Data Scientist,Gojek,Jakarta,8898541,7,On-site,S1,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+data analyst,Lead Data Analyst,Shopee,Jakarta,6067262,1,Hybrid,S1,1,0,0,0,0,0,1,1,0,0,0,1,1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1
+machine learning,Data Scientist,Shopee,Jakarta,10538545,2,On-site,D3,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,1
+data engineer,Data Analyst,Dana,Jakarta,6492000,3,On-site,S1,1,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1
+data analyst,Data Analyst,Traveloka,Jakarta,4440995,1,On-site,S2,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,1,1,0,1,0,1,0,1,0,1,0,0,0
+data engineer,Data Analyst,OVO,Jakarta,5933975,0,On-site,S1,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,1,0
+data engineer,Senior Data Analyst,Bank BCA,Surabaya,8113495,2,On-site,SMA/SMK,0,1,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0
+data engineer,ML Engineer,OVO,Jakarta,5517309,3,On-site,S1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+machine learning,Data Engineer,Dana,Jakarta,4133144,3,On-site,S1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1
+data engineer,ML Engineer,Bank Mandiri,Jakarta,5931234,5,On-site,S2,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,1,1,1,0,1,0,1,0,0
+data analyst,ML Engineer,Blibli,Semarang,12689062,1,On-site,S1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,1,1,1,0,0,0,0
+data engineer,Data Analyst,Telkomsel,Jakarta,8049974,1,On-site,S1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+data scientist,ML Engineer,Bank BCA,Jakarta,6709518,1,On-site,S1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,1,0,0,0
+data scientist,Senior Data Analyst,PT Tokopedia,Bandung,4812446,3,Hybrid,S1,1,1,1,0,0,1,0,0,0,0,1,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,1,1,1,0,0,1
+data scientist,Junior Data Scientist,Shopee,Jakarta,6140639,7,Remote,S1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0
+data engineer,Data Engineer,Bank Mandiri,Yogyakarta,3045615,7,Remote,D3,1,0,1,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,1,1,0,0
+data analyst,Junior Data Scientist,Telkomsel,Bandung,4842933,1,On-site,S1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,1,1,0,1,0,0,0,0,1,0,0
+data analyst,Data Analyst,Bank Mandiri,Bandung,7410873,1,On-site,S1,0,0,1,0,1,1,0,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0
+data engineer,Lead Data Analyst,Traveloka,Bandung,5760874,2,Hybrid,S1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,1
+data engineer,Data Scientist,OVO,Jakarta,4315590,2,Hybrid,S1,0,0,0,1,0,0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1
+machine learning,Lead Data Analyst,PT Tokopedia,Surabaya,2587623,5,On-site,S1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,1,0
+data engineer,Lead Data Analyst,OVO,Jakarta,5005878,4,Hybrid,S1,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,1,1,0,1,0,0,1,0,0,0,0,0,1,0,1,1,1
+data scientist,Junior Data Scientist,Shopee,Bandung,3462283,7,On-site,S1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,1,0
+machine learning,Data Engineer,OVO,Jakarta,5303238,5,Remote,S1,0,1,0,1,0,0,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0
+machine learning,Junior Data Scientist,Blibli,Jakarta,6380414,2,Hybrid,S2,0,1,1,0,1,0,0,0,1,1,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,1,0,1
+data engineer,Data Scientist,Bank Mandiri,Jakarta,12823191,0,On-site,S1,1,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+data engineer,Data Scientist,Dana,Jakarta,9417481,1,On-site,S1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1,1,1,0,1,0,1,0,0,0,0
+machine learning,ML Engineer,Gojek,Jakarta,6220396,3,On-site,S1,1,0,0,0,1,0,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+machine learning,Data Engineer,OVO,Jakarta,18913205,3,On-site,S1,0,1,1,0,0,1,1,1,0,0,1,1,1,0,1,0,0,0,0,1,1,1,1,0,1,0,1,0,0,0,0,1
+machine learning,Senior Data Analyst,Bank BCA,Jakarta,6876024,1,On-site,S1,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,1,1,0,1,1,1
+machine learning,ML Engineer,OVO,Jakarta,3509167,1,Remote,S1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0
+machine learning,Data Scientist,Dana,Jakarta,4736078,1,Hybrid,S1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Junior Data Scientist,Bank BRI,Jakarta,25326706,1,Hybrid,S1,1,0,1,1,0,0,0,0,1,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+machine learning,Data Engineer,Bukalapak,Medan,3504226,5,Hybrid,S2,1,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,1,1,1
+machine learning,ML Engineer,Traveloka,Jakarta,4500430,4,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,1,1,1,0,0,0,0,0,0
+data analyst,Data Engineer,Gojek,Jakarta,9820784,3,Hybrid,SMA/SMK,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,1,1,0,0,1
+data scientist,Junior Data Scientist,Bukalapak,Jakarta,3174729,0,On-site,D3,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1,0,1,1,0,0,0,0,1,1
+data scientist,Data Analyst,Traveloka,Jakarta,9996052,5,Hybrid,SMA/SMK,0,1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,1,0,1,0
+data scientist,Senior Data Analyst,Bukalapak,Surabaya,10839963,3,On-site,S1,1,1,1,0,1,1,1,0,0,0,1,1,0,0,0,0,0,1,0,1,1,1,1,1,0,1,0,1,0,0,1,0
+data scientist,Senior Data Analyst,Telkomsel,Jakarta,6409306,3,Hybrid,S1,0,1,0,1,0,0,0,1,1,0,0,0,1,0,1,0,1,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0
+data engineer,Senior Data Analyst,Blibli,Jakarta,14616254,1,Hybrid,S1,1,0,0,1,0,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+data engineer,Data Scientist,Gojek,Denpasar,4881468,5,On-site,SMA/SMK,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,1,0
+machine learning,Data Scientist,PT Tokopedia,Jakarta,9474605,5,On-site,S1,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,1,0,1,0,1,0,0
+machine learning,Senior Data Analyst,Gojek,Jakarta,1306441,7,Remote,S1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0
+data scientist,Data Engineer,Bank BCA,Jakarta,8070603,3,On-site,S1,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+data scientist,Data Analyst,Telkomsel,Jakarta,12125097,2,On-site,S1,1,1,0,1,0,1,0,0,1,1,0,1,0,1,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,1
+data analyst,Data Scientist,PT Tokopedia,Bandung,8745036,1,On-site,S1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,0,0,0,1,0,1
+data analyst,Junior Data Scientist,Dana,Semarang,4307410,1,Hybrid,S1,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1
+data analyst,ML Engineer,PT Tokopedia,Bandung,2201495,1,Hybrid,S1,1,0,0,1,1,1,0,0,1,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,1,1,0,0,0
+data scientist,ML Engineer,Bukalapak,Bandung,10800600,1,Hybrid,S1,1,0,1,0,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+data analyst,Data Scientist,Blibli,Denpasar,3279281,1,On-site,S1,0,0,0,0,1,0,1,1,1,0,0,0,1,0,1,0,1,0,0,1,1,1,0,0,1,0,0,0,1,0,0,0
+machine learning,Senior Data Analyst,Dana,Bandung,3550962,7,Remote,S1,0,0,0,0,1,1,1,0,1,0,0,0,1,0,1,1,1,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0
+data scientist,Data Engineer,Dana,Jakarta,4606860,3,On-site,S1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,1,0,0,0,0,0
+data engineer,Data Analyst,Blibli,Jakarta,8065865,4,Remote,S1,0,0,0,1,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0
+data scientist,ML Engineer,Traveloka,Jakarta,11177745,2,Remote,S1,0,1,0,1,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,1,0,0,0
+data engineer,Data Scientist,Traveloka,Jakarta,18317200,1,On-site,D3,0,1,1,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+data engineer,Data Engineer,Bank BRI,Jakarta,5957862,2,On-site,S1,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0,0
+data scientist,Senior Data Analyst,Dana,Bandung,6578951,5,On-site,S1,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,0
+data analyst,Data Analyst,Gojek,Jakarta,7237818,2,On-site,S2,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0
+machine learning,Data Analyst,Bank Mandiri,Jakarta,4145891,1,Hybrid,S1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1
+data scientist,ML Engineer,Traveloka,Jakarta,8428194,0,On-site,S1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0,1,0,0,1,1,0,1,0,0,0,1,0,1,0,0
+data analyst,Lead Data Analyst,Blibli,Jakarta,3894660,3,On-site,S1,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,1,0
+data engineer,ML Engineer,Shopee,Jakarta,10824759,2,Hybrid,S1,0,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,1,0,0
+data engineer,Junior Data Scientist,Blibli,Jakarta,3091597,1,On-site,S1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+data engineer,Data Scientist,Bukalapak,Bandung,9448041,3,On-site,S2,1,1,1,0,0,0,0,1,0,0,1,0,1,0,0,0,1,1,0,0,0,0,1,0,1,0,0,1,0,0,1,1
+data engineer,Lead Data Analyst,Dana,Yogyakarta,9541026,4,Hybrid,S1,0,0,1,0,0,1,1,0,1,0,1,0,0,1,0,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,0,0
+data scientist,Data Analyst,Traveloka,Jakarta,2198977,1,On-site,S1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,0,0,1
+machine learning,Senior Data Analyst,Bank BRI,Jakarta,6835394,3,Hybrid,S1,0,0,0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+data engineer,Senior Data Analyst,OVO,Yogyakarta,14283275,2,Hybrid,S1,1,0,1,0,0,0,0,1,0,1,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0,1,1,0
+data analyst,Lead Data Analyst,Gojek,Jakarta,6431891,7,Hybrid,S1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,1,1
+data analyst,Data Scientist,Traveloka,Jakarta,5854472,4,On-site,S1,0,0,1,1,0,0,0,1,0,1,1,0,1,0,0,1,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,1
+machine learning,Data Analyst,Bank BCA,Jakarta,4172752,3,On-site,S1,0,1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+machine learning,ML Engineer,Telkomsel,Jakarta,7645855,1,On-site,S2,1,0,0,0,0,0,0,1,1,0,0,0,0,1,0,1,0,0,0,0,1,1,1,1,0,0,0,0,0,1,0,1
+machine learning,Junior Data Scientist,Bukalapak,Denpasar,4568468,3,On-site,S1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0
+data engineer,Senior Data Analyst,Bukalapak,Jakarta,7509650,5,Hybrid,S1,1,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,1,0,0
+data scientist,Data Engineer,PT Tokopedia,Jakarta,8871338,4,On-site,S2,1,1,0,0,1,0,0,0,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0
+data engineer,Data Scientist,OVO,Jakarta,6672910,4,On-site,S1,0,1,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,1,1,0,0,1,1,1,1,0,0,0,0,0,0,1
+data engineer,Senior Data Analyst,Bukalapak,Yogyakarta,11040045,2,On-site,S1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,1,0,1,0,0,1,0,0,1,0
+data analyst,Data Engineer,OVO,Jakarta,7196331,2,On-site,S1,1,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,1,1,0,0,1,0,0,0,1,0,0,0,1,1,0,1
+data scientist,Lead Data Analyst,Bank BCA,Jakarta,4537616,3,On-site,S1,0,1,1,0,0,0,1,1,0,0,1,0,1,1,0,1,0,0,1,0,0,0,1,1,1,0,0,1,1,0,0,0
+data scientist,Data Engineer,Dana,Jakarta,1906784,2,On-site,S2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0
+data analyst,Senior Data Analyst,Blibli,Surabaya,4277372,1,Hybrid,S1,1,0,1,0,0,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1
+data analyst,Data Scientist,Blibli,Surabaya,5122874,2,On-site,S1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,1,0
+data analyst,Data Engineer,Bank Mandiri,Semarang,7923475,0,On-site,S1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+machine learning,Data Engineer,Dana,Jakarta,1840842,4,On-site,S1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,1,1,1,0,1,0
+data scientist,Data Analyst,Dana,Jakarta,1933926,4,On-site,S1,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,0,1,0,1,1,0,1,1,0,0,0,0,0,0,0,1,1
+data analyst,Junior Data Scientist,OVO,Medan,1805221,3,Hybrid,S1,0,0,1,1,1,0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0,1,1,1,1,1,0,0,1,0,0
+data analyst,Junior Data Scientist,Shopee,Medan,5370302,4,Hybrid,S1,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+data analyst,Junior Data Scientist,Traveloka,Jakarta,2555666,3,On-site,S1,0,1,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0
+data engineer,Data Analyst,Dana,Jakarta,7376842,4,Hybrid,S2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+data scientist,Junior Data Scientist,Bank BCA,Jakarta,4469110,1,Remote,S2,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0
+data scientist,Data Analyst,Traveloka,Jakarta,2208186,7,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1
+machine learning,Data Engineer,Bank Mandiri,Surabaya,10486626,3,On-site,S1,0,0,1,0,1,1,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,1,1
+data engineer,Data Engineer,Traveloka,Jakarta,5579900,3,On-site,S1,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0
+data scientist,Data Scientist,Bank BCA,Bandung,10749715,2,On-site,S1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0
+machine learning,ML Engineer,Gojek,Jakarta,5779196,0,On-site,S1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0
+machine learning,Data Analyst,Gojek,Jakarta,14285769,7,On-site,SMA/SMK,0,0,0,1,0,0,0,1,0,0,1,0,1,0,1,1,1,1,1,0,1,1,0,1,1,1,0,0,1,0,0,0
+data analyst,Junior Data Scientist,Bank BRI,Jakarta,8281943,7,On-site,S2,0,0,1,0,0,1,1,1,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,1,0
+machine learning,ML Engineer,Shopee,Jakarta,2485868,5,Hybrid,S1,0,0,0,0,0,0,0,1,0,1,1,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,1
+machine learning,Data Analyst,Blibli,Medan,4121419,7,On-site,S1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0
+data engineer,Junior Data Scientist,Shopee,Jakarta,3825270,1,Remote,S1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0
+data analyst,Lead Data Analyst,Bukalapak,Jakarta,1460192,1,On-site,S1,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,0,0
+data analyst,Lead Data Analyst,Telkomsel,Jakarta,9679369,5,Hybrid,S1,0,1,1,0,0,0,1,1,1,0,1,1,0,0,0,1,1,0,0,1,0,0,1,0,0,1,0,0,1,1,0,0
+data analyst,Data Analyst,Blibli,Jakarta,7377362,0,On-site,S1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,1,1,1,0,0,1,0,1,0,0,0,0,0,1,0,0
+machine learning,Junior Data Scientist,Bank BRI,Jakarta,13538709,1,Hybrid,S1,1,0,0,0,0,0,0,1,1,0,0,0,1,0,1,0,0,1,0,1,1,0,1,0,1,0,0,0,0,0,0,1
+data analyst,Data Scientist,Dana,Jakarta,2143335,5,Hybrid,D3,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,1,0,0,0
+data scientist,Data Scientist,Shopee,Jakarta,2866141,3,On-site,S1,1,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,0,0,1,0,1,1,1,0,0,0,0,0,1,1,0
+data engineer,Lead Data Analyst,PT Tokopedia,Jakarta,3152680,2,On-site,S1,0,0,1,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1
+data engineer,Senior Data Analyst,Telkomsel,Jakarta,13902901,3,Hybrid,S1,1,1,1,0,1,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0
+machine learning,Data Analyst,Telkomsel,Jakarta,13328585,5,On-site,S1,0,0,1,0,1,0,1,0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1
+data analyst,Data Analyst,OVO,Jakarta,2594387,4,Remote,S1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,1,1,0,0
+data engineer,Lead Data Analyst,Bank Mandiri,Denpasar,7111559,4,On-site,S1,0,0,1,1,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1
+machine learning,Data Analyst,Telkomsel,Jakarta,8309862,7,On-site,S2,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,1,1,0,1,1,0,0
+machine learning,Data Scientist,Dana,Jakarta,5241898,3,On-site,S1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,1,0,0,0,0,1,1,1,0,1,0,1,1,0,0
+data engineer,Junior Data Scientist,PT Tokopedia,Jakarta,18728497,0,On-site,S1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0
+data analyst,Data Analyst,Gojek,Jakarta,1285895,2,On-site,SMA/SMK,1,0,1,0,1,1,1,0,1,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0
+data analyst,Senior Data Analyst,Shopee,Bandung,1750981,1,Hybrid,S1,0,0,1,0,1,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,1,1,0,1,0,0,0,1,0,1,1,1
+data scientist,Data Engineer,Dana,Medan,6040944,1,Hybrid,S1,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+data scientist,Senior Data Analyst,Shopee,Jakarta,2731333,1,Hybrid,S1,0,1,0,1,0,0,0,1,0,0,1,1,0,1,1,1,1,1,0,0,1,0,1,1,0,0,0,0,1,0,0,0
+data analyst,Junior Data Scientist,PT Tokopedia,Jakarta,9702703,2,On-site,S1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,1,0
+data scientist,Data Engineer,Shopee,Jakarta,2152959,3,Hybrid,S1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+data scientist,Data Scientist,Traveloka,Jakarta,8226947,1,On-site,S1,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0
+data engineer,Lead Data Analyst,PT Tokopedia,Yogyakarta,5570573,2,On-site,S1,1,0,1,0,1,1,0,0,0,0,1,1,0,0,0,1,1,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0
+data analyst,Junior Data Scientist,PT Tokopedia,Jakarta,16812430,2,On-site,S1,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0
+data engineer,ML Engineer,Bank BRI,Jakarta,3435648,2,Hybrid,S2,0,0,0,0,0,1,1,0,1,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+data engineer,Junior Data Scientist,Gojek,Jakarta,14771077,1,Hybrid,S1,1,1,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,1
+machine learning,Data Scientist,Traveloka,Denpasar,8952108,2,On-site,D3,1,0,1,1,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,1,0,0
+data analyst,ML Engineer,Bank BRI,Yogyakarta,3125843,3,On-site,S1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,0
+data engineer,Data Engineer,Telkomsel,Bandung,3194821,1,On-site,S1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,0
+data scientist,ML Engineer,Telkomsel,Jakarta,10796298,3,On-site,S1,0,0,0,1,1,0,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1
+machine learning,Data Engineer,Traveloka,Bandung,6069416,4,On-site,S1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+data scientist,Junior Data Scientist,Dana,Jakarta,5103448,0,On-site,S1,0,1,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0
+machine learning,ML Engineer,PT Tokopedia,Jakarta,15951465,0,On-site,S1,0,1,1,0,1,0,1,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+data scientist,Data Engineer,Gojek,Jakarta,8948586,2,On-site,S1,0,0,0,1,0,0,1,1,1,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,1,0
+data scientist,Junior Data Scientist,Blibli,Medan,3339148,5,On-site,D3,0,0,1,1,1,1,1,0,0,0,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+data scientist,ML Engineer,Blibli,Jakarta,3966231,7,On-site,D3,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0,1,0,1,0,0,1,0,1,0,0,1,1,1
+data engineer,Data Engineer,Bank BCA,Surabaya,7131460,1,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,1,1,0,1,1,0,1,1,1,0,0
+data analyst,Senior Data Analyst,Bank BCA,Jakarta,6333490,0,On-site,S1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+machine learning,Data Analyst,Traveloka,Bandung,8497401,1,Hybrid,S1,0,1,1,1,1,1,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1
+data engineer,Senior Data Analyst,Traveloka,Jakarta,9048117,2,Hybrid,D3,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0
+machine learning,Data Scientist,Bank BRI,Makassar,13939821,3,On-site,S1,1,0,0,0,1,0,1,1,0,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0
+data engineer,Lead Data Analyst,Blibli,Bandung,4280259,7,On-site,S1,0,0,0,1,0,1,1,0,0,1,1,1,1,1,0,1,0,0,0,0,1,0,1,0,0,0,1,1,1,1,0,0
+machine learning,Lead Data Analyst,Gojek,Jakarta,22893934,7,Hybrid,S1,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1
+machine learning,ML Engineer,Gojek,Jakarta,9537694,3,Hybrid,S1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+data scientist,Lead Data Analyst,PT Tokopedia,Jakarta,6420557,2,On-site,S1,1,1,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,1,0,0,0,1,1,1,0,0,0,1,0
+machine learning,Junior Data Scientist,Traveloka,Jakarta,4961375,2,Hybrid,S1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+machine learning,Data Engineer,Traveloka,Jakarta,6856523,3,Remote,SMA/SMK,1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0
+data scientist,Senior Data Analyst,Traveloka,Jakarta,1859922,4,On-site,S2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,1,0,0
+data engineer,Senior Data Analyst,Bank BCA,Bandung,5091833,3,Remote,D3,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,0,1,0,1
+data engineer,Junior Data Scientist,Gojek,Jakarta,11972544,2,On-site,S1,1,0,1,0,0,0,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0
+data analyst,Data Engineer,Shopee,Jakarta,4246099,3,On-site,D3,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,1,0,0,0,1
+data analyst,ML Engineer,Bank Mandiri,Bandung,1724885,3,On-site,S1,0,1,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0
+data analyst,Junior Data Scientist,PT Tokopedia,Semarang,2449295,2,On-site,S1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1
+data analyst,Data Scientist,PT Tokopedia,Surabaya,4489867,4,Remote,D3,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,1
+machine learning,Data Scientist,Dana,Jakarta,6595701,2,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+machine learning,Junior Data Scientist,Bank Mandiri,Yogyakarta,3266455,3,On-site,S1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0
+data analyst,Data Scientist,Blibli,Jakarta,2383415,7,On-site,S1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,1,1
+data scientist,Lead Data Analyst,OVO,Jakarta,3485870,4,Remote,S2,0,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,1,1,0,0,1,1,0,0,0,0
+data analyst,Data Engineer,Shopee,Jakarta,17190160,2,On-site,D3,0,0,0,0,0,1,1,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0
+data engineer,Senior Data Analyst,Gojek,Surabaya,26218166,3,On-site,S1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1
+machine learning,Junior Data Scientist,Gojek,Semarang,7402490,2,On-site,SMA/SMK,1,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0
+data scientist,Data Scientist,Telkomsel,Denpasar,6344060,1,Hybrid,D3,1,1,0,0,1,0,1,0,0,0,0,1,0,1,1,1,0,1,0,0,1,1,0,0,0,1,1,0,1,1,1,0
+data engineer,Senior Data Analyst,Gojek,Jakarta,10599295,2,On-site,S1,0,1,1,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,1,0,0,0,1,0,1,0,1,0,0,1
+data scientist,Junior Data Scientist,Bukalapak,Jakarta,2377976,5,On-site,S1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0
+data scientist,Data Scientist,Bank BRI,Jakarta,3869072,2,On-site,S1,0,1,0,1,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Data Scientist,OVO,Jakarta,1534214,3,On-site,S1,0,0,0,1,1,0,1,0,1,1,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0
+data engineer,Junior Data Scientist,Bank BRI,Jakarta,7134479,1,On-site,S1,1,0,0,0,1,1,0,1,0,1,0,0,0,0,1,1,0,1,1,0,1,0,0,0,0,0,1,0,1,1,1,0
+data analyst,ML Engineer,Shopee,Bandung,5249739,2,Remote,S1,1,0,0,1,0,1,0,0,0,0,1,1,0,1,1,0,1,0,1,1,0,0,0,1,1,1,1,0,0,0,0,1
+data engineer,Data Engineer,Gojek,Jakarta,3359345,7,Hybrid,S1,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1
+machine learning,ML Engineer,Dana,Bandung,17311843,2,Remote,D3,1,1,1,0,1,0,0,0,1,0,1,1,0,1,0,0,1,1,1,0,1,0,0,1,0,0,0,0,0,0,1,0
+data engineer,Lead Data Analyst,PT Tokopedia,Jakarta,11355204,1,On-site,S2,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,1,1,0,0,0,1
+machine learning,Senior Data Analyst,Gojek,Semarang,5288552,0,On-site,S1,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0
+machine learning,Lead Data Analyst,Shopee,Jakarta,3341588,1,On-site,S1,1,0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,1,0,1,0,1,0,1,0,0,0,0,1,1,0,0,0
+data analyst,Senior Data Analyst,Bank BRI,Jakarta,6495130,3,On-site,D3,1,0,0,0,0,1,0,0,0,0,1,1,1,0,1,0,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0
+machine learning,Junior Data Scientist,Bukalapak,Jakarta,5740679,4,Remote,S1,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1,1,0,1,0,1,0,0,0,1,0
+data analyst,Data Engineer,PT Tokopedia,Jakarta,3964189,3,Remote,S1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0
+data scientist,Data Scientist,Telkomsel,Jakarta,2998315,3,Hybrid,S1,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0
+data scientist,Data Engineer,Blibli,Jakarta,6233702,3,On-site,S1,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+data scientist,Data Scientist,Bukalapak,Jakarta,6170538,1,Hybrid,S1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+data engineer,Data Analyst,Bank BRI,Jakarta,2822035,5,On-site,SMA/SMK,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,1,1,0,0,0,1,0,0,0,0,1
+machine learning,Lead Data Analyst,Gojek,Yogyakarta,1659824,3,Hybrid,S1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1
+data analyst,Data Analyst,Dana,Surabaya,4391255,1,On-site,S1,0,1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+data scientist,Data Engineer,PT Tokopedia,Jakarta,2282913,1,On-site,S1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,1,1,0,0,0,0
+data analyst,Lead Data Analyst,PT Tokopedia,Semarang,3342602,3,On-site,S1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0,1,0,0,0,1,0,1,0,1,1,1,1,0,0,0
+data scientist,Data Analyst,OVO,Yogyakarta,3871425,1,Hybrid,S1,0,0,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0
+machine learning,Data Analyst,Bukalapak,Jakarta,7075227,7,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1,0,0
+data scientist,Lead Data Analyst,Dana,Jakarta,3847178,3,On-site,S1,1,1,0,0,1,1,0,0,1,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0
+data analyst,Lead Data Analyst,Traveloka,Jakarta,6350946,7,Remote,S1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+data scientist,Senior Data Analyst,Bukalapak,Surabaya,3135266,4,On-site,S2,1,0,1,0,0,1,0,0,0,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Data Scientist,Traveloka,Jakarta,6566682,5,On-site,S2,0,0,0,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,1,1,0,1,1
+data scientist,Junior Data Scientist,Traveloka,Jakarta,4437456,2,On-site,S2,0,1,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,1,0
+data analyst,Data Analyst,Dana,Jakarta,6420113,1,On-site,S1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0
+data scientist,ML Engineer,Dana,Jakarta,11753702,4,On-site,S1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0
+machine learning,Lead Data Analyst,Bukalapak,Medan,4813812,2,On-site,S2,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+data scientist,Senior Data Analyst,Telkomsel,Yogyakarta,4917207,7,On-site,S1,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+data engineer,Data Scientist,PT Tokopedia,Jakarta,7039791,1,On-site,S1,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0
+data analyst,Senior Data Analyst,Traveloka,Jakarta,7380032,3,On-site,S1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+data scientist,ML Engineer,Shopee,Jakarta,1291138,5,On-site,S2,1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,0,1,1,0,0,1,1,0,0,0,0,0
+data engineer,Junior Data Scientist,Shopee,Jakarta,2710097,2,Remote,D3,0,0,1,1,0,1,1,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,1,0,1,0,1,1,0,0,0
+data analyst,Data Scientist,PT Tokopedia,Jakarta,6216780,7,Remote,S1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0
+data scientist,Data Engineer,Traveloka,Surabaya,14434255,1,On-site,SMA/SMK,0,0,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0
+data scientist,Data Engineer,Blibli,Jakarta,2215498,3,Hybrid,S1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0
+machine learning,Senior Data Analyst,Bank Mandiri,Jakarta,3824197,4,Hybrid,S1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+data scientist,Junior Data Scientist,PT Tokopedia,Jakarta,6239017,1,Hybrid,S1,0,0,0,0,1,0,1,1,1,0,0,0,0,1,0,1,1,1,0,0,1,0,1,0,1,0,0,0,0,1,1,0
+data analyst,Data Engineer,Shopee,Jakarta,3009693,0,Hybrid,S1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1
+data engineer,Lead Data Analyst,Telkomsel,Jakarta,7459373,1,On-site,S2,1,1,0,1,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+data scientist,Data Scientist,Bank BRI,Jakarta,8288763,2,Remote,S1,0,0,0,0,1,0,0,1,0,1,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0
+data engineer,ML Engineer,Bukalapak,Jakarta,7015311,1,On-site,S1,0,1,0,1,0,1,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0
+data analyst,ML Engineer,Gojek,Yogyakarta,6080955,1,On-site,SMA/SMK,1,0,0,0,0,1,0,0,1,0,0,1,1,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0
+data analyst,Data Engineer,Shopee,Jakarta,2928570,2,Hybrid,S1,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+data scientist,Data Analyst,PT Tokopedia,Jakarta,4513767,1,Remote,S1,0,0,1,1,1,0,0,1,0,0,1,1,0,0,0,0,0,1,0,1,1,0,1,1,1,1,0,0,0,0,0,0
+machine learning,Data Analyst,Telkomsel,Makassar,11546107,7,On-site,S2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,0,0,1,0,0,1
+data scientist,Junior Data Scientist,Blibli,Jakarta,6703103,4,On-site,S1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,1,1,1,0
+machine learning,Data Analyst,Bank BRI,Jakarta,1323951,0,On-site,S1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,1,0,1,1,0,0,0,0,1,0,0
+data scientist,Data Engineer,Shopee,Jakarta,8813621,4,Remote,S1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+data engineer,Data Engineer,Shopee,Surabaya,6885139,5,Hybrid,S1,0,0,0,0,0,1,0,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1
+machine learning,Data Engineer,Shopee,Jakarta,4386602,1,On-site,S1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,1,0,0,1,0,1,0,1,1,0,0,0,1,1,0,0,0
+machine learning,Lead Data Analyst,Bank BRI,Jakarta,4756489,5,On-site,S1,0,1,0,1,1,0,1,0,0,1,1,0,1,0,1,1,0,0,1,0,0,0,1,0,0,0,1,1,0,0,0,0
+data engineer,Data Scientist,Bukalapak,Jakarta,3730138,3,On-site,S1,1,1,1,0,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+data scientist,Data Analyst,Bank BCA,Jakarta,5632168,5,On-site,S1,0,0,1,0,1,1,1,0,0,0,1,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+data analyst,Senior Data Analyst,Bank BRI,Jakarta,5404695,4,Hybrid,S1,0,1,0,1,0,1,0,1,1,1,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0
+data analyst,Junior Data Scientist,Bank BRI,Bandung,4647791,4,On-site,S1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1,0
+data scientist,Data Scientist,OVO,Jakarta,6311556,1,On-site,S1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0
+data engineer,Junior Data Scientist,Bank Mandiri,Jakarta,4997915,2,On-site,S1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1
+data analyst,Junior Data Scientist,OVO,Jakarta,9836949,3,Hybrid,S1,0,1,1,0,0,1,0,1,0,1,0,0,0,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+data engineer,Data Scientist,Shopee,Jakarta,8891882,1,On-site,D3,0,0,0,1,0,1,0,0,0,1,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0
+data scientist,Data Engineer,Blibli,Jakarta,2399801,3,On-site,S1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0
+data engineer,Data Engineer,Shopee,Jakarta,6739744,2,On-site,S1,0,0,1,0,1,1,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,1,1,0,0,0,0,1,1,1,0,0
+data engineer,Data Scientist,Traveloka,Medan,4561648,1,On-site,S1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+data engineer,Data Engineer,Dana,Surabaya,3012157,1,Hybrid,S2,0,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+data analyst,Data Analyst,Bank BCA,Jakarta,6573212,1,Remote,SMA/SMK,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+data engineer,Data Scientist,Traveloka,Jakarta,6873231,3,On-site,S1,1,0,0,0,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,0,1,0,1
+machine learning,Lead Data Analyst,Bukalapak,Jakarta,28242400,2,Hybrid,S1,0,0,0,0,1,1,0,0,1,1,0,0,1,0,1,1,0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,0
+data engineer,Lead Data Analyst,Bank BCA,Makassar,1422508,2,On-site,S1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1
+data engineer,Junior Data Scientist,Traveloka,Surabaya,4066922,1,On-site,S1,0,1,1,0,0,0,0,1,0,1,0,1,0,1,0,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0
+data scientist,Lead Data Analyst,OVO,Jakarta,24304457,5,Remote,S1,0,0,0,0,0,1,0,0,1,0,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+data engineer,Data Scientist,Telkomsel,Jakarta,3430806,4,On-site,S1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,1,0,1,0
+data engineer,Lead Data Analyst,Traveloka,Bandung,6705506,2,On-site,S1,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Data Scientist,Telkomsel,Jakarta,6089616,1,Remote,S2,0,1,0,1,0,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0
+machine learning,Data Engineer,Bukalapak,Semarang,5674816,4,On-site,S1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+data scientist,Lead Data Analyst,Traveloka,Denpasar,3841238,7,Hybrid,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,1,0,0,1,0,0,0,0,0,1,1,0,0,1
+machine learning,Data Scientist,PT Tokopedia,Surabaya,4028551,1,On-site,D3,0,1,0,0,0,1,1,1,0,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+data engineer,Senior Data Analyst,Traveloka,Jakarta,6522587,3,On-site,S1,0,1,0,1,1,1,1,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,1
+data analyst,Senior Data Analyst,Traveloka,Jakarta,4810902,2,On-site,S1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0
+machine learning,Data Analyst,PT Tokopedia,Jakarta,6474090,1,On-site,S2,0,1,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,1,0,1,0,0,0,1,0,0,1,0,1
+machine learning,Data Scientist,Shopee,Surabaya,7181667,4,Hybrid,S1,0,0,1,0,0,0,1,1,0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0
+machine learning,Lead Data Analyst,Bank BRI,Jakarta,9728738,1,On-site,S1,0,1,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0
+machine learning,Data Scientist,OVO,Jakarta,10204366,4,Hybrid,SMA/SMK,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0
+machine learning,Junior Data Scientist,Bukalapak,Jakarta,5974081,2,On-site,D3,1,1,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+data analyst,Data Engineer,Blibli,Jakarta,2755888,3,Hybrid,D3,0,1,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,1,0,0,1,0,0
+data engineer,Junior Data Scientist,Bukalapak,Makassar,11573143,1,Remote,S1,0,1,0,0,0,0,1,1,0,0,1,0,0,0,1,1,0,0,0,0,1,1,0,0,0,1,1,1,0,1,0,0
+data analyst,Lead Data Analyst,OVO,Semarang,6645873,2,On-site,S1,1,0,0,0,0,0,0,1,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,1,1,0,0
+data analyst,ML Engineer,Bukalapak,Bandung,8962886,1,Remote,S1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,1,1,0,0,1,0,1,0,0,0,1
+data analyst,Junior Data Scientist,Gojek,Medan,7202648,2,On-site,S1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1
+data analyst,Lead Data Analyst,Telkomsel,Jakarta,4787496,1,On-site,S1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+data engineer,ML Engineer,Telkomsel,Jakarta,4475788,1,On-site,S1,1,1,1,0,1,1,1,1,1,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0
+data engineer,Lead Data Analyst,OVO,Jakarta,14295733,1,On-site,S1,1,0,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,1
+data analyst,Data Scientist,OVO,Jakarta,5811907,4,On-site,D3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,0,0,1,0
+machine learning,Data Analyst,Blibli,Jakarta,5352525,3,Remote,S1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1
+data engineer,Senior Data Analyst,Bank Mandiri,Yogyakarta,3397158,1,Hybrid,S1,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1
+data engineer,Data Scientist,PT Tokopedia,Jakarta,4668746,3,On-site,S1,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0
+data analyst,Data Scientist,Shopee,Bandung,9870051,4,Hybrid,D3,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0
+machine learning,Data Analyst,Dana,Bandung,5726535,5,On-site,S1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,1
+machine learning,Data Analyst,Traveloka,Jakarta,12122301,0,On-site,S1,0,1,0,0,0,1,1,1,0,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1
+data analyst,ML Engineer,Gojek,Jakarta,6808935,2,Hybrid,S1,1,1,0,0,1,1,1,1,1,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0
+data analyst,Lead Data Analyst,Gojek,Surabaya,5915017,3,On-site,S1,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+data engineer,Data Scientist,PT Tokopedia,Jakarta,4244945,0,On-site,S1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,1,0
+data engineer,Lead Data Analyst,Traveloka,Surabaya,5748318,1,On-site,S1,1,0,1,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0
+data scientist,Data Scientist,Blibli,Jakarta,3331728,4,Hybrid,S1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1
+data scientist,Data Engineer,PT Tokopedia,Yogyakarta,8098785,2,Hybrid,S1,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,1,1,0,1,1,0,1
+data analyst,Senior Data Analyst,Bank BRI,Surabaya,5378713,1,On-site,S1,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+data scientist,Data Engineer,PT Tokopedia,Jakarta,4801472,3,On-site,S1,0,1,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+machine learning,Data Engineer,PT Tokopedia,Jakarta,4745599,1,On-site,S1,0,0,1,0,1,0,0,0,1,1,0,0,0,1,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,0,0,1
+machine learning,Senior Data Analyst,OVO,Jakarta,8373274,4,On-site,S1,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0
+machine learning,Data Scientist,Bukalapak,Jakarta,3804616,7,On-site,S2,0,0,1,0,1,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0
+data engineer,ML Engineer,Shopee,Bandung,10226642,3,On-site,S1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0
+data scientist,Lead Data Analyst,Telkomsel,Jakarta,4276213,3,Hybrid,S1,0,0,0,0,0,1,0,1,0,1,0,1,1,1,1,0,1,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0
+data scientist,Senior Data Analyst,PT Tokopedia,Yogyakarta,8072895,3,On-site,S1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+data analyst,Data Analyst,PT Tokopedia,Medan,4174181,5,On-site,S1,0,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1
+data engineer,Data Scientist,OVO,Bandung,3900582,1,On-site,S2,0,1,1,0,1,0,0,0,0,0,0,1,1,1,0,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0
+data engineer,Senior Data Analyst,Bank Mandiri,Jakarta,13412484,2,On-site,S1,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0
+data engineer,Senior Data Analyst,Bukalapak,Jakarta,8226376,7,Remote,S1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0
+machine learning,Junior Data Scientist,Bukalapak,Surabaya,5812494,4,Hybrid,D3,1,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0
+data engineer,Lead Data Analyst,Dana,Medan,2271099,2,On-site,S1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1
+data scientist,Senior Data Analyst,Dana,Jakarta,7010139,5,Hybrid,S1,0,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,1,0,1,1,0,1,0,1,1,0,0,0,1,0,0,0
+data analyst,ML Engineer,Dana,Jakarta,10031358,1,Hybrid,S1,1,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+data scientist,Data Engineer,Blibli,Jakarta,6088290,3,Hybrid,S1,0,0,0,0,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,1,1,0,0
+data engineer,Data Engineer,Bank BCA,Surabaya,5504955,7,On-site,S1,0,0,0,0,0,1,1,0,1,0,0,1,1,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0
+data analyst,Junior Data Scientist,Dana,Bandung,6093084,3,Remote,S1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,1,0,1,1,1,0,1,1,0,0,1,0,1,0
+machine learning,Senior Data Analyst,Blibli,Jakarta,7052725,5,Hybrid,S2,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+data analyst,Senior Data Analyst,Blibli,Jakarta,3833268,4,On-site,S1,1,0,0,1,1,0,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,1,1,1,0,0,1,1,0,0,0
+data engineer,Data Engineer,Blibli,Jakarta,5366032,5,On-site,S1,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,1,0,0,0
+data engineer,ML Engineer,Blibli,Bandung,5855802,7,On-site,S1,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+data analyst,Data Scientist,Bukalapak,Bandung,9599065,0,On-site,S2,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1
+data engineer,Data Engineer,OVO,Surabaya,1501226,0,Remote,S1,0,1,0,0,0,1,0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,1,0,0,0,1,0,0,1,0
+data engineer,Senior Data Analyst,Bank Mandiri,Jakarta,9757641,3,Hybrid,S1,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,1,1,0,1,1,0,0,0,0
+data engineer,ML Engineer,Telkomsel,Jakarta,2158850,7,On-site,S1,0,1,0,0,1,0,1,0,1,0,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,0,1,1,0,1,0,0
+data engineer,Lead Data Analyst,Dana,Surabaya,3655818,3,On-site,S1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,1,0,1,1,1,0,0,1,0,0,0
+data analyst,ML Engineer,Shopee,Medan,5398042,5,On-site,S1,1,0,0,0,0,1,0,1,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0
+data analyst,Lead Data Analyst,Bank BRI,Jakarta,8344142,4,On-site,S1,0,0,1,0,1,0,1,1,1,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0
+data scientist,Junior Data Scientist,Dana,Jakarta,10492533,3,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0
+machine learning,Senior Data Analyst,Bank BCA,Jakarta,3621235,3,Hybrid,S1,0,1,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+machine learning,Data Analyst,Bank BCA,Jakarta,7769239,2,Hybrid,S1,0,1,0,1,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+data scientist,ML Engineer,Bank BCA,Jakarta,3245258,1,Remote,S1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,1,0,1,0,0,0,1,0,1,0,0,1,0,0
+data analyst,Data Engineer,Shopee,Jakarta,2738476,5,Hybrid,S1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,1
+data scientist,Data Analyst,Bank BRI,Jakarta,13832688,1,Remote,S1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,1
+data engineer,Junior Data Scientist,Blibli,Medan,13457860,7,Hybrid,S1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,1,1,1,0,0,1,1,1,1,0,1,0,0,0,1,0,0,1
+data engineer,Data Scientist,Bank BRI,Jakarta,4488049,2,Hybrid,S1,0,0,0,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,0
+machine learning,Data Engineer,Bank Mandiri,Jakarta,2319579,0,Hybrid,S1,1,0,0,0,0,0,1,0,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1
+data analyst,Junior Data Scientist,Blibli,Jakarta,2761427,1,Remote,SMA/SMK,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1
+machine learning,Lead Data Analyst,Telkomsel,Denpasar,10506179,7,On-site,D3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,1
+data scientist,Junior Data Scientist,Traveloka,Jakarta,6931318,1,Hybrid,S1,0,0,1,0,1,0,1,0,1,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,0,0,0,0,1,0
+machine learning,Junior Data Scientist,PT Tokopedia,Denpasar,2844189,4,On-site,S1,1,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0
+machine learning,Senior Data Analyst,Gojek,Bandung,6012326,1,On-site,S1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1
+data engineer,Data Analyst,Shopee,Jakarta,3388650,3,On-site,S1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1
+machine learning,Junior Data Scientist,Traveloka,Yogyakarta,2127469,1,On-site,S1,1,0,0,0,1,0,1,0,0,1,1,0,1,0,1,0,1,1,0,0,0,1,0,1,1,1,0,1,0,0,1,0
+data scientist,Junior Data Scientist,OVO,Jakarta,2866067,2,On-site,S1,1,0,0,0,1,0,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,1,0,0,1,0,0,0,1,1,0
+data analyst,Junior Data Scientist,Bank BRI,Jakarta,10295912,1,Hybrid,S1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+machine learning,Data Engineer,Bukalapak,Bandung,1972397,3,On-site,S2,0,0,0,0,1,0,0,0,0,1,0,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,1,0
+data analyst,Junior Data Scientist,Shopee,Surabaya,4969451,2,Hybrid,S2,0,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,1,1,1,0,0,0,0,0,1
+data scientist,ML Engineer,Gojek,Surabaya,2784190,2,Remote,S2,0,0,1,0,0,0,0,1,0,1,0,0,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0
+machine learning,Senior Data Analyst,OVO,Bandung,10975219,0,Hybrid,S1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0
+data analyst,Data Analyst,Telkomsel,Jakarta,4810312,1,On-site,S1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1
+data engineer,ML Engineer,Bukalapak,Bandung,9966254,4,Hybrid,D3,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0
+data engineer,Junior Data Scientist,Blibli,Yogyakarta,3488912,2,On-site,S2,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,0
+data scientist,Lead Data Analyst,Traveloka,Bandung,6120085,2,On-site,S1,1,1,0,1,0,0,1,0,0,0,1,0,1,1,1,0,0,1,1,1,1,0,1,1,0,0,0,1,0,1,1,1
+machine learning,Senior Data Analyst,Traveloka,Jakarta,3623652,4,On-site,D3,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0
+data scientist,Senior Data Analyst,Bukalapak,Jakarta,2384842,2,Remote,S1,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Data Analyst,OVO,Jakarta,3239552,1,Hybrid,S1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,1
+data analyst,Data Analyst,Bukalapak,Jakarta,4172909,3,Hybrid,S1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+data scientist,Data Analyst,PT Tokopedia,Jakarta,2470447,5,On-site,S1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,1,1,0,0,0,1,0,0,0,0,0,1,0,0,1
+data analyst,Data Engineer,Bank BRI,Jakarta,8672005,3,On-site,S1,0,0,1,0,1,0,0,0,1,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,1,1,0,1,0,0,0,0
+data scientist,Lead Data Analyst,Telkomsel,Jakarta,3235253,2,Remote,S1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0
+data scientist,Senior Data Analyst,Dana,Jakarta,10075055,1,On-site,S1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,1,1
+data engineer,Junior Data Scientist,Gojek,Jakarta,3415822,1,On-site,SMA/SMK,0,1,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,1,1,0,0,0,0,0
+data analyst,Data Scientist,Bank BCA,Jakarta,4344807,7,On-site,S2,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,0
+data scientist,ML Engineer,Traveloka,Jakarta,3292259,4,On-site,S1,0,0,0,1,1,1,0,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,1,1,1,0,0
+data engineer,Data Analyst,Gojek,Yogyakarta,5340251,1,On-site,S1,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0
+data scientist,Senior Data Analyst,Dana,Yogyakarta,3323723,0,On-site,S1,0,0,0,0,0,0,1,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+data analyst,Lead Data Analyst,Bukalapak,Jakarta,3148123,1,Remote,S2,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0
+data engineer,Junior Data Scientist,Dana,Medan,13158358,7,Hybrid,D3,0,0,1,0,0,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0
+data analyst,ML Engineer,Bank BRI,Jakarta,10968919,3,Hybrid,S1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1
+machine learning,Data Scientist,OVO,Jakarta,17538255,5,Hybrid,S1,1,0,0,0,0,1,1,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+machine learning,ML Engineer,Bukalapak,Bandung,5012163,2,Remote,S1,0,1,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,1,0
+machine learning,Data Scientist,Bank BRI,Medan,1744201,5,Hybrid,S2,1,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,0
+machine learning,Junior Data Scientist,Dana,Bandung,5166945,0,On-site,S2,0,1,0,1,0,0,1,0,0,0,0,1,0,1,1,0,1,0,1,0,1,0,0,1,1,1,0,0,0,1,0,0
+data engineer,Data Analyst,Gojek,Jakarta,3423643,2,On-site,S1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,1
+data analyst,Data Engineer,Bank BCA,Jakarta,4069729,2,Remote,S1,1,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0,0,1,0,1
+data scientist,Data Scientist,Shopee,Jakarta,5257038,7,Hybrid,S1,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1
+data scientist,Data Analyst,Blibli,Jakarta,15125077,2,On-site,S1,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1
+data scientist,ML Engineer,Bank Mandiri,Jakarta,5724271,2,On-site,S1,0,0,1,1,0,1,0,0,0,1,0,1,0,0,1,0,1,1,0,1,1,1,0,0,0,0,1,1,1,0,1,1
+data analyst,Junior Data Scientist,PT Tokopedia,Jakarta,18606103,4,Remote,SMA/SMK,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+data engineer,Lead Data Analyst,Gojek,Jakarta,3594330,7,Remote,S2,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0
+data analyst,ML Engineer,OVO,Jakarta,13102516,5,On-site,S1,1,0,0,0,1,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0
+machine learning,ML Engineer,Bukalapak,Jakarta,5962434,2,Remote,S1,1,0,0,0,0,0,0,1,0,0,1,1,0,0,1,1,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+data scientist,Junior Data Scientist,Dana,Jakarta,1551638,7,On-site,S1,0,0,0,0,1,0,0,1,1,0,1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,1,0
+data analyst,Junior Data Scientist,Bukalapak,Jakarta,5997722,4,On-site,S1,1,0,0,0,0,1,0,0,1,0,1,1,1,0,0,0,0,1,1,1,0,0,1,0,0,1,0,0,1,0,1,0
+machine learning,Data Engineer,PT Tokopedia,Denpasar,8218788,5,On-site,S1,1,0,0,0,0,0,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+machine learning,Senior Data Analyst,Bank BRI,Bandung,2041010,7,Remote,SMA/SMK,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,1,0,0
+data engineer,Data Scientist,PT Tokopedia,Jakarta,4561570,1,Hybrid,D3,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,1,1,0,0,1,1,0,1,0,0,0,1,0,1,1,0
+data scientist,Lead Data Analyst,Gojek,Jakarta,3954388,3,On-site,S1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+data analyst,Junior Data Scientist,PT Tokopedia,Jakarta,9633803,3,On-site,S1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,1,1
+machine learning,Senior Data Analyst,Blibli,Jakarta,4144248,5,On-site,S2,1,0,1,0,1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,1,1,0,0,0,0,0,1,0,1,1,0,0
+machine learning,ML Engineer,Gojek,Jakarta,4278208,2,On-site,S1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1
+data scientist,Lead Data Analyst,Bank BRI,Jakarta,3192124,1,On-site,S1,1,0,0,1,0,1,0,0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,1,1,1
+data analyst,Data Engineer,Bank BCA,Jakarta,3043433,4,Hybrid,S2,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,1,0,0,0,0
+data analyst,Data Analyst,Blibli,Jakarta,2990830,3,On-site,S1,0,0,0,1,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+data scientist,Data Engineer,Bank BCA,Jakarta,2633211,7,Remote,SMA/SMK,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+machine learning,Junior Data Scientist,Bukalapak,Semarang,2548838,4,On-site,S1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1
+data engineer,Senior Data Analyst,PT Tokopedia,Jakarta,13206713,0,Hybrid,S1,0,1,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,1,0,0,1,0,1,1,0,1,0,0,0,1,0
+data scientist,ML Engineer,Telkomsel,Makassar,12437043,7,Hybrid,S1,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+machine learning,Lead Data Analyst,Bank BRI,Bandung,10729401,3,On-site,SMA/SMK,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,1,1,0
+data engineer,Lead Data Analyst,Gojek,Jakarta,5631908,3,On-site,S1,1,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1,0,1,1,0,0,0,1,1,0,0,0,0,1,0
+data scientist,Lead Data Analyst,Traveloka,Jakarta,4175124,7,On-site,SMA/SMK,0,0,0,0,0,0,0,1,1,1,0,1,0,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1
+data scientist,Data Scientist,Bukalapak,Jakarta,7364138,4,Remote,D3,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,1,0
+machine learning,Data Engineer,Bank BRI,Jakarta,13035928,3,On-site,S2,0,0,0,0,0,0,1,1,1,1,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0
+data scientist,Senior Data Analyst,Dana,Jakarta,6173606,1,On-site,S1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0,0,0,0,0,1,0,0,0
+data analyst,Senior Data Analyst,Bank BRI,Jakarta,4257092,7,Remote,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,1,1,1
+data analyst,Data Analyst,Bank Mandiri,Jakarta,7675317,1,Remote,SMA/SMK,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1
+data engineer,Data Scientist,Bukalapak,Jakarta,40307815,1,On-site,SMA/SMK,1,1,0,0,1,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0
+data scientist,Lead Data Analyst,OVO,Jakarta,3354067,5,Hybrid,S2,0,1,1,0,0,1,0,1,0,1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+data analyst,Senior Data Analyst,Shopee,Medan,2885479,3,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,1,1,0,0,0
+machine learning,Data Scientist,Dana,Yogyakarta,11238410,1,On-site,S1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+machine learning,ML Engineer,Bank Mandiri,Surabaya,10038962,2,On-site,D3,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+machine learning,Junior Data Scientist,Telkomsel,Jakarta,2885300,7,On-site,S1,0,1,0,1,0,1,0,1,1,0,0,1,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+data analyst,Data Engineer,PT Tokopedia,Jakarta,6489242,3,Hybrid,S1,1,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,1,0,1,0,1,0,0,1,0,0
+data scientist,Senior Data Analyst,Gojek,Jakarta,4391139,2,On-site,S1,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+data scientist,ML Engineer,Bank Mandiri,Medan,2553293,5,On-site,S1,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,0
+data scientist,Data Analyst,OVO,Surabaya,2635953,3,Hybrid,D3,1,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0
+data engineer,Data Scientist,Shopee,Jakarta,3820671,2,On-site,S1,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0
+data scientist,Junior Data Scientist,Shopee,Bandung,5929793,1,Hybrid,S1,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,ML Engineer,PT Tokopedia,Yogyakarta,8223825,4,On-site,S1,0,0,1,0,1,0,1,1,0,1,0,1,0,0,0,0,1,1,0,0,0,0,0,1,1,0,1,0,0,0,0,1
+data analyst,Data Scientist,Dana,Jakarta,4247561,3,On-site,D3,1,1,0,0,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+data scientist,Lead Data Analyst,Bank Mandiri,Yogyakarta,4584780,1,On-site,S1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,1,0,1,1,0,0
+machine learning,Lead Data Analyst,Bank Mandiri,Jakarta,7628753,3,On-site,S1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,1,0,1,0,0,0,0,1,0,0,0,1,0,0,0
+data engineer,Junior Data Scientist,Gojek,Jakarta,4488240,1,On-site,S1,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,1,0,1,0,0
+data engineer,Data Scientist,Bank Mandiri,Jakarta,4607621,7,On-site,S1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0
+data analyst,Senior Data Analyst,Traveloka,Jakarta,10861901,1,On-site,SMA/SMK,0,1,0,0,1,0,0,0,1,0,0,1,1,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0
+data engineer,Data Scientist,OVO,Denpasar,4296559,4,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0
+machine learning,ML Engineer,Telkomsel,Yogyakarta,3727358,4,On-site,S1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0
+data scientist,Data Analyst,Gojek,Jakarta,3755522,4,On-site,S1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0
+data engineer,Senior Data Analyst,Blibli,Jakarta,4869256,2,Hybrid,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+data engineer,Data Engineer,PT Tokopedia,Bandung,11559954,1,On-site,D3,0,1,1,1,1,0,0,0,1,1,1,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+data analyst,Data Analyst,OVO,Jakarta,6990812,7,On-site,S1,1,0,0,0,1,0,1,0,0,1,0,0,1,1,0,1,1,1,0,0,0,0,0,1,1,1,0,1,0,0,1,0
+machine learning,ML Engineer,Blibli,Jakarta,5000411,1,On-site,S1,1,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Senior Data Analyst,Gojek,Bandung,5049486,4,Hybrid,D3,0,0,0,1,0,1,1,0,0,0,1,0,1,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,1,1,0
+data analyst,Junior Data Scientist,Dana,Jakarta,8563898,1,Hybrid,S1,1,0,0,0,0,0,1,1,0,1,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,1,0,0
+data engineer,Junior Data Scientist,Telkomsel,Surabaya,5035570,2,On-site,S1,0,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1
+data analyst,Data Scientist,Telkomsel,Jakarta,4991377,3,Remote,S1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0
+data analyst,Lead Data Analyst,Shopee,Jakarta,6581946,2,Remote,S1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0
+data engineer,Data Analyst,Bank Mandiri,Jakarta,3507895,7,On-site,S1,0,1,0,0,1,0,1,0,0,1,1,1,1,0,0,0,1,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0
+data engineer,Senior Data Analyst,Bank BRI,Bandung,17431009,5,On-site,S1,1,0,0,0,1,0,0,1,0,0,1,1,0,0,1,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+data engineer,Data Engineer,Bank BRI,Bandung,16738151,7,On-site,S1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+data scientist,Lead Data Analyst,OVO,Jakarta,5677616,3,Hybrid,S1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1,0,0,0,0
+machine learning,Data Engineer,Bank Mandiri,Jakarta,5018950,1,On-site,S1,1,0,0,0,1,0,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0
+data scientist,Data Engineer,Telkomsel,Jakarta,3170244,3,On-site,S1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,1,1,0
+data engineer,Junior Data Scientist,OVO,Bandung,5644276,4,Remote,D3,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1
+machine learning,Senior Data Analyst,Bank Mandiri,Jakarta,2973168,1,On-site,S1,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+data analyst,Data Analyst,OVO,Jakarta,4920710,5,Hybrid,S1,0,0,1,1,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0
+machine learning,Data Scientist,Blibli,Jakarta,8421740,3,Hybrid,S1,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0
+data engineer,Data Analyst,Dana,Surabaya,10040020,4,Hybrid,S1,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,1,1
+data scientist,Data Scientist,Bukalapak,Jakarta,12923749,4,On-site,S1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+machine learning,Data Analyst,Bank BRI,Jakarta,7112437,5,On-site,S1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1
+data analyst,Data Analyst,Bank Mandiri,Jakarta,3180767,1,Hybrid,S1,0,1,0,1,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+data scientist,Senior Data Analyst,Shopee,Jakarta,13040621,2,On-site,S1,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0,1,0,1,0,1,0,0,0,0,1,1,1,0,0,1,0,0
+data scientist,Data Engineer,Bank Mandiri,Jakarta,9596980,3,On-site,D3,0,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,1,1
+data scientist,Lead Data Analyst,Traveloka,Jakarta,4225987,3,On-site,S1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,1,0,0,0,1
+data scientist,Data Engineer,Bank BCA,Jakarta,2967213,7,Remote,S1,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0
+data analyst,Data Engineer,Telkomsel,Medan,6062424,0,Hybrid,S1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,0,0,0,0,1,1,1,0,0,0,0,0
+data engineer,Lead Data Analyst,Shopee,Bandung,11805015,5,Hybrid,S2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,1,1,1,1,0,0
+data analyst,Data Engineer,Traveloka,Jakarta,4176207,3,Remote,S1,0,1,1,0,0,0,1,1,0,0,1,1,0,1,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0
+data engineer,Data Analyst,Bank BRI,Jakarta,5915867,3,On-site,S2,0,0,1,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1
+data engineer,Data Engineer,Shopee,Bandung,7711126,2,On-site,S1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0
+machine learning,Data Analyst,Bank BRI,Jakarta,2263910,3,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,1,1,1,1,0
+data analyst,Data Scientist,Bank BRI,Makassar,3722968,3,Hybrid,S1,0,1,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+data engineer,ML Engineer,Telkomsel,Medan,14284231,1,Hybrid,S1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+data analyst,Lead Data Analyst,Bank BRI,Jakarta,1693674,4,On-site,S1,1,0,0,0,1,0,1,1,0,1,1,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0
+data analyst,Lead Data Analyst,Bank BRI,Jakarta,11103233,2,On-site,S1,1,1,1,0,1,1,1,1,0,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0
+data engineer,ML Engineer,Bank BCA,Jakarta,11024130,4,On-site,S1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1,1,0,0,1,1,0,0,0,0,0,1,0,1,0,0
+data engineer,Data Scientist,Traveloka,Surabaya,6962168,3,Hybrid,S1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,0,0,0,1,1,0,1
+data scientist,Data Analyst,OVO,Bandung,5879930,4,On-site,SMA/SMK,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+machine learning,Lead Data Analyst,Shopee,Jakarta,2013498,0,Remote,S1,0,0,0,1,1,0,0,1,1,0,1,1,0,1,0,1,0,1,1,1,0,0,1,0,1,1,0,0,0,0,0,0
+data engineer,Data Engineer,OVO,Bandung,7225255,1,On-site,S1,1,0,1,0,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,1,1,0,1,0,0,0
+data engineer,Senior Data Analyst,Blibli,Jakarta,4163426,5,On-site,S1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,1,1,1,1,0,0,0,0,0,1,0
+data engineer,Data Analyst,OVO,Jakarta,11152620,2,On-site,S1,1,1,1,0,1,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+machine learning,Data Analyst,Dana,Jakarta,6597946,5,Hybrid,S1,0,0,0,1,0,0,1,1,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,1,1,1
+data analyst,Lead Data Analyst,Bank Mandiri,Jakarta,2128142,1,Remote,S1,0,0,0,1,1,1,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1,1,0,1,0,0,1
+data scientist,Data Scientist,Bukalapak,Jakarta,3401417,4,Remote,S1,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,0,0,1
+data scientist,Data Scientist,Bank BRI,Bandung,2115583,1,Hybrid,S1,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,1,1,0,1,0,0,1,0,0,1,1,0,0,1,0,0
+data analyst,Senior Data Analyst,OVO,Jakarta,2422901,2,On-site,S2,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,1
+machine learning,Data Engineer,Bank Mandiri,Bandung,9044793,7,On-site,S1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,1,0
+machine learning,ML Engineer,Bukalapak,Medan,4655959,1,Remote,S1,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0
+data engineer,Junior Data Scientist,Gojek,Jakarta,3491398,2,On-site,S1,0,1,0,0,1,1,0,0,0,0,1,0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+machine learning,Data Engineer,Bank Mandiri,Jakarta,5299843,3,On-site,S1,0,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0
+machine learning,Data Engineer,Shopee,Jakarta,4285336,7,Hybrid,S1,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0
+data engineer,Junior Data Scientist,Blibli,Jakarta,5921394,2,On-site,S1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0
+data analyst,Junior Data Scientist,Bukalapak,Denpasar,19307421,5,On-site,S1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+data scientist,Data Analyst,Bank Mandiri,Jakarta,5331013,4,On-site,D3,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,1,0,0,0,1,0,0,0
+data analyst,Senior Data Analyst,Telkomsel,Jakarta,10555213,2,Remote,S1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0
+data analyst,Lead Data Analyst,Bank Mandiri,Jakarta,1714386,2,Remote,S1,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1
+data engineer,Data Analyst,Bank Mandiri,Surabaya,4297693,1,On-site,S1,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1
+data analyst,Data Scientist,Dana,Jakarta,2546426,4,Remote,S1,0,0,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0
+machine learning,Junior Data Scientist,Telkomsel,Jakarta,6220577,3,On-site,S1,1,0,1,0,0,1,0,0,1,1,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+data analyst,ML Engineer,Traveloka,Jakarta,8559372,1,Hybrid,D3,0,1,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,0,1,0,0,1,1,1,0,0,0
+data analyst,Lead Data Analyst,Bank Mandiri,Jakarta,9119393,3,On-site,S1,0,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,1,1,1,0,1,1,0,0,0,0,1,0,0
+data engineer,Senior Data Analyst,Blibli,Jakarta,4976047,3,Hybrid,S1,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0,1
+data engineer,Lead Data Analyst,Bank BRI,Jakarta,11163615,1,Remote,D3,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,1,0,1,1,1,0,0,1,1,0,0
+data scientist,Senior Data Analyst,Bank BCA,Jakarta,6524825,7,On-site,S1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,1
+machine learning,Data Engineer,Telkomsel,Jakarta,7594862,5,Remote,S2,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,1
+machine learning,Data Analyst,Blibli,Jakarta,4056707,1,On-site,S2,0,1,1,1,1,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0
+data scientist,Data Engineer,Gojek,Jakarta,3918424,7,Hybrid,S2,0,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1
+data scientist,Data Engineer,Dana,Jakarta,4490309,7,On-site,S1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,1,1,0,0,0,1,0
+data engineer,Senior Data Analyst,Gojek,Jakarta,11665378,0,Remote,SMA/SMK,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0
+data scientist,ML Engineer,Bank Mandiri,Jakarta,4057961,1,On-site,S1,1,1,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,1,1,1,1,0,0,0,1,0,1,1,0,0,1,1
+data analyst,Data Scientist,Bank Mandiri,Bandung,2147823,4,On-site,S1,0,0,1,1,0,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,1,0,1,0
+data scientist,Data Engineer,Bukalapak,Yogyakarta,4769189,7,Remote,S1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,0,1,0
+data analyst,Junior Data Scientist,Bank Mandiri,Makassar,3771214,5,Hybrid,D3,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0
+data scientist,ML Engineer,Bank BRI,Bandung,10094902,2,Hybrid,S1,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1
+data engineer,Junior Data Scientist,Blibli,Jakarta,5930460,0,Hybrid,S1,0,1,1,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,1,1,0,1,1,1,0
+machine learning,Data Engineer,OVO,Bandung,7105291,3,On-site,S2,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+data analyst,ML Engineer,Shopee,Yogyakarta,10331993,1,Remote,S1,1,1,1,0,0,0,1,0,0,0,0,1,1,0,0,1,1,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0
+machine learning,Data Analyst,Bank BCA,Surabaya,6499135,1,Hybrid,S1,0,1,0,1,1,1,0,0,0,1,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Junior Data Scientist,PT Tokopedia,Jakarta,3005051,3,On-site,S1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,1,0,0,1,0
+machine learning,Data Scientist,Traveloka,Bandung,6805224,3,Hybrid,S1,0,0,1,0,1,1,1,0,1,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0
+data engineer,Senior Data Analyst,Gojek,Jakarta,11139423,2,Remote,S1,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0
+data analyst,Data Analyst,Blibli,Bandung,5393340,7,Remote,S1,0,1,0,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0,1,1
+data scientist,Data Engineer,OVO,Bandung,5655495,1,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0
+data engineer,Data Engineer,Blibli,Surabaya,3961964,3,Hybrid,S1,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,1,0,0,1
+machine learning,Data Scientist,Shopee,Surabaya,6101328,3,Remote,S1,1,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0
+data analyst,Lead Data Analyst,Blibli,Jakarta,7115422,2,On-site,D3,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,1,0,0,1,0
+data engineer,Lead Data Analyst,PT Tokopedia,Medan,10864593,4,Remote,D3,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0
+machine learning,Junior Data Scientist,Blibli,Denpasar,15406179,5,On-site,S1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,1,0,1,1,0,1,1,0,0
+data analyst,Junior Data Scientist,PT Tokopedia,Makassar,7334082,3,On-site,S2,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,1,0,0,0
+data analyst,Data Scientist,Bank Mandiri,Jakarta,13385175,5,On-site,D3,0,0,0,0,1,1,0,1,0,1,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0
+data engineer,Data Scientist,Telkomsel,Jakarta,6626443,1,On-site,S1,0,1,0,0,0,0,1,0,0,0,0,0,1,1,1,0,1,0,1,0,0,1,0,1,0,0,0,0,0,1,1,1
+machine learning,Data Engineer,Bank Mandiri,Jakarta,7817419,1,On-site,SMA/SMK,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,0,0
+machine learning,Data Engineer,Bank BRI,Jakarta,25359359,2,On-site,D3,0,1,0,0,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,1,0,1,0,1,1,1,0,0,0,0,0
+data analyst,Senior Data Analyst,Gojek,Jakarta,5118836,7,On-site,S1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,1
+machine learning,Data Scientist,Bank BCA,Jakarta,2763266,3,On-site,S1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,1,1,1
+data scientist,ML Engineer,Bank BCA,Semarang,20384491,2,On-site,S1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1
+data scientist,Lead Data Analyst,Bank Mandiri,Jakarta,8107467,3,Remote,S1,0,0,0,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1
+data analyst,Senior Data Analyst,Dana,Semarang,2693325,1,Remote,S1,0,0,1,1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+machine learning,ML Engineer,Bank BRI,Jakarta,4942624,4,On-site,D3,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1
+data analyst,Lead Data Analyst,Gojek,Jakarta,7125655,1,Hybrid,S1,0,1,1,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,0,1,1,0,1,1
+data scientist,Data Analyst,Bukalapak,Jakarta,3465066,3,Hybrid,S1,0,0,0,1,1,1,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,1
+data analyst,Data Scientist,Bank Mandiri,Jakarta,2581484,4,Hybrid,S1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,0,1,0,0,0,1,0
+data analyst,Senior Data Analyst,Dana,Medan,8834348,2,On-site,S1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,1,0,1,0,0,0,1,1,0,0,0,1,0,1
+data engineer,Junior Data Scientist,Shopee,Jakarta,1785987,7,On-site,S1,0,0,1,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,1,1,1,0,0,0
+data engineer,Lead Data Analyst,OVO,Jakarta,3953914,1,Remote,S2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0,0,1,1,0
+data scientist,Senior Data Analyst,Bank BRI,Jakarta,3895903,1,On-site,S1,0,1,0,0,0,0,0,1,1,0,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0
+machine learning,Data Analyst,Bank BRI,Medan,2971118,3,On-site,D3,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1
+data scientist,Data Analyst,Bank Mandiri,Jakarta,4372303,7,On-site,S2,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,0,1,1,0
+machine learning,Data Analyst,Gojek,Makassar,4785541,2,On-site,S1,0,1,0,1,0,1,0,0,0,1,0,1,1,1,0,1,0,1,0,1,0,0,1,1,0,0,0,0,0,0,0,1
+machine learning,Lead Data Analyst,Bank BRI,Bandung,874368,7,Hybrid,S1,1,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,1,0,0
+data engineer,Senior Data Analyst,Gojek,Yogyakarta,6363798,4,Hybrid,S1,0,1,0,0,0,0,0,1,1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0
+data engineer,Data Engineer,Bukalapak,Jakarta,8834222,5,On-site,S1,0,0,0,1,1,0,1,0,0,0,0,1,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,1,0
+data scientist,ML Engineer,Dana,Jakarta,13013301,7,On-site,S1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+data scientist,Junior Data Scientist,Gojek,Jakarta,5227816,3,On-site,S1,0,0,1,1,1,1,0,1,1,1,1,1,0,0,0,1,1,0,1,0,0,0,1,0,1,0,0,0,1,1,0,0
+data scientist,Junior Data Scientist,Gojek,Jakarta,1480135,3,On-site,S1,0,1,1,0,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,1,0,1,0,0,1,0,1,0,0,0
+data engineer,ML Engineer,Blibli,Yogyakarta,8906149,3,On-site,S1,0,0,1,0,0,0,0,0,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,0,0
+data engineer,Junior Data Scientist,Bank BRI,Jakarta,5628778,5,On-site,S1,0,0,0,1,0,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,0,1,0
+data analyst,Data Analyst,Bank Mandiri,Jakarta,8469105,2,On-site,S1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+data scientist,Junior Data Scientist,Bank Mandiri,Jakarta,5754894,5,Hybrid,S1,0,0,0,0,1,1,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+data analyst,Data Engineer,Traveloka,Medan,7512282,4,Hybrid,S1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0
+machine learning,Data Engineer,Traveloka,Yogyakarta,3128477,3,On-site,S1,0,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0
+data scientist,Data Analyst,Traveloka,Bandung,2700809,0,On-site,SMA/SMK,0,1,0,0,1,1,0,1,0,1,1,1,0,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,1,1,1,0
+data engineer,Data Scientist,Bukalapak,Jakarta,4990828,4,On-site,S1,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,0,1,0,1,0,1
+data scientist,Senior Data Analyst,Telkomsel,Yogyakarta,5273087,1,On-site,S1,1,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0,1,1,0
+data scientist,Lead Data Analyst,Bank BRI,Jakarta,3326811,7,Remote,S1,1,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,0,1,0,1,0,0
+data engineer,Data Scientist,Dana,Jakarta,3358356,1,On-site,S1,1,1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0
+data engineer,Lead Data Analyst,Bank BCA,Jakarta,3285693,4,On-site,S1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,1,0,1,0,1
+machine learning,Lead Data Analyst,Telkomsel,Medan,10845206,2,On-site,S2,0,0,0,1,0,1,0,1,0,1,0,1,0,1,1,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+data scientist,Data Engineer,PT Tokopedia,Jakarta,3030713,4,Hybrid,S1,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+data scientist,Data Analyst,Blibli,Jakarta,7332217,3,Hybrid,S1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0
+data scientist,Senior Data Analyst,Bank BCA,Bandung,3350997,3,On-site,S1,1,0,1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,1,1,0,1
+data scientist,ML Engineer,Blibli,Bandung,7085431,1,Hybrid,S1,0,1,1,1,0,0,0,1,1,0,1,1,0,1,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,1,0
+machine learning,Junior Data Scientist,Bank BCA,Jakarta,12219447,7,On-site,S1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,1,0,0,1,1,0,0,0
+data scientist,Data Engineer,Bank Mandiri,Yogyakarta,10495280,0,Remote,S1,0,0,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0
+machine learning,Senior Data Analyst,Dana,Jakarta,4517318,7,On-site,S1,0,0,1,1,0,1,1,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1
+machine learning,Senior Data Analyst,Shopee,Jakarta,6345507,3,On-site,S1,0,1,1,0,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0,1,1,1,0,0,1,1,0,0,0,1,1,1
+data engineer,Data Scientist,Shopee,Surabaya,4133024,1,Remote,S1,0,0,1,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0
+data scientist,ML Engineer,Bukalapak,Jakarta,9479454,3,Remote,S1,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,1,0,1,0,1,1,0,1,1,0,0,0,0
+data engineer,Data Scientist,Bank BRI,Yogyakarta,5150172,4,On-site,S1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0
+machine learning,Data Scientist,Bank BRI,Jakarta,12201782,4,On-site,S1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0
+data analyst,Data Scientist,Bank Mandiri,Bandung,3036234,0,Remote,S1,0,0,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Data Scientist,OVO,Makassar,3337872,7,Hybrid,S1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,1
+data scientist,Data Engineer,Bank BRI,Jakarta,7896368,3,Remote,S1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,0
+data analyst,ML Engineer,Bukalapak,Jakarta,7001459,2,On-site,S1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,0
+data engineer,Data Scientist,Bank Mandiri,Surabaya,16115833,3,Hybrid,S1,0,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1
+data analyst,Lead Data Analyst,Bank Mandiri,Jakarta,4620315,1,On-site,SMA/SMK,0,1,1,1,0,0,1,0,1,0,1,0,0,1,0,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,1,0
+data analyst,Data Engineer,PT Tokopedia,Jakarta,3866573,1,On-site,S1,0,0,1,0,0,0,1,0,0,1,0,1,0,0,1,1,0,0,1,0,1,0,1,1,0,1,0,0,0,0,0,1
+machine learning,Lead Data Analyst,Telkomsel,Jakarta,3818509,1,On-site,D3,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1,1,1,0,0,0,0,0,1,0,0,1,0,1,0,0
+data engineer,Junior Data Scientist,Dana,Jakarta,4539000,5,On-site,S1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,1,0,1
+data scientist,Data Engineer,Bank BRI,Jakarta,6697690,1,On-site,S1,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0,1,0,1,1,0,1,1,0,0,1,0,1,1
+data engineer,Senior Data Analyst,Traveloka,Makassar,2005985,4,On-site,S1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,1
+data engineer,Senior Data Analyst,Traveloka,Bandung,2571850,2,On-site,S1,1,1,0,1,0,1,0,0,0,1,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0
+data scientist,Data Analyst,Traveloka,Yogyakarta,6173189,1,On-site,S1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0
+data engineer,Data Engineer,Bukalapak,Medan,6734545,1,Remote,S1,1,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,1,1,1
+machine learning,Lead Data Analyst,Gojek,Jakarta,4439697,5,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+data scientist,Data Analyst,Bukalapak,Medan,7082981,1,On-site,S1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,1
+machine learning,Data Engineer,Bank BCA,Yogyakarta,2164711,1,Hybrid,S1,1,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+data engineer,Data Scientist,OVO,Jakarta,3448125,0,Hybrid,S1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0,0,1,0,1,1,0,0,1,0,0,1,0
+data analyst,Data Scientist,Bank Mandiri,Makassar,3402975,2,On-site,S1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+data scientist,Data Analyst,OVO,Jakarta,3183127,7,Remote,SMA/SMK,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0
+data scientist,Data Scientist,Bank BCA,Makassar,8877347,7,On-site,S1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,0,1,1
+data analyst,Data Scientist,Gojek,Surabaya,9534571,1,On-site,S1,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,0,0,1,1,0,0,0,1,0,0,0,1
+data analyst,Lead Data Analyst,Bank BRI,Jakarta,1398861,0,Hybrid,S1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+data scientist,Senior Data Analyst,Telkomsel,Jakarta,1646093,4,Hybrid,SMA/SMK,0,0,1,1,0,0,0,1,0,0,1,0,0,1,1,0,1,0,0,1,0,1,0,0,0,0,0,1,1,0,0,1
+data analyst,Data Scientist,OVO,Jakarta,5817617,2,On-site,S1,1,0,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,1,0,1,0
+machine learning,Senior Data Analyst,Dana,Jakarta,3767571,5,On-site,S1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,1,1,0,0,0,0,1
+data engineer,ML Engineer,Shopee,Jakarta,4971419,1,Remote,S1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1
+machine learning,Data Engineer,OVO,Medan,6537527,3,Remote,S1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+data engineer,Senior Data Analyst,Dana,Bandung,15639926,0,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0
+data engineer,Junior Data Scientist,Bank Mandiri,Surabaya,5155178,7,On-site,S1,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0
+data analyst,Junior Data Scientist,Gojek,Jakarta,9013803,1,Hybrid,S1,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1
+data analyst,Senior Data Analyst,Dana,Jakarta,4154678,2,On-site,S1,0,1,1,0,1,1,0,0,1,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0
+machine learning,Senior Data Analyst,Traveloka,Jakarta,7090203,3,On-site,S1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1
+data analyst,Junior Data Scientist,OVO,Jakarta,8242138,2,On-site,S1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,1,1,0,1
+machine learning,Data Engineer,Telkomsel,Jakarta,3955119,0,On-site,S1,0,1,0,1,1,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0
+data scientist,Data Engineer,Telkomsel,Jakarta,3589769,0,Remote,S1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1
+machine learning,Data Engineer,OVO,Yogyakarta,4046836,7,Hybrid,S1,1,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,0,0
+data engineer,Junior Data Scientist,OVO,Bandung,9081506,2,On-site,S1,0,1,1,0,0,0,0,0,1,1,1,1,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+data scientist,Data Scientist,Traveloka,Jakarta,8333362,2,On-site,S1,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,1,1,1,1,0,1,0,1
+machine learning,Senior Data Analyst,Shopee,Surabaya,1208032,7,Hybrid,S1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0
+machine learning,Data Engineer,Bank BRI,Jakarta,4185677,5,On-site,D3,1,0,0,0,1,1,0,1,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0
+data scientist,ML Engineer,Bank BCA,Jakarta,6978147,4,Hybrid,S1,1,0,0,1,0,1,0,0,1,1,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0
+data scientist,Junior Data Scientist,OVO,Makassar,13718342,4,On-site,S1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0
+data engineer,Data Engineer,Bukalapak,Jakarta,5075996,5,On-site,S1,0,1,1,0,0,1,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,1,1,1,1,0,1
+data engineer,Lead Data Analyst,Blibli,Jakarta,6747715,1,On-site,S1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1
+data engineer,Lead Data Analyst,OVO,Jakarta,5730281,4,Hybrid,S1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+data analyst,Data Analyst,Bank BRI,Jakarta,3938654,1,Hybrid,S1,1,1,1,0,0,0,0,0,1,0,0,0,0,1,1,1,1,1,0,1,1,0,0,0,1,0,1,1,1,1,1,0
+data engineer,Data Analyst,PT Tokopedia,Jakarta,2405519,1,On-site,D3,0,0,0,1,0,0,0,1,1,0,1,1,1,1,1,0,1,0,0,0,0,0,0,1,0,0,1,1,1,0,0,1
+data analyst,Senior Data Analyst,PT Tokopedia,Jakarta,2542440,1,On-site,S1,0,0,0,0,1,0,0,0,0,0,1,0,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+machine learning,Senior Data Analyst,Telkomsel,Surabaya,8643649,4,On-site,D3,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0
+machine learning,Senior Data Analyst,Blibli,Bandung,5793529,7,On-site,S1,0,1,0,0,0,0,0,0,1,0,1,0,1,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1
+machine learning,Lead Data Analyst,Bank BCA,Jakarta,3462803,4,Hybrid,S1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,1,1
+data analyst,Lead Data Analyst,Blibli,Medan,2289246,2,On-site,S1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0
+machine learning,Data Scientist,Traveloka,Medan,8572235,3,On-site,S1,0,1,1,0,0,0,0,1,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+machine learning,Junior Data Scientist,Bukalapak,Jakarta,2967079,4,On-site,S1,0,0,0,0,1,0,0,1,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0,0,0
+data analyst,Data Analyst,OVO,Jakarta,8085987,3,On-site,D3,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+data engineer,Data Analyst,OVO,Jakarta,4982489,3,Remote,D3,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,1,0,1,1,1,1,0
+data engineer,Senior Data Analyst,Gojek,Bandung,5253806,1,Hybrid,S1,0,1,0,0,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0
+data engineer,Junior Data Scientist,Bukalapak,Makassar,15406530,3,On-site,S1,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+data engineer,Data Analyst,Bank BRI,Denpasar,1530330,0,On-site,D3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,1,0,1
+data scientist,Data Analyst,Bukalapak,Jakarta,3181586,3,Hybrid,S2,0,1,0,1,0,0,1,0,0,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1
+machine learning,Data Scientist,Gojek,Jakarta,14067738,5,Remote,S1,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0,1,0,0,1,0,1,0,1,1,1,1,0,1,0,1,0
+data engineer,ML Engineer,Blibli,Jakarta,9444036,1,Remote,S1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,1
+data engineer,Senior Data Analyst,OVO,Jakarta,4663393,1,On-site,S1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,0,1,1,0,0,1,0
+data engineer,ML Engineer,Bukalapak,Jakarta,16522380,7,On-site,S1,1,1,1,0,1,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,1,1,0,1,0
+data engineer,ML Engineer,Bukalapak,Makassar,9842780,5,On-site,S2,1,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0
+data engineer,Data Scientist,Bank BRI,Jakarta,3938291,2,On-site,S1,0,1,0,0,1,0,0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+data scientist,Lead Data Analyst,PT Tokopedia,Jakarta,2830983,1,On-site,S1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0
+data scientist,Data Analyst,PT Tokopedia,Jakarta,12478952,2,Remote,S1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,1,0,1,0,0,1,0,1,1,1,0,0,1,0,0,0,1
+data analyst,Senior Data Analyst,Bank BCA,Medan,3308429,2,Hybrid,D3,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,1,0,0
+data analyst,Data Engineer,PT Tokopedia,Denpasar,6261115,5,Hybrid,D3,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,1,1,0,0,1,0
+data engineer,Lead Data Analyst,Blibli,Yogyakarta,13231234,1,On-site,S1,0,0,0,1,1,0,1,0,1,1,1,0,0,0,0,1,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,1
+data analyst,ML Engineer,OVO,Jakarta,6006206,4,On-site,S2,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,0,0,0,0
+data scientist,Junior Data Scientist,Gojek,Jakarta,5423088,7,On-site,D3,0,0,1,0,1,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+data engineer,ML Engineer,Blibli,Jakarta,1978623,2,Hybrid,S1,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0
+data analyst,Data Scientist,Bank BRI,Bandung,9804518,0,Remote,S2,0,0,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0
+data analyst,ML Engineer,Traveloka,Jakarta,1811935,5,Hybrid,S1,0,1,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
+data scientist,ML Engineer,Bukalapak,Denpasar,12135005,4,On-site,S1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+machine learning,ML Engineer,Traveloka,Yogyakarta,1962922,1,Hybrid,S2,0,1,0,1,1,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,0,1,0,0
+data engineer,Data Scientist,Telkomsel,Jakarta,3278315,3,On-site,D3,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0,1,1,1,0,0,1,1,0,0,0,0
+data analyst,Data Analyst,Bank BRI,Jakarta,10864531,5,On-site,S1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0
+data scientist,Junior Data Scientist,Bank BCA,Bandung,12844177,1,Remote,S2,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,1,1,1,0,0,0
+data engineer,ML Engineer,Bank Mandiri,Jakarta,5704263,1,Hybrid,S1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,1,1,0
+data scientist,Senior Data Analyst,Bank BCA,Jakarta,4339340,1,On-site,S1,1,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+data engineer,Junior Data Scientist,Telkomsel,Jakarta,5908685,7,Hybrid,S1,0,0,0,1,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0
+machine learning,ML Engineer,Dana,Medan,1658867,1,Hybrid,S1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0,0,0
+machine learning,ML Engineer,Blibli,Semarang,10377683,2,On-site,D3,0,1,0,0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1,1,1
+data engineer,Senior Data Analyst,Bank BCA,Jakarta,3714610,0,Hybrid,S1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,1,0,0,0,0,1,1
+data engineer,Data Scientist,Blibli,Yogyakarta,4627432,7,On-site,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,1,0,0,0,1,0
+data scientist,Data Engineer,PT Tokopedia,Jakarta,5671862,1,On-site,S1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,1,0
+data engineer,Senior Data Analyst,Bukalapak,Jakarta,6366035,4,Hybrid,S1,0,1,0,0,0,0,1,1,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0
+data analyst,Lead Data Analyst,Traveloka,Jakarta,7045427,0,On-site,S1,1,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0
+data engineer,Data Engineer,Dana,Denpasar,11243295,5,Remote,S1,0,0,1,1,1,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
+data engineer,Data Analyst,OVO,Jakarta,11550646,4,On-site,S1,0,1,0,0,0,0,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,1,0,0,0,0
+machine learning,Data Analyst,OVO,Jakarta,5292666,1,On-site,S1,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1
+machine learning,ML Engineer,Traveloka,Bandung,8376954,1,On-site,D3,1,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+data scientist,Junior Data Scientist,PT Tokopedia,Jakarta,9084449,2,Remote,S1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,1,0,0,1,0,1
+data engineer,ML Engineer,PT Tokopedia,Surabaya,1899647,2,Remote,S1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,0,0,0
+data analyst,Data Scientist,Bank BRI,Bandung,4144478,5,On-site,S1,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,1,0,1,1,1,1,0,1,0,0,0,1,0,1,0,0
+data analyst,Data Engineer,Shopee,Yogyakarta,3128899,1,On-site,S1,0,1,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,1
+data engineer,Data Analyst,Bank Mandiri,Jakarta,5475256,4,On-site,S1,1,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0
+data scientist,Data Analyst,Shopee,Yogyakarta,11448603,1,Hybrid,D3,0,0,1,1,0,0,1,0,0,1,0,1,1,0,0,0,1,0,1,1,0,0,0,1,0,0,0,0,0,1,0,1
+data analyst,ML Engineer,Bukalapak,Jakarta,8600694,2,On-site,D3,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,1,0,1,0,1,0
+data scientist,ML Engineer,PT Tokopedia,Jakarta,8814898,0,On-site,S1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,0,1,1,1
+data engineer,Data Scientist,Bank BCA,Medan,4253123,2,On-site,S1,1,0,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1
+data scientist,ML Engineer,Blibli,Bandung,4261386,1,Hybrid,S1,1,0,1,0,0,1,0,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,1,1,1,1,0,0,1,0,0,0
+data engineer,Lead Data Analyst,Dana,Jakarta,3752740,3,On-site,S1,0,1,0,1,0,0,1,1,0,1,0,1,1,1,1,1,0,0,1,1,0,0,1,0,0,0,1,0,0,0,0,1
+machine learning,Junior Data Scientist,Traveloka,Jakarta,3148442,1,Hybrid,S1,1,0,1,1,1,1,1,0,0,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+data engineer,ML Engineer,Gojek,Jakarta,7616269,5,On-site,S1,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,1,1,1,0,1,1,0,1,0,0
+data scientist,Junior Data Scientist,Dana,Makassar,3877423,7,On-site,S1,0,0,0,1,0,1,0,0,1,1,0,0,0,1,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1,0
+data analyst,Lead Data Analyst,Gojek,Yogyakarta,2469909,5,On-site,S1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0
+data engineer,Junior Data Scientist,Traveloka,Jakarta,6404495,7,On-site,S1,1,0,1,1,0,1,0,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+data engineer,Data Scientist,OVO,Jakarta,5612084,7,On-site,SMA/SMK,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0
+data engineer,ML Engineer,Telkomsel,Jakarta,6441505,2,On-site,S1,0,1,1,1,0,0,0,1,1,1,1,1,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1
+machine learning,Junior Data Scientist,Traveloka,Bandung,12839744,2,On-site,S1,0,0,1,1,0,0,1,0,0,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,1,1,0,0,0,0,0
+machine learning,Junior Data Scientist,Telkomsel,Jakarta,5467889,3,Remote,D3,1,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,0,1,0,0,0,0,1,0,0,1
+machine learning,Lead Data Analyst,Bank BCA,Jakarta,3665905,2,On-site,S1,1,0,0,0,1,1,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+data analyst,ML Engineer,Bank Mandiri,Jakarta,3650165,7,Hybrid,S1,1,0,0,1,1,0,0,1,0,0,1,0,1,0,1,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,0
+data analyst,ML Engineer,Bank BRI,Yogyakarta,3027312,2,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,1,1
+data engineer,Data Engineer,Bank BCA,Jakarta,3404572,4,Remote,S1,1,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,1,1
+data analyst,Data Analyst,Blibli,Semarang,2545358,3,Remote,S1,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,1,0,0,0,0,1
+data scientist,Senior Data Analyst,Bukalapak,Semarang,5787492,7,Hybrid,S1,0,0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0
+data scientist,Data Analyst,PT Tokopedia,Bandung,3592368,4,On-site,S1,1,1,0,0,0,1,0,0,1,1,1,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,1,1,0,0,0,0
+machine learning,Data Engineer,Blibli,Jakarta,5821246,2,On-site,D3,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0,0
+data scientist,Senior Data Analyst,Bank Mandiri,Bandung,4334501,1,On-site,S1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,1,0,0,1,1,1,1,0,0,0,0,0
+data scientist,Data Analyst,Telkomsel,Jakarta,5058014,5,On-site,S1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+data engineer,Data Scientist,Dana,Jakarta,15431454,7,On-site,S1,0,0,1,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1,1,1,0,0,1,0,0,0,0
+machine learning,Lead Data Analyst,Bank Mandiri,Bandung,10709227,5,On-site,S2,0,0,1,1,1,0,1,1,0,0,0,0,1,0,0,0,1,1,0,1,0,0,1,1,0,0,0,1,0,1,0,0
+machine learning,Data Engineer,Bukalapak,Yogyakarta,2140178,4,Remote,S1,0,0,0,0,0,0,1,1,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,1,1
+machine learning,Data Scientist,Bank BRI,Jakarta,3738650,2,On-site,S1,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1
+data scientist,Data Scientist,Blibli,Jakarta,1725791,3,On-site,S1,1,0,1,0,0,0,1,0,0,1,1,0,0,1,1,0,0,1,1,0,1,0,1,0,1,0,0,0,1,0,1,0
+data analyst,Data Analyst,Traveloka,Jakarta,4234113,7,Hybrid,S1,0,0,0,0,1,0,0,1,1,0,0,1,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+data engineer,Lead Data Analyst,Bank Mandiri,Jakarta,6578969,1,On-site,D3,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,1,0,0
+data analyst,Junior Data Scientist,Blibli,Jakarta,10260832,3,On-site,S1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+machine learning,Senior Data Analyst,Bukalapak,Bandung,9958087,2,On-site,S1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,1
+machine learning,Junior Data Scientist,Traveloka,Bandung,6522396,4,Hybrid,D3,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,1,1,0,0
+data scientist,ML Engineer,Bank BCA,Makassar,3079755,3,Remote,S1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1
+data engineer,ML Engineer,Bank Mandiri,Jakarta,8946146,3,On-site,S1,1,0,0,0,1,0,0,0,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,1,0,0,0,0,0,1,1,0
+data engineer,Data Engineer,Blibli,Jakarta,5550011,2,Remote,D3,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,0,1,1,1,1,0,0,1,0,1,0,0,0,0,0,1
+data engineer,Data Scientist,Telkomsel,Bandung,6039592,1,Remote,S2,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+data scientist,Data Engineer,Dana,Jakarta,17391956,5,On-site,S1,0,0,1,0,0,0,0,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1
+data analyst,Data Analyst,Bukalapak,Yogyakarta,3058727,7,On-site,S2,1,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,1,1,0
+data engineer,Lead Data Analyst,PT Tokopedia,Jakarta,18709340,1,Hybrid,S1,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,1,0,1,0,0,0,1,0,1,1,0,1,0,0,0,0,0
+data analyst,Lead Data Analyst,Dana,Jakarta,15855146,1,On-site,S1,1,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,1,1,0,1,0,0,0,1,0,1,1,0,0
+data scientist,Data Scientist,Blibli,Jakarta,5614141,4,Hybrid,S1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+data scientist,ML Engineer,Bukalapak,Jakarta,6052895,2,On-site,S1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0
+data analyst,Data Analyst,Bank Mandiri,Jakarta,3526244,1,On-site,S1,1,1,0,0,0,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,1,1
+data engineer,Data Analyst,Dana,Bandung,6041199,3,Hybrid,S1,1,0,0,0,0,1,0,1,0,0,0,1,1,0,1,0,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+data analyst,Junior Data Scientist,Bank BRI,Yogyakarta,5700523,4,Hybrid,D3,0,0,0,0,0,1,1,0,0,0,1,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,1,0
+data engineer,Data Engineer,Shopee,Jakarta,3565476,1,On-site,S1,1,0,1,1,1,0,0,1,0,0,1,0,0,0,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,1
+machine learning,Lead Data Analyst,Bank BRI,Jakarta,3509929,7,Hybrid,S1,0,1,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0
+machine learning,Data Engineer,Bank BCA,Jakarta,4669796,2,On-site,D3,0,0,0,0,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+data engineer,Junior Data Scientist,Blibli,Jakarta,5359995,2,Remote,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1
+data analyst,Lead Data Analyst,Bank Mandiri,Jakarta,1928890,2,On-site,S1,1,0,0,0,1,1,1,0,0,0,1,0,1,1,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,1,1,0
+data engineer,Senior Data Analyst,Traveloka,Jakarta,10599452,4,Hybrid,D3,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,1,0,0,0,0
+data engineer,ML Engineer,Bank BRI,Jakarta,3998706,5,Hybrid,S1,1,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,1
+data engineer,ML Engineer,Telkomsel,Jakarta,4500417,2,On-site,S1,0,0,0,1,1,0,0,0,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0
+machine learning,Data Engineer,Bank Mandiri,Denpasar,5995626,1,On-site,S1,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1
+data scientist,ML Engineer,Telkomsel,Yogyakarta,4591225,1,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0,1,0
+machine learning,ML Engineer,Gojek,Surabaya,10677161,1,Hybrid,S2,0,1,0,1,1,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0
+data engineer,Data Analyst,Bukalapak,Jakarta,4544512,3,On-site,S1,0,1,1,0,0,0,0,1,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+data analyst,Junior Data Scientist,Blibli,Jakarta,3798179,4,Hybrid,SMA/SMK,0,0,0,1,0,1,1,0,0,0,1,1,1,0,0,1,0,1,0,0,0,1,0,0,1,1,0,0,1,0,0,1
+data scientist,Junior Data Scientist,Bukalapak,Jakarta,7818322,2,On-site,S1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1
+data engineer,Data Scientist,Gojek,Jakarta,8504121,7,On-site,S1,0,0,0,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+data scientist,Data Scientist,Shopee,Medan,24201612,4,On-site,S1,0,0,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,1,0,1,1,0,0,1,1,1,0,0,1,1,0,0
+data analyst,Senior Data Analyst,Blibli,Jakarta,1728439,2,On-site,S2,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0
+data scientist,Data Scientist,Bank BCA,Denpasar,5642497,1,On-site,S1,0,1,0,1,0,1,0,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0
+data scientist,Junior Data Scientist,Bank BRI,Jakarta,8109365,3,On-site,S1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,1,1,1,1
+data engineer,ML Engineer,Telkomsel,Jakarta,3122170,3,Hybrid,S1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,0,0,0,0,1,1,1,1
+data analyst,Junior Data Scientist,Bank Mandiri,Jakarta,12529883,3,On-site,S1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,1,0,0,0,1,0,0,1
+data analyst,Data Analyst,Blibli,Medan,3574285,4,On-site,S1,0,1,0,1,1,0,1,1,1,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0
+machine learning,Junior Data Scientist,OVO,Jakarta,5786556,2,On-site,S1,0,1,1,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0
+data scientist,Data Scientist,Gojek,Jakarta,10350206,0,On-site,S1,1,1,1,0,0,0,1,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,0,1,0,1,1,0
+data engineer,ML Engineer,Shopee,Jakarta,2797816,5,Hybrid,S1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0
+data scientist,Junior Data Scientist,OVO,Jakarta,4976226,5,Remote,S1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+data scientist,ML Engineer,Blibli,Jakarta,8543418,7,On-site,S1,0,0,0,0,1,0,0,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1
+data scientist,Data Engineer,Bukalapak,Jakarta,5900305,7,On-site,S1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1,0
+data engineer,Lead Data Analyst,Shopee,Jakarta,8049688,1,On-site,S1,1,0,1,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0
+data scientist,Junior Data Scientist,Bank BRI,Jakarta,8707422,2,On-site,S1,0,0,0,0,0,0,1,1,0,0,0,1,1,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1,1,1,0
+data engineer,Data Engineer,Dana,Jakarta,3924132,5,On-site,S1,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1
+data analyst,Data Scientist,Blibli,Jakarta,14235367,7,On-site,S1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,1,0,0,1,1
+data scientist,Data Engineer,Bukalapak,Jakarta,3255040,0,On-site,S1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0,0,1,0,1,1,1,1,0
+machine learning,ML Engineer,Telkomsel,Jakarta,12166418,2,On-site,S1,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1
+data analyst,ML Engineer,Bank Mandiri,Jakarta,6655322,1,Hybrid,S1,1,0,0,1,0,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0
+machine learning,Data Engineer,Traveloka,Jakarta,3723744,5,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,1,1,0,0,1,1,0,0,1,1,0,0
+data scientist,Lead Data Analyst,Telkomsel,Jakarta,3212300,4,On-site,S1,0,0,0,0,0,1,1,1,0,0,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+data analyst,Data Analyst,Bank BCA,Surabaya,6379212,4,Hybrid,S1,0,1,1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+data engineer,Data Engineer,Telkomsel,Bandung,4723511,2,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0
+data scientist,Data Analyst,Shopee,Yogyakarta,7224702,2,On-site,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0
+data scientist,Lead Data Analyst,OVO,Bandung,4704676,2,Hybrid,S2,0,0,1,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0
+data engineer,Data Engineer,Bukalapak,Jakarta,5637437,2,Hybrid,S1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,0,1,0,1,0
+machine learning,ML Engineer,PT Tokopedia,Jakarta,7327067,7,On-site,S1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0,0
+data analyst,Junior Data Scientist,Bukalapak,Bandung,5190464,0,On-site,S2,0,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,1
+data analyst,ML Engineer,Traveloka,Yogyakarta,4620290,2,On-site,SMA/SMK,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0
+data engineer,Data Engineer,PT Tokopedia,Jakarta,6673478,5,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0
+data analyst,Senior Data Analyst,Bank Mandiri,Jakarta,4325606,2,Hybrid,S1,1,0,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+data engineer,Data Analyst,Traveloka,Yogyakarta,8064335,7,Hybrid,S1,1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0
+machine learning,Senior Data Analyst,Shopee,Jakarta,7080325,2,On-site,S1,1,1,0,0,0,0,1,1,1,0,0,0,0,1,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+machine learning,ML Engineer,Shopee,Jakarta,8196652,5,On-site,S1,0,0,0,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+data analyst,Lead Data Analyst,Shopee,Jakarta,8167380,5,Remote,S1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0
+data engineer,Data Analyst,Dana,Jakarta,4640345,0,On-site,S1,1,1,0,1,1,0,0,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,0,1,1,0,0,0,0,1
+data engineer,Junior Data Scientist,Gojek,Jakarta,1624166,2,Hybrid,S1,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,0,0,0,1,0,0,1,0,0,0,1,1,1,0,0,0
+data engineer,Lead Data Analyst,Bank Mandiri,Surabaya,4892158,2,On-site,S1,0,1,0,1,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1
+data engineer,Data Engineer,Shopee,Surabaya,6215651,3,On-site,S1,1,0,0,0,0,0,0,1,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,1,1,1,1,1,1
+data analyst,Data Analyst,Traveloka,Jakarta,5017568,2,On-site,S2,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+data scientist,Data Analyst,PT Tokopedia,Bandung,3499069,7,On-site,S1,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0
+data analyst,Lead Data Analyst,OVO,Jakarta,11343997,1,On-site,S1,0,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+data engineer,Data Scientist,Shopee,Makassar,3332292,1,Remote,D3,0,0,1,0,0,1,0,1,1,0,0,0,1,1,0,1,0,0,1,0,0,0,1,1,1,1,0,0,1,0,0,0
+data scientist,Junior Data Scientist,Gojek,Jakarta,3577297,1,On-site,S1,0,0,1,0,1,0,0,0,1,1,0,1,0,0,1,0,0,1,1,0,0,1,1,1,0,1,0,0,0,0,0,0
+data scientist,Data Analyst,Telkomsel,Surabaya,4120600,4,On-site,S1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+data analyst,Junior Data Scientist,Shopee,Jakarta,4518345,7,On-site,S1,1,0,0,1,0,0,0,1,0,0,0,1,0,1,1,1,0,1,1,0,0,1,0,0,1,1,0,0,1,1,1,0
+data engineer,ML Engineer,Telkomsel,Semarang,3798066,2,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,0,0,1,0,0
+data engineer,Junior Data Scientist,Traveloka,Makassar,5327316,1,On-site,S1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0
+data engineer,Senior Data Analyst,Bank BCA,Jakarta,5738152,1,Remote,D3,1,0,0,1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0
+data engineer,Senior Data Analyst,Dana,Jakarta,3025501,1,On-site,S1,1,0,0,0,1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0
+data engineer,Junior Data Scientist,Bukalapak,Jakarta,2768136,3,Hybrid,SMA/SMK,1,1,0,0,1,1,0,1,1,1,1,0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,1
+data scientist,Data Engineer,Bank Mandiri,Jakarta,8299977,2,On-site,S1,1,0,1,0,0,0,0,0,1,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0
+data analyst,Data Scientist,Traveloka,Medan,5236519,7,On-site,S2,0,1,1,0,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,1,0
+data analyst,Senior Data Analyst,Telkomsel,Jakarta,9834771,1,On-site,S1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,0
+machine learning,Lead Data Analyst,Dana,Jakarta,7914037,7,Hybrid,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+data analyst,Senior Data Analyst,Gojek,Jakarta,4515997,2,On-site,S1,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0
+data scientist,Data Analyst,OVO,Jakarta,6999136,5,Remote,D3,0,0,0,1,0,1,0,0,1,1,0,1,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+machine learning,Junior Data Scientist,Bukalapak,Yogyakarta,8424591,7,On-site,S1,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,1,1,0,0,0,0,0,1,0,0,0,1
+data scientist,ML Engineer,Dana,Jakarta,3328787,7,Remote,S1,1,1,0,0,0,0,1,0,1,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+data analyst,Junior Data Scientist,OVO,Jakarta,2148828,5,On-site,S1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,0
+data scientist,Junior Data Scientist,Shopee,Jakarta,3047170,1,On-site,S2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,1,0
+data scientist,ML Engineer,Bukalapak,Makassar,7601100,0,On-site,D3,0,1,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+data analyst,Data Engineer,Blibli,Jakarta,15162794,4,On-site,S1,0,1,1,0,0,1,1,1,0,1,0,1,0,0,0,1,1,1,0,0,1,0,0,0,0,1,0,0,1,0,0,0
+data scientist,ML Engineer,Gojek,Denpasar,5276290,7,On-site,S1,0,1,0,0,1,0,0,0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,1,0,0,1,0
+machine learning,Senior Data Analyst,Telkomsel,Medan,11571214,1,On-site,S1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0,0,1,1,1,1,1,0,1,0
+machine learning,Data Analyst,Traveloka,Bandung,9321954,7,On-site,S1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0
+data engineer,ML Engineer,Shopee,Semarang,3542828,3,On-site,S1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
+machine learning,Data Scientist,Bank BCA,Jakarta,5180012,1,On-site,S1,0,0,0,0,0,0,0,1,1,0,0,0,0,1,0,1,0,1,0,1,1,0,0,1,1,0,1,1,1,0,0,0
+machine learning,Data Scientist,Blibli,Semarang,7917768,1,Remote,S1,1,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,1
+data analyst,Data Scientist,Telkomsel,Jakarta,2664413,1,On-site,S1,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1
+machine learning,ML Engineer,Dana,Jakarta,8967333,1,Remote,D3,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+data analyst,Data Analyst,Shopee,Jakarta,10249292,4,Hybrid,D3,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0
+machine learning,ML Engineer,Gojek,Jakarta,8771252,1,On-site,S1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,0,0,0,0
+data analyst,Senior Data Analyst,Dana,Jakarta,5017046,3,On-site,S1,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,1
+data analyst,ML Engineer,Shopee,Surabaya,7207292,4,On-site,S1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,1,0,0
+data scientist,Lead Data Analyst,Bukalapak,Bandung,9720862,7,Hybrid,D3,0,1,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,0,0
+machine learning,Lead Data Analyst,Bank Mandiri,Semarang,2228691,3,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0
+data analyst,Junior Data Scientist,Dana,Jakarta,1278950,3,Hybrid,S1,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,0,1,1,0,1,0,0,1,1,0,0,0
+machine learning,Data Scientist,Shopee,Jakarta,7341528,7,Hybrid,S1,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,1,0,1,0,0,0,0,0,1,1,0,1,0,0,1,0,0
+data engineer,Data Scientist,Bank Mandiri,Medan,3767650,2,Remote,S1,1,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+data scientist,Junior Data Scientist,Bukalapak,Medan,6004666,1,On-site,S1,0,0,0,0,0,1,0,0,0,1,1,0,1,0,1,1,0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,0
+data scientist,Data Analyst,Bank Mandiri,Jakarta,6081838,5,Remote,S1,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0,1,0,1,1,0,0,0,0,1,0,0,0,1,1,1
+data analyst,Data Engineer,Bank Mandiri,Surabaya,11236606,1,On-site,S1,0,0,0,0,0,0,1,1,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+machine learning,Data Scientist,Bank BRI,Jakarta,5970799,1,Hybrid,S1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1
+data scientist,Data Scientist,Shopee,Jakarta,7416047,2,On-site,S1,0,0,1,0,1,0,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,1,1,0,0,1,0,1,0,1,0,0
+data scientist,Data Engineer,Dana,Yogyakarta,7123236,2,On-site,S1,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1,0,1,1,1,0,0,1,0,1,0,1
+data scientist,ML Engineer,Bukalapak,Surabaya,8671765,4,On-site,S1,1,0,1,1,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,1,0,1,0,1,1,1,0,0,0,1,0,1
+data analyst,Data Scientist,Bank BRI,Jakarta,3836675,1,On-site,S1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,1
+data engineer,Data Analyst,Bank BCA,Jakarta,6466851,3,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,1,0,1,0,0
+data analyst,Lead Data Analyst,Telkomsel,Jakarta,1329891,5,Remote,S1,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0
+data engineer,ML Engineer,Telkomsel,Yogyakarta,3688770,4,On-site,S2,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0,0
+data scientist,ML Engineer,Bank Mandiri,Jakarta,9951467,3,On-site,S1,1,0,0,1,0,0,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,1,0,1,0,1
+data engineer,Data Scientist,Blibli,Bandung,2431664,1,On-site,S1,0,0,0,0,0,0,0,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,1,0
+data analyst,ML Engineer,OVO,Jakarta,2597045,2,On-site,D3,1,0,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,1,1,0,1,0,0,0
+data analyst,ML Engineer,Bank BRI,Jakarta,7963306,1,On-site,S1,1,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0
+machine learning,Data Analyst,PT Tokopedia,Jakarta,3730494,3,Remote,SMA/SMK,0,0,0,1,0,0,0,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+machine learning,ML Engineer,Bank Mandiri,Semarang,11440928,3,On-site,S1,0,1,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1
+data analyst,Junior Data Scientist,Gojek,Jakarta,5637586,3,Hybrid,S1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0
+machine learning,Data Scientist,Bank BRI,Jakarta,13426427,5,On-site,S1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,0
+data scientist,Data Scientist,Bank BCA,Jakarta,14960474,1,Hybrid,S2,1,0,0,0,1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,1
+data engineer,Junior Data Scientist,Bank BCA,Jakarta,11586491,2,On-site,S1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+data analyst,Lead Data Analyst,Bank BRI,Jakarta,3968236,3,Hybrid,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,1,0,1,1,0,0,1
+data analyst,Junior Data Scientist,Shopee,Jakarta,2752926,3,Hybrid,S1,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+machine learning,Junior Data Scientist,Traveloka,Jakarta,11557369,0,On-site,S1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0,0,0,1,1,1,0
+data analyst,Data Engineer,PT Tokopedia,Jakarta,5341047,1,On-site,D3,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0
+machine learning,Senior Data Analyst,Bank Mandiri,Jakarta,6078535,5,On-site,SMA/SMK,0,0,0,1,0,0,1,1,0,1,0,0,0,1,0,1,1,0,0,1,0,1,1,1,1,1,1,0,0,0,0,0
+data scientist,Data Engineer,Bank BCA,Surabaya,10736154,3,Remote,S1,1,1,1,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0
+data analyst,Data Analyst,Telkomsel,Jakarta,2749576,2,On-site,S1,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,1
+data scientist,Data Analyst,OVO,Medan,7671990,7,On-site,S1,1,1,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0
+data scientist,Lead Data Analyst,Bank BCA,Jakarta,4008761,1,On-site,S1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0,1,0,0
+data analyst,Data Scientist,Shopee,Yogyakarta,8671611,7,Hybrid,S1,0,1,0,1,0,0,0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1
+machine learning,Senior Data Analyst,Bank Mandiri,Jakarta,6795576,0,On-site,S1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,1,0,0
+machine learning,Data Engineer,Telkomsel,Jakarta,9147457,3,Hybrid,S1,0,1,1,0,0,1,1,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0
+data scientist,Lead Data Analyst,Bank BCA,Jakarta,4175965,3,On-site,S1,1,1,0,0,1,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,1,1,0
+machine learning,Lead Data Analyst,Shopee,Jakarta,3520755,3,Hybrid,SMA/SMK,0,0,1,0,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+machine learning,Senior Data Analyst,Telkomsel,Jakarta,5394548,0,Hybrid,D3,0,1,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+data scientist,Data Scientist,Dana,Bandung,3803557,3,On-site,S1,0,0,1,1,0,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,1,1
+data analyst,Lead Data Analyst,Bank BRI,Yogyakarta,3694893,1,Remote,S1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0
+data analyst,Lead Data Analyst,Traveloka,Jakarta,3538060,1,On-site,D3,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,1,0
+data engineer,ML Engineer,Gojek,Jakarta,7880953,1,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0
+data analyst,Data Scientist,Bank BCA,Denpasar,17399193,3,Hybrid,S1,0,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,0
+machine learning,Lead Data Analyst,PT Tokopedia,Bandung,8672707,2,On-site,D3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0,1,0,0,0,1,0,1,1
+data engineer,Data Scientist,Blibli,Jakarta,8207494,1,Hybrid,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0
+data engineer,Senior Data Analyst,Bank BCA,Makassar,8086525,2,On-site,D3,1,1,0,1,1,0,1,0,1,1,1,1,0,0,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1
+data engineer,Data Analyst,Bank Mandiri,Semarang,3116168,1,On-site,S1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0
+data analyst,ML Engineer,Shopee,Jakarta,8167501,4,On-site,D3,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0
+data engineer,ML Engineer,Telkomsel,Jakarta,1827356,3,On-site,S1,1,0,1,1,1,0,0,1,1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1
+data engineer,Lead Data Analyst,Bank Mandiri,Jakarta,6743385,2,On-site,S1,0,0,0,0,0,0,1,1,0,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,1,0,0,1,1,0,0
+data engineer,Data Analyst,Dana,Bandung,8369580,7,On-site,S1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+data analyst,Senior Data Analyst,Traveloka,Bandung,8780294,3,On-site,S1,0,0,0,1,0,0,0,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1
+data analyst,Senior Data Analyst,Traveloka,Bandung,7966788,7,Hybrid,S1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0
+data analyst,Data Analyst,Traveloka,Jakarta,2552324,3,On-site,S1,0,0,0,1,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,1,0,0,0,1,0,1,1,1,1,0,0
+data analyst,Data Engineer,Bank Mandiri,Jakarta,3666766,2,On-site,S1,0,1,1,1,1,0,0,0,1,0,1,1,0,1,0,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0,1,0
+data scientist,Senior Data Analyst,Traveloka,Jakarta,10913017,3,Hybrid,SMA/SMK,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,1
+data analyst,Lead Data Analyst,Telkomsel,Medan,6726628,1,On-site,S1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0
+machine learning,Data Analyst,Gojek,Medan,6513585,4,Hybrid,S1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0,0,1,0,0,1,1,1,0,0,0,1,1,0,1
+data engineer,Data Engineer,Bank Mandiri,Jakarta,3920773,7,Hybrid,S2,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0
+data analyst,Data Scientist,Telkomsel,Jakarta,2781668,1,On-site,S1,1,0,1,0,1,0,0,1,1,1,0,1,1,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,1
+machine learning,ML Engineer,Bank BCA,Jakarta,3476342,2,On-site,S1,0,0,1,0,0,1,0,1,0,0,1,0,1,0,1,1,1,0,0,0,1,1,1,0,0,0,1,0,0,1,1,0
+machine learning,Data Analyst,PT Tokopedia,Jakarta,2341107,2,Remote,S1,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0
+machine learning,Lead Data Analyst,Shopee,Jakarta,7499224,3,On-site,S1,0,0,1,0,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,1,0,1,0,0
+data scientist,Senior Data Analyst,Bank BRI,Jakarta,927911,4,On-site,S1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0
+data scientist,ML Engineer,Bukalapak,Jakarta,3482610,1,Hybrid,S1,0,1,0,1,1,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0
+data scientist,Data Engineer,Bank BRI,Bandung,17609753,2,On-site,SMA/SMK,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,0
+machine learning,Lead Data Analyst,Bank BCA,Medan,4739415,3,On-site,S1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,1
+data analyst,ML Engineer,Dana,Medan,3390025,3,On-site,S1,0,0,1,0,1,0,0,0,0,1,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0
+machine learning,Lead Data Analyst,Traveloka,Jakarta,20596642,3,Remote,D3,0,0,1,1,0,0,1,0,0,0,0,1,0,0,1,1,1,0,0,0,1,1,0,1,1,1,0,0,0,0,1,1
+data scientist,Junior Data Scientist,Blibli,Bandung,4229977,2,Hybrid,S1,0,0,0,0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0
+data scientist,Data Analyst,Dana,Jakarta,17768147,4,On-site,S1,1,0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+data scientist,Data Scientist,Traveloka,Jakarta,4561209,1,Hybrid,S2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,1,1,0,1,0,1,1
+data analyst,Data Engineer,Shopee,Jakarta,9320126,2,On-site,S1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+machine learning,Lead Data Analyst,Traveloka,Jakarta,21329257,2,On-site,S1,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,0,0,1,1,0,0,0,1,0,0,1,0
+data scientist,Data Engineer,Traveloka,Jakarta,5894965,4,Remote,SMA/SMK,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0
+machine learning,Data Engineer,Gojek,Jakarta,4388663,1,Hybrid,S1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+machine learning,ML Engineer,Bukalapak,Jakarta,8277385,1,Hybrid,S1,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,1,1,0,0,0,0,0
+data scientist,Data Scientist,Traveloka,Yogyakarta,2977540,5,Remote,S1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1
+data engineer,Lead Data Analyst,OVO,Semarang,11488798,2,Hybrid,S1,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
+data engineer,Data Analyst,Bukalapak,Jakarta,3667762,7,On-site,S1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,1,1,0,1,0
+data engineer,Data Analyst,Telkomsel,Jakarta,2136775,7,On-site,S2,1,1,0,1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
+data scientist,ML Engineer,Bank BRI,Jakarta,5082498,4,On-site,S1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0
+machine learning,Junior Data Scientist,Traveloka,Medan,4149232,4,On-site,S1,0,1,0,1,1,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0
+data engineer,Lead Data Analyst,Traveloka,Jakarta,1235534,4,Hybrid,S1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+data analyst,Data Analyst,Blibli,Jakarta,5439971,1,Hybrid,S1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,1,1,1,0,0
+data engineer,Data Analyst,Blibli,Jakarta,2806527,3,Hybrid,S1,0,1,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0
+data analyst,Data Scientist,OVO,Jakarta,4119890,5,On-site,D3,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1
+data engineer,ML Engineer,PT Tokopedia,Surabaya,2802309,4,On-site,S1,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0
+data engineer,ML Engineer,Gojek,Jakarta,8025222,7,Hybrid,S1,1,1,0,0,0,0,0,0,1,1,1,1,0,0,1,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,1
+data engineer,Data Engineer,Bank BCA,Surabaya,5350393,7,Hybrid,S1,0,0,0,1,1,0,1,1,0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+data analyst,Data Analyst,PT Tokopedia,Bandung,2253337,2,On-site,D3,1,1,0,0,1,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+data analyst,Senior Data Analyst,OVO,Jakarta,12595101,4,On-site,S2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,1,0
+data engineer,Junior Data Scientist,Shopee,Bandung,6508740,4,Hybrid,S1,1,0,0,1,0,0,1,1,0,0,1,0,1,0,0,0,1,0,0,1,1,0,0,1,0,1,0,0,0,0,0,1
+data analyst,Data Scientist,Blibli,Yogyakarta,4011622,7,On-site,S1,1,0,1,0,1,1,1,1,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,1,0,0,0,0,1,1,1
+machine learning,Data Scientist,Bank Mandiri,Surabaya,3424929,1,Hybrid,S1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,1,1,0,1,0,0,0,0,0,1,1,1,0
+data engineer,Lead Data Analyst,Bank Mandiri,Bandung,5205351,4,On-site,S1,0,1,0,1,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+machine learning,Junior Data Scientist,Shopee,Bandung,2527006,2,Hybrid,S1,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0

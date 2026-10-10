@@ -1,0 +1,35 @@
+# Streamlit theme — Glints Job Intel.
+#
+# Soft dark slate palette: charcoal body, lighter surface for cards/
+# sidebar, slate-100 text. Pure black (#000) is too harsh for long
+# reading; slate-900 (#0F172A) reads as "dark mode" without the
+# terminal-app vibe.
+#
+# Color choices:
+#   - primaryColor: brighter teal so buttons/highlights stay legible
+#     against the darker background.
+#   - backgroundColor: slate-900, the canvas everything sits on.
+#   - secondaryBackgroundColor: slate-800, sidebar + container(border)
+#     cards; one step lighter so panels pop against the canvas.
+#   - textColor: slate-200, high contrast without being pure white.
+#
+# Skipped: fontFamily. The system default still renders cleanly; pinning
+# Inter here would require also shipping a webfont via Streamlit's static
+# asset CDN, which is out of scope for an incremental theme pass.
+[theme]
+base = "dark"
+primaryColor = "#2DD4BF"
+backgroundColor = "#0F172A"
+secondaryBackgroundColor = "#1E293B"
+textColor = "#E2E8F0"
+
+[server]
+# Headless-friendly defaults. These don't change the UI but keep the
+# shared deploy from printing access warnings on every rerun.
+headless = true
+runOnSave = true
+
+[browser]
+# Don't surface the "Want to add a Gather usage stat?" toast in the
+# corner of the deployed app — it looks unfinished for a portfolio.
+gatherUsageStats = false

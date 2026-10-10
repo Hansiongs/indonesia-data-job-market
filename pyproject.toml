@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glints-job-intel"
+version = "0.1.0"
+description = "Interactive analytics for the Indonesian data job market"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+keywords = ["scraper", "glints", "data-jobs", "indonesia", "analytics"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+dependencies = [
+    "pandas>=2.2,<3.0",
+    "streamlit>=1.39,<2.0",
+    "plotly>=5.24,<7.0",
+    "folium>=0.17,<1.0",
+    "streamlit-folium>=0.21,<1.0",
+]
+
+[project.optional-dependencies]
+viz = [
+    "kaleido>=0.2",            # required by scripts/generate_assets.py for PNG export
+    "wordcloud>=1.9",
+]
+scraper = ["parsel>=1.9,<2.0", "playwright>=1.48,<2.0"]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+    "ruff>=0.7",
+    "parsel>=1.9,<2.0",
+    "playwright>=1.48,<2.0",
+    "jupyter>=1.0",
+    "nbconvert>=7.16",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM", "RUF"]
+ignore = ["E501"]  # line-length handled by formatter
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["E402", "F811"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short --strict-markers"
+markers = [
+    "slow: marks tests as slow",
+    "integration: marks tests as integration tests",
+]

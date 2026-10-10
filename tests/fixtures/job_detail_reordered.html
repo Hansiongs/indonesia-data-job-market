@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Job Detail with Reordered Overview</title>
+</head>
+<body>
+  <h1>Security Engineer</h1>
+
+  <div class="JobDescriptionsc">
+    <p>Security engineer role focused on threat detection.</p>
+  </div>
+
+  <p class="Skillssc__TagName">Python</p>
+  <p class="Skillssc__TagName">Splunk</p>
+
+  <span class="BasicSalary">Rp 15.000.000 per bulan</span>
+
+  <!-- Overview with the fields in a non-default order: education first,
+       then experience, then work method. This proves the label-based
+       extraction in :func:`overview_field` is resilient to
+       DOM reordering, unlike the legacy positional XPath approach. -->
+  <div class="JobOverViewInfoContainer">
+    <div>
+      <span>Minimal pendidikan</span>
+      <div>S1</div>
+    </div>
+    <div>
+      <span>Pengalaman kerja</span>
+      <div>5+ tahun</div>
+    </div>
+    <div>
+      <span>Tipe pekerjaan</span>
+      <div>Remote</div>
+    </div>
+  </div>
+</body>
+</html>
