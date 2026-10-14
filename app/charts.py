@@ -101,7 +101,7 @@ def _add_linear_trendline(fig: go.Figure, df: pd.DataFrame) -> None:
             # Light grey so the trendline stays visible against the dark
             # slate canvas without competing with the data points.
             line={"color": "rgba(200,200,210,0.55)", "width": 2, "dash": "dash"},
-            name="Overall trend",
+            name="Tren Keseluruhan",
             hoverinfo="skip",
             showlegend=True,
         )
@@ -189,8 +189,8 @@ def plot_salary_distribution(df: pd.DataFrame, *, by: str = "keyword") -> go.Fig
         color=by,
         points=show_points,
         color_discrete_sequence=palette,
-        labels={"salary_avg": "Salary (IDR / month)", by: by.replace("_", " ").title()},
-        title=f"Salary Distribution by {by.replace('_', ' ').title()}",
+        labels={"salary_avg": "Gaji (IDR / Bulan)", by: by.replace("_", " ").title()},
+        title=f"Distribusi Gaji Berdasarkan {by.replace('_', ' ').title()}",
     )
     fig.update_traces(
         jitter=0.5,
@@ -223,11 +223,11 @@ def plot_salary_vs_experience(df: pd.DataFrame) -> go.Figure:
             trendline="ols",
             trendline_scope="overall",
             labels={
-                "exp_min_years": "Min experience (years)",
-                "salary_avg": "Salary (IDR / month)",
+                "exp_min_years": "Pengalaman Minimum (Tahun)",
+                "salary_avg": "Gaji (IDR / Bulan)",
                 "keyword": "Role",
             },
-            title="Salary vs. Experience",
+            title="Distribusi Gaji vs. Pengalaman Kerja",
             opacity=0.55,
         )
     except Exception:  # pragma: no cover - exercised when statsmodels missing
@@ -238,17 +238,17 @@ def plot_salary_vs_experience(df: pd.DataFrame) -> go.Figure:
             color="keyword",
             color_discrete_sequence=palette,
             labels={
-                "exp_min_years": "Min experience (years)",
-                "salary_avg": "Salary (IDR / month)",
+                "exp_min_years": "Pengalaman Minimum (Tahun)",
+                "salary_avg": "Gaji (IDR / Bulan)",
                 "keyword": "Role",
             },
-            title="Salary vs. Experience",
+            title="Distribusi Gaji vs. Pengalaman Kerja",
             opacity=0.55,
         )
         _add_linear_trendline(fig, df)
     fig.update_traces(marker={"size": 6, "line": {"width": 0}}, selector={"mode": "markers"})
     fig.update_traces(
-        hovertemplate="Experience: %{x}y<br>Salary: Rp %{y:,.0f}<extra>%{fullData.name}</extra>",
+        hovertemplate="Pengalaman: %{x} Thn<br>Gaji: Rp %{y:,.0f}<extra>%{fullData.name}</extra>",
         selector={"mode": "markers"},
     )
     fig.update_yaxes(tickformat=",.0s")
@@ -282,11 +282,11 @@ def plot_top_skills_bar(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
         orientation="h",
         color=ordered.values,
         color_continuous_scale=SEQUENTIAL_PALETTE,
-        labels={"x": "Job count", "y": "Skill", "color": "Jobs"},
-        title=f"Top {min(top_n, len(freq))} Most-Requested Skills",
+        labels={"x": "Jumlah Lowongan", "y": "Skill", "color": "Lowongan"},
+        title=f"Top {min(top_n, len(freq))} Tech Stack Paling Banyak Dicari",
     )
     fig.update_traces(
-        hovertemplate="%{y}<br>%{x:,} jobs<extra></extra>",
+        hovertemplate="%{y}<br>%{x:,} lowongan<extra></extra>",
         marker_line_width=0,
     )
     fig.update_layout(coloraxis_showscale=False)
@@ -361,7 +361,7 @@ def plot_skill_cooccurrence_heatmap(df: pd.DataFrame, top_n: int = 12) -> go.Fig
     fig.update_xaxes(side="bottom", tickangle=-40)
     fig.update_yaxes(autorange="reversed")
     fig.update_layout(
-        title="Skill Co-occurrence (Jaccard Similarity)",
+        title="Korelasi Kemunculan Bersama Skill (Jaccard Similarity)",
         annotations=annotations,
     )
     return _apply_base_layout(fig, height=520)
@@ -394,13 +394,13 @@ def _count_bar(
         color=column,
         color_discrete_sequence=palette,
         text="count",
-        labels={"count": "Jobs", column: column.replace("_", " ").title()},
+        labels={"count": "Jumlah Lowongan", column: column.replace("_", " ").title()},
         title=title,
     )
     fig.update_traces(
         texttemplate="%{text:,}",
         textposition="outside",
-        hovertemplate="%{x}<br>%{y:,} jobs<extra></extra>",
+        hovertemplate="%{x}<br>%{y:,} lowongan<extra></extra>",
         marker_line_width=0,
     )
     if hide_legend:
@@ -414,7 +414,7 @@ def _count_bar(
 
 
 def plot_role_distribution(df: pd.DataFrame) -> go.Figure:
-    return _count_bar(df, "keyword", "Job Distribution by Role")
+    return _count_bar(df, "keyword", "Distribusi Lowongan Berdasarkan Role")
 
 
 def plot_experience_distribution(df: pd.DataFrame) -> go.Figure:
@@ -423,21 +423,17 @@ def plot_experience_distribution(df: pd.DataFrame) -> go.Figure:
         return _empty_figure("No experience data")
 
     work = df.copy()
-    # Buckets chosen so every label is either "Fresher" or an "N-M years"
-    # range. We collapsed the old single-year "3" bucket into "3-5 years"
-    # so the x-axis reads as a uniform ordinal scale rather than mixing
-    # a single year next to two ranges.
     def _bucket(v: int) -> str:
         if v <= 0:
-            return "Fresher"
+            return "Fresh Graduate (< 1 Thn)"
         if v <= 2:
-            return "1-2 years"
+            return "1-2 Tahun"
         if v <= 5:
-            return "3-5 years"
-        return "6+ years"
+            return "3-5 Tahun"
+        return "6+ Tahun"
 
     work["exp_bucket"] = work["exp_min_years"].astype(int).apply(_bucket)
-    order = ["Fresher", "1-2 years", "3-5 years", "6+ years"]
+    order = ["Fresh Graduate (< 1 Thn)", "1-2 Tahun", "3-5 Tahun", "6+ Tahun"]
     counts = work["exp_bucket"].value_counts().reindex(order, fill_value=0).reset_index()
     counts.columns = ["exp_bucket", "count"]
 
@@ -448,13 +444,13 @@ def plot_experience_distribution(df: pd.DataFrame) -> go.Figure:
         color="exp_bucket",
         color_discrete_sequence=_discrete_colors(len(counts)),
         text="count",
-        labels={"count": "Jobs", "exp_bucket": "Min Experience"},
-        title="Distribution by Minimum Experience",
+        labels={"count": "Jumlah Lowongan", "exp_bucket": "Pengalaman Kerja"},
+        title="Distribusi Lowongan Berdasarkan Minimum Pengalaman",
     )
     fig.update_traces(
         texttemplate="%{text:,}",
         textposition="outside",
-        hovertemplate="%{x}<br>%{y:,} jobs<extra></extra>",
+        hovertemplate="%{x}<br>%{y:,} lowongan<extra></extra>",
         marker_line_width=0,
     )
     fig.update_xaxes(categoryorder="array", categoryarray=order, showgrid=False)
@@ -464,7 +460,7 @@ def plot_experience_distribution(df: pd.DataFrame) -> go.Figure:
 
 def plot_education_distribution(df: pd.DataFrame) -> go.Figure:
     """Bar chart of job counts by required education level."""
-    return _count_bar(df, "job_education_clean", "Distribution by Required Education")
+    return _count_bar(df, "job_education_clean", "Distribusi Lowongan Berdasarkan Syarat Pendidikan")
 
 
 def plot_workplace_type_distribution(df: pd.DataFrame) -> go.Figure:
@@ -473,7 +469,7 @@ def plot_workplace_type_distribution(df: pd.DataFrame) -> go.Figure:
     Hides the colour legend: the category set is small and stable
     (≤ 3 values), so the legend duplicates what the x-axis already says.
     """
-    return _count_bar(df, "workplace_type", "Distribution by Workplace Type", hide_legend=True)
+    return _count_bar(df, "workplace_type", "Distribusi Lowongan Berdasarkan Model Kerja", hide_legend=True)
 
 
 # ---------------------------------------------------------------------------
@@ -497,11 +493,11 @@ def plot_top_companies(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
         orientation="h",
         color=counts.sort_values().values,
         color_continuous_scale=SEQUENTIAL_PALETTE,
-        labels={"x": "Job postings", "y": "Company", "color": "Jobs"},
-        title=f"Top {min(top_n, len(counts))} Companies Hiring Data Talent",
+        labels={"x": "Jumlah Lowongan", "y": "Perusahaan", "color": "Lowongan"},
+        title=f"Top {min(top_n, len(counts))} Perusahaan dengan Lowongan Data Terbanyak",
     )
     fig.update_traces(
-        hovertemplate="%{y}<br>%{x:,} postings<extra></extra>",
+        hovertemplate="%{y}<br>%{x:,} lowongan<extra></extra>",
         marker_line_width=0,
         text=counts.sort_values().values,
         texttemplate="%{text:,}",
@@ -562,18 +558,18 @@ def plot_skill_vs_salary(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
         color_continuous_scale=[[0.0, "#F43F5E"], [0.5, "#475569"], [1.0, "#34D399"]],
         color_continuous_midpoint=0,
         text="median_with",
-        labels={"premium": "Premi Gaji Median (IDR)", "skill": "Keahlian", "median_with": "Median Gaji"},
-        title=f"Premi Median Gaji per Keahlian (Top {len(table)})",
+        labels={"premium": "Premi Gaji Median (IDR)", "skill": "Skill", "median_with": "Median Gaji"},
+        title=f"Premi Median Gaji per Skill (Top {len(table)})",
         hover_data={"median_without": True, "count": True, "premium": False, "median_with": False},
     )
     fig.update_traces(
         texttemplate="Rp %{text:,.0f}",
         textposition="outside",
         marker_line_width=0,
-        hovertemplate="<b>%{y}</b><br>Median (with skill): Rp %{customdata[1]:,.0f}<br>Median (without): Rp %{customdata[0]:,.0f}<br>Premium: Rp %{customdata[2]:,.0f}<br>Postings: %{customdata[3]}<extra></extra>",
+        hovertemplate="<b>%{y}</b><br>Median (dengan skill): Rp %{customdata[1]:,.0f}<br>Median (tanpa skill): Rp %{customdata[0]:,.0f}<br>Premi: Rp %{customdata[2]:,.0f}<br>Jumlah Lowongan: %{customdata[3]}<extra></extra>",
     )
     fig.update_layout(coloraxis_showscale=False)
-    fig.update_xaxes(title="Salary premium (IDR / month)")
+    fig.update_xaxes(title="Premi Gaji (IDR / Bulan)")
     fig.update_yaxes(showgrid=False)
     return _apply_base_layout(fig, height=520)
 
@@ -613,20 +609,20 @@ def plot_remote_premium(df: pd.DataFrame) -> go.Figure:
         color_continuous_midpoint=0,
         text="median",
         labels={
-            "median": "Median salary (IDR / month)",
-            "workplace_type": "Workplace type",
-            "premium_pct": "vs. On-site (%)",
+            "median": "Median Gaji (IDR / Bulan)",
+            "workplace_type": "Model Kerja",
+            "premium_pct": "Selisih vs. On-site (%)",
         },
-        title="Median Salary by Workplace Type",
+        title="Perbandingan Median Gaji Berdasarkan Model Kerja",
         custom_data=["premium_pct", "count"],
     )
     fig.update_traces(
         texttemplate="Rp %{text:,.0f}",
         textposition="outside",
         marker_line_width=0,
-        hovertemplate="<b>%{x}</b><br>Median: Rp %{y:,.0f}<br>Premium vs. On-site: %{customdata[0]:+.1f}%%<br>Postings: %{customdata[1]}<extra></extra>",
+        hovertemplate="<b>%{x}</b><br>Median: Rp %{y:,.0f}<br>Selisih vs. On-site: %{customdata[0]:+.1f}%%<br>Jumlah Lowongan: %{customdata[1]}<extra></extra>",
     )
-    fig.update_layout(coloraxis_showscale=True, coloraxis_colorbar={"title": "Premium %"})
+    fig.update_layout(coloraxis_showscale=True, coloraxis_colorbar={"title": "Selisih %"})
     fig.update_xaxes(showgrid=False)
     fig.update_yaxes()
     return _apply_base_layout(fig, height=480)

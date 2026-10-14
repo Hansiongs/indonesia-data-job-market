@@ -38,9 +38,9 @@ Dari 430 lowongan kerja data yang dianalisis (349 di antaranya mencantumkan nomi
     # Cell 2: Setup and Data Loading
     cells.append(nbf.v4.new_markdown_cell("""---
 
-## Setup Environment dan Pemuatan Data
+## Setup Environment & Data Loading
 
-Pemuatan dataset terproses `data/processed/master_dataset_eda.csv` dan modul visualisasi terpusat dari `app.charts`."""))
+Pemuatan master dataset `data/processed/master_dataset_eda.csv` dan modul visualisasi terpusat dari `app.charts`."""))
 
     # Cell 3: Code - Imports & Data Loading
     cells.append(nbf.v4.new_code_cell("""import sys
@@ -77,8 +77,8 @@ df, skill_cols = build_skill_columns(df)
 
 disclosed_salaries = df["salary_avg"].notna().sum()
 print(f"[DATA] Total lowongan terverifikasi: {len(df):,}")
-print(f"[SKILLS] Fitur skill terdeteksi: {len(skill_cols)}")
-print(f"[SALARY] Keterbukaan gaji: {disclosed_salaries:,} ({disclosed_salaries/len(df):.1%})")"""))
+print(f"[TECH STACK] Fitur skill terdeteksi: {len(skill_cols)}")
+print(f"[GAJI] Tingkat transparansi gaji: {disclosed_salaries:,} ({disclosed_salaries/len(df):.1%})")"""))
 
     # Cell 4: Section 1 Intro
     cells.append(nbf.v4.new_markdown_cell("""---
@@ -178,7 +178,7 @@ fig_tech_stack.show()"""))
     # Cell 23: Section 4 Intro
     cells.append(nbf.v4.new_markdown_cell("""---
 
-## 4. Sebaran Peran, Kompensasi per Skill, dan Perusahaan Perekrut"""))
+## 4. Sebaran Role, Kompensasi per Skill, dan Top Hiring Companies"""))
 
     # Cell 24: Role & Salary Charts
     cells.append(nbf.v4.new_code_cell("""plot_skill_vs_salary(df, top_n=15).show()
@@ -186,7 +186,7 @@ plot_role_distribution(df).show()
 plot_top_companies(df, top_n=15).show()"""))
 
     # Cell 25: Section 4 Insight
-    cells.append(nbf.v4.new_markdown_cell("""Posisi Data Analyst dan Data Engineer mendominasi volume perekrutan di Indonesia. Dari segi premi kompensasi, keahlian arsitektur Cloud dan manajemen pipeline data (ETL) memberikan selisih median kompensasi positif tertinggi di atas rata-rata pasar."""))
+    cells.append(nbf.v4.new_markdown_cell("""Posisi Data Analyst dan Data Engineer mendominasi volume rekrutmen di Indonesia. Dari segi premi kompensasi, keahlian arsitektur Cloud dan manajemen data pipeline (ETL) memberikan selisih median kompensasi positif tertinggi di atas rata-rata pasar."""))
 
     # Cell 26: Conclusion
     cells.append(nbf.v4.new_markdown_cell("""---
