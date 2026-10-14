@@ -48,7 +48,9 @@ from pathlib import Path
 import pandas as pd
 import plotly.io as pio
 
-pio.renderers.default = "notebook_connected"
+# Menggunakan renderer 'png' agar visualisasi grafik langsung tampil di GitHub notebook viewer
+# (GitHub secara default memblokir eksekusi script JavaScript interaktif Plotly pada file .ipynb).
+pio.renderers.default = "png"
 
 sys.path.insert(0, str(Path.cwd() / "src"))
 sys.path.insert(0, str(Path.cwd()))
