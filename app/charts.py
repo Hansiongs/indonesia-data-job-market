@@ -41,17 +41,21 @@ CATEGORICAL_PALETTE: Final[list[str]] = [
     "#64748B",  # Slate
     "#2DD4BF",  # Teal
 ]
-SEQUENTIAL_PALETTE: Final[str] = "Blues"
+SEQUENTIAL_PALETTE: Final[list[list[Any]]] = [
+    [0.0, "#1E3A5F"],
+    [0.5, "#0284C7"],
+    [1.0, "#38BDF8"],
+]
 
 _BASE_LAYOUT: Final[dict[str, Any]] = {
     "template": "plotly_dark",
-    "paper_bgcolor": "rgba(0,0,0,0)",
-    "plot_bgcolor": "rgba(0,0,0,0)",
-    "margin": {"l": 40, "r": 20, "t": 60, "b": 40},
+    "paper_bgcolor": "#0F172A",
+    "plot_bgcolor": "#0F172A",
+    "margin": {"l": 60, "r": 70, "t": 70, "b": 50},
     "font": {
         "family": "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
         "size": 12,
-        "color": "#CBD5E1",
+        "color": "#E2E8F0",
     },
     "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "right", "x": 1},
 }
@@ -67,7 +71,7 @@ def _apply_base_layout(fig: go.Figure, height: int = 450, title: str | None = No
                 "text": title,
                 "x": 0.0,
                 "xanchor": "left",
-                "font": {"size": 14, "color": "#F8FAFC", "family": "Inter, -apple-system, sans-serif"},
+                "font": {"size": 15, "color": "#F8FAFC", "family": "Inter, -apple-system, sans-serif"},
             }
         )
     return fig
@@ -198,7 +202,7 @@ def plot_salary_distribution(df: pd.DataFrame, *, by: str = "keyword") -> go.Fig
         marker={"opacity": 0.35, "size": 4},
         hovertemplate="%{x}<br>Rp %{y:,.0f}<extra></extra>",
     )
-    fig.update_yaxes(tickformat=",.0s")
+    fig.update_yaxes(tickformat="~s")
     fig.update_xaxes(showgrid=False)
     return _apply_base_layout(fig, height=480)
 
@@ -251,7 +255,7 @@ def plot_salary_vs_experience(df: pd.DataFrame) -> go.Figure:
         hovertemplate="Pengalaman: %{x} Thn<br>Gaji: Rp %{y:,.0f}<extra>%{fullData.name}</extra>",
         selector={"mode": "markers"},
     )
-    fig.update_yaxes(tickformat=",.0s")
+    fig.update_yaxes(tickformat="~s")
     return _apply_base_layout(fig, height=480)
 
 
@@ -288,6 +292,7 @@ def plot_top_skills_bar(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
     fig.update_traces(
         hovertemplate="%{y}<br>%{x:,} lowongan<extra></extra>",
         marker_line_width=0,
+        cliponaxis=False,
     )
     fig.update_layout(coloraxis_showscale=False)
     fig.update_xaxes()
@@ -350,7 +355,7 @@ def plot_skill_cooccurrence_heatmap(df: pd.DataFrame, top_n: int = 12) -> go.Fig
                     "text": f"{v:.2f}",
                     "showarrow": False,
                     "font": {
-                        "color": "white" if v < 0.5 else "#1F2933",
+                        "color": "#0F172A" if v >= 0.55 else "#F8FAFC",
                         "size": 10,
                     },
                     "xref": "x",
@@ -358,8 +363,8 @@ def plot_skill_cooccurrence_heatmap(df: pd.DataFrame, top_n: int = 12) -> go.Fig
                 }
             )
 
-    fig.update_xaxes(side="bottom", tickangle=-40)
-    fig.update_yaxes(autorange="reversed")
+    fig.update_xaxes(side="bottom", tickangle=-40, showgrid=False)
+    fig.update_yaxes(autorange="reversed", showgrid=False)
     fig.update_layout(
         title="Korelasi Kemunculan Bersama Skill (Jaccard Similarity)",
         annotations=annotations,
@@ -502,6 +507,7 @@ def plot_top_companies(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
         text=counts.sort_values().values,
         texttemplate="%{text:,}",
         textposition="outside",
+        cliponaxis=False,
     )
     fig.update_layout(coloraxis_showscale=False)
     fig.update_xaxes()
@@ -565,6 +571,7 @@ def plot_skill_vs_salary(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
     fig.update_traces(
         texttemplate="Rp %{text:,.0f}",
         textposition="outside",
+        cliponaxis=False,
         marker_line_width=0,
         hovertemplate="<b>%{y}</b><br>Median (dengan skill): Rp %{customdata[1]:,.0f}<br>Median (tanpa skill): Rp %{customdata[0]:,.0f}<br>Premi: Rp %{customdata[2]:,.0f}<br>Jumlah Lowongan: %{customdata[3]}<extra></extra>",
     )
@@ -605,7 +612,7 @@ def plot_remote_premium(df: pd.DataFrame) -> go.Figure:
         x="workplace_type",
         y="median",
         color="premium_pct",
-        color_continuous_scale="RdYlGn",
+        color_continuous_scale=[[0.0, "#475569"], [0.5, "#38BDF8"], [1.0, "#10B981"]],
         color_continuous_midpoint=0,
         text="median",
         labels={
@@ -619,6 +626,7 @@ def plot_remote_premium(df: pd.DataFrame) -> go.Figure:
     fig.update_traces(
         texttemplate="Rp %{text:,.0f}",
         textposition="outside",
+        cliponaxis=False,
         marker_line_width=0,
         hovertemplate="<b>%{x}</b><br>Median: Rp %{y:,.0f}<br>Selisih vs. On-site: %{customdata[0]:+.1f}%%<br>Jumlah Lowongan: %{customdata[1]}<extra></extra>",
     )
@@ -675,12 +683,12 @@ def plot_skill_burden_by_career_stage(df: pd.DataFrame) -> go.Figure:
         return _empty_figure("Data pengalaman tidak memadai")
 
     focus_skills = [
+        ("skill_sql", "SQL"),
         ("skill_python", "Python"),
+        ("skill_excel", "Excel"),
         ("skill_statistics", "Statistika"),
         ("skill_machine_learning", "Machine Learning"),
-        ("skill_deep_learning", "Deep Learning"),
-        ("skill_sql", "SQL"),
-        ("skill_excel", "Excel"),
+        ("skill_etl", "ETL / Pipeline"),
     ]
 
     records = []
@@ -706,9 +714,9 @@ def plot_skill_burden_by_career_stage(df: pd.DataFrame) -> go.Figure:
         color_discrete_sequence=["#F59E0B", "#38BDF8", "#10B981"],
         text="Persentase",
     )
-    fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
-    fig.update_yaxes(title="Proporsi Lowongan yang Menuntut Skill (%)", range=[0, 105])
-    fig.update_xaxes(title="Keahlian / Tools")
+    fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside", cliponaxis=False, marker_line_width=0)
+    fig.update_yaxes(title="Proporsi Lowongan (%)", range=[0, 105], showgrid=True)
+    fig.update_xaxes(title="Keahlian / Tools", showgrid=False)
     return _apply_base_layout(fig, height=480, title="Perbandingan Beban Kualifikasi Skill per Jenjang Karir")
 
 
@@ -724,13 +732,6 @@ def plot_salary_reality_curve(df: pd.DataFrame) -> go.Figure:
 
     sub["salary_juta"] = sub["salary_avg"] / 1_000_000.0
 
-    has_sm = False
-    try:
-        import statsmodels  # noqa: F401
-        has_sm = True
-    except ImportError:
-        pass
-
     color_col = "keyword" if "keyword" in sub.columns else None
     fig = px.scatter(
         sub,
@@ -739,13 +740,32 @@ def plot_salary_reality_curve(df: pd.DataFrame) -> go.Figure:
         color=color_col,
         color_discrete_sequence=CATEGORICAL_PALETTE,
         hover_data={c: True for c in ["job_title", "company_name", "salary_juta", "exp_min_years"] if c in sub.columns},
-        opacity=0.75,
-        trendline="ols" if (has_sm and len(sub) >= 3) else None,
+        opacity=0.65,
     )
-    if has_sm and len(sub) >= 3:
-        fig.update_traces(line=dict(color="#F59E0B", width=2.5), selector=dict(mode="lines"))
-    fig.update_xaxes(title="Syarat Pengalaman Minimum (Tahun)", dtick=1)
-    fig.update_yaxes(title="Estimasi Gaji Rata-rata (Juta IDR / Bulan)")
+    fig.update_traces(marker={"size": 6, "line": {"width": 0}}, selector={"mode": "markers"})
+
+    exp_summary = (
+        sub.groupby("exp_min_years")["salary_juta"]
+        .agg(["median", "count"])
+        .query("count >= 3")
+        .reset_index()
+    )
+    if not exp_summary.empty:
+        fig.add_trace(
+            go.Scatter(
+                x=exp_summary["exp_min_years"],
+                y=exp_summary["median"],
+                mode="lines+markers+text",
+                line=dict(color="#F59E0B", width=3),
+                marker=dict(size=9, color="#F59E0B"),
+                name="Median Pasar",
+                text=[f"Rp {val:.1f} Jt" for val in exp_summary["median"]],
+                textposition="top center",
+                hovertemplate="Pengalaman: %{x} Thn<br>Median Pasar: Rp %{y:.1f} Jt<extra></extra>",
+            )
+        )
+    fig.update_xaxes(title="Syarat Pengalaman Minimum (Tahun)", dtick=1, showgrid=False)
+    fig.update_yaxes(title="Estimasi Gaji Rata-rata (Juta IDR / Bulan)", showgrid=True)
     return _apply_base_layout(fig, height=480, title="Distribusi Gaji Aktual Berdasarkan Pengalaman Kerja")
 
 
@@ -798,6 +818,7 @@ def plot_remote_luxury_comparison(df: pd.DataFrame) -> go.Figure:
             col=2,
         )
 
+    fig.update_xaxes(showgrid=False)
     fig.update_yaxes(title="Porsi Lowongan (%)", range=[0, 105], row=1, col=1)
     fig.update_yaxes(title="Gaji Rata-rata (Juta IDR)", row=1, col=2)
     return _apply_base_layout(fig, height=450, title="Dominasi On-Site vs Premi Gaji Kerja Remote")
@@ -824,12 +845,12 @@ def plot_real_tech_stack_landscape(df: pd.DataFrame, top_n: int = 15) -> go.Figu
         orientation="h",
         text="Jumlah Lowongan",
         color="Jumlah Lowongan",
-        color_continuous_scale="Blues",
+        color_continuous_scale=SEQUENTIAL_PALETTE,
     )
-    fig.update_traces(textposition="outside")
+    fig.update_traces(textposition="outside", cliponaxis=False, marker_line_width=0)
     fig.update_layout(coloraxis_showscale=False)
-    fig.update_xaxes(title="Jumlah Lowongan yang Menyebutkan Skill")
-    fig.update_yaxes(title="")
+    fig.update_xaxes(title="Jumlah Lowongan yang Menyebutkan Skill", showgrid=True)
+    fig.update_yaxes(title="", showgrid=False)
     return _apply_base_layout(fig, height=520, title="Kebutuhan Tech Stack Industri Data Indonesia")
 
 

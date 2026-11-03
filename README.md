@@ -12,43 +12,43 @@ Proyek ini memetakan dinamika kompensasi, kesenjangan kualifikasi antara level p
 
 ## Temuan Utama
 
-### 1. Disparitas Beban Kualifikasi pada Posisi Entry-Level
+### 1. Paradoks Kualifikasi Entry-Level vs Pergeseran Kebutuhan Senior
 
-Lowongan tingkat pemula (<1 tahun pengalaman kerja) mencatatkan proporsi tuntutan skill teoritis tertinggi dibanding jenjang mana pun: Python (70,6%), Statistik (58,8%), dan Machine Learning (47,1%). Namun, median kompensasi yang ditawarkan berada di level terendah bursa kerja, yaitu **Rp 4,2 juta/bulan**.
+Hanya **8,4%** lowongan (36 dari 430) yang terbuka bagi *Fresh Graduate* (0 tahun pengalaman), sedangkan **91,6%** mensyaratkan minimal 1 tahun pengalaman kerja (1–2 tahun: 47,7%, 3+ tahun: 43,9%).
 
-Sebaliknya, pada posisi dengan syarat pengalaman di atas 3 tahun (Mid/Senior), tuntutan Machine Learning justru menurun ke angka **29,8%**. Perusahaan beralih memprioritaskan integrasi sistem operasional riil: ETL (41,5%), Power BI/Tableau (35,1%), dan arsitektur Cloud (27,7%), dengan median kompensasi **Rp 9,0 – 15,0+ juta/bulan**.
+Menariknya, lowongan *Fresh Graduate* (<1 tahun) justru mencatatkan proporsi tuntutan skill fundamental & teoritis paling padat: **SQL (88,9%)**, **Python (77,8%)**, **Excel (72,2%)**, **Statistika (66,7%)**, dan **Machine Learning (50,0%)**, dengan **median gaji Rp 5,25 juta/bulan** (rentang Q1 Rp 2,9 juta – Q3 Rp 5,86 juta). Pada level *Junior* (1–2 tahun), median gaji naik moderat ke **Rp 6,5 juta/bulan**.
 
 ![Perbandingan Beban Kualifikasi Skill](assets/charts/01_skill-burden-by-career-stage.png)
 
-Fenomena ini mencerminkan dinamika di mana organisasi yang baru mulai membangun inisiatif data kerap merekrut *single-person data team*—menuntut satu orang menyelesaikan seluruh siklus data dari analitik hingga machine learning—dengan alokasi anggaran staf pemula.
+Pola ini mencerminkan dinamika di mana organisasi yang baru merintis kapabilitas data kerap merekrut *single-person data team*—menuntut satu kandidat menangani seluruh alur analitik hingga modeling—dengan alokasi anggaran entry-level.
 
-Kurva regresi sebaran gaji terhadap pengalaman kerja memperlihatkan bahwa titik percepatan kompensasi riil baru terjadi setelah kandidat melewati batas 2–3 tahun pengalaman kerja:
+Sebaliknya, pada jenjang *Mid/Senior* (3+ tahun), tuntutan pengolahan spreadsheet dasar dan teori menurun (**Excel turun dari 72,2% ke 30,2%**, **Statistika turun dari 66,7% ke 18,5%**). Prioritas beralih ke stabilitas sistem data produksi: **ETL / Data Pipeline melonjak dari 25,0% ke 46,0%** dan **arsitektur Cloud (AWS/GCP/Azure) naik dari 13,9% ke 28,0%**. Titik lompatan kompensasi (*inflection point*) pasar data Indonesia terjadi pada level **Mid-Level (3 tahun: median Rp 9,0 juta/bulan)** dan **Senior (5+ tahun: median Rp 17,5 juta/bulan)**:
 
 ![Distribusi Gaji vs Pengalaman](assets/charts/02_salary-reality-curve.png)
 
 ---
 
-### 2. Ketersediaan Kerja Remote dan Disparitas Kompensasi
+### 2. Sentralisasi Geografis & Langkanya Kerja Remote (*Double Barrier*)
 
-Sebanyak **90,7%** lowongan kerja data di Indonesia mensyaratkan kehadiran fisik penuh di kantor (On-site / WFO). Skema Hybrid mencakup **5,8%**, dan opsi Full Remote hanya mencakup **3,5%** dari total lowongan aktif.
+Pasar tenaga kerja data di Indonesia sangat tersentralisasi: **93,0%** lowongan mewajibkan kehadiran fisik penuh di kantor (On-site / WFO, 400 lowongan), skema Hybrid mencakup **4,2%** (18 lowongan), dan opsi Full Remote hanya **2,8%** (12 lowongan).
 
-Meskipun ketersediaannya sangat terbatas, lowongan remote menawarkan median kompensasi **Rp 12,5 juta**, berbanding On-site sebesar **Rp 7,0 juta** (premi sebesar +78,6%).
+Secara geografis, **83,5% lowongan terpusat di wilayah metropolitan Jabodetabek** (Jakarta 65,8%, Tangerang 13,0%, Depok/Bekasi/Bogor 4,7%), diikuti Bandung (4,9%) dan Surabaya (4,4%). Kombinasi dominasi WFO (93,0%) dan konsentrasi Jabodetabek (83,5%) menciptakan hambatan ganda (*double barrier*) bagi talenta data di luar Jabodetabek.
 
 ![Porsi Model Kerja dan Median Gaji](assets/charts/03_remote-luxury-comparison.png)
 
-Di pasar tenaga kerja Indonesia, fasilitas kerja jarak jauh (remote) bukan benefit standar tempat kerja yang umum dinegosiasikan untuk jenjang pemula. Model remote berfungsi sebagai instrumen kompensasi untuk talenta spesialis senior atau perusahaan multinasional dan regional yang merekrut kandidat Indonesia.
+Meskipun peluangnya sangat terbatas (2,8%), lowongan Full Remote menawarkan **median gaji Rp 12,5 juta/bulan**—premi kompensasi **+78,6%** dibandingkan posisi On-site dan Hybrid yang sama-sama memiliki median **Rp 7,0 juta/bulan**. Di pasar lokal, fasilitas remote bukan merupakan benefit umum untuk jenjang pemula, melainkan instrumen kompensasi premium bagi talenta spesialis senior atau perusahaan skala regional.
 
 ---
 
-### 3. Kebutuhan Tech Stack Industri: Fondasi vs Tren
+### 3. Hierarki Tech Stack Industri: Fondasi Operasional vs Hype AI
 
-Di tengah ramainya diskusi publik mengenai AI generatif dan model bahasa besar, kebutuhan operasional harian bursa kerja Indonesia tetap berpusat pada penarikan data dasar dan otomatisasi pelaporan:
+Di tengah pesatnya eksposur publik terhadap model AI mutakhir, kebutuhan operasional harian industri data di Indonesia bertumpu kuat pada fondasi kueri dan pelaporan bisnis:
 
 ![Kebutuhan Tech Stack Industri Data](assets/charts/04_real-tech-stack-landscape.png)
 
-- **SQL** (428 kemunculan) dan **Excel** (246 kemunculan) merupakan syarat mutlak yang mendominasi hampir seluruh deskripsi pekerjaan.
-- **Python** (189 kemunculan) dan **ETL** (168 kemunculan) menjadi tulang punggung rekayasa dan pipeline data.
-- Framework deep learning murni seperti PyTorch dan TensorFlow hanya muncul pada ceruk riset spesifik (<30 kemunculan). Prioritas utama rekrutmen tetap bertumpu pada konsistensi metrik dan keandalan data operasional.
+- **Fondasi Operasional Mutlak:** Tiga tools yang paling banyak diminta adalah **SQL (329 lowongan / 76,5%)**, **Python (243 lowongan / 56,5%)**, dan **Excel (190 lowongan / 44,2%)**.
+- **Ekosistem Analytics & Data Pipeline:** Lapis kedua didominasi oleh keahlian pipeline dan visualisasi: **Machine Learning (144 / 33,5%)**, **ETL (139 / 32,3%)**, **Power BI (139 / 32,3%)**, **Tableau (114 / 26,5%)**, dan **Statistika (114 / 26,5%)**.
+- **Realitas Adopsi AI:** Framework *Deep Learning* spesifik seperti **TensorFlow (20 lowongan / 4,7%)** dan **PyTorch (18 lowongan / 4,2%)** hanya muncul pada kurang dari 5% lowongan. Mayoritas bisnis memprioritaskan konsistensi metrik dan integrasi data operasional sebelum mengimplementasikan machine learning tingkat lanjut.
 
 ---
 

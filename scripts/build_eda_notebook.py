@@ -22,18 +22,18 @@ def create_eda_notebook():
     cells.append(nbf.v4.new_markdown_cell("""# Analisis Pasar Kerja Profesi Data di Indonesia
 ### Riset Empiris Berbasis 430 Lowongan Kerja Glints Indonesia
 
-Notebook ini menganalisis kondisi pasar tenaga kerja sektor data di Indonesia (Data Analyst, Data Engineer, Data Scientist, ML Engineer). Analisis dibangun di atas 430 lowongan kerja aktif dari Glints Indonesia yang telah divalidasi dan disaring secara ketat (100% berbasis di Indonesia, deduplikasi, dan pembersihan data).
+Notebook ini menyajikan analisis empiris terhadap kondisi pasar tenaga kerja sektor data di Indonesia (*Data Analyst, Data Engineer, Data Scientist, ML Engineer*). Analisis dibangun di atas 430 lowongan kerja aktif dari Glints Indonesia yang telah melalui kurasi ketat (100% berbasis di Indonesia, deduplikasi, dan pembersihan data).
 
 ---
 
 ## Ringkasan Eksekutif
 
-Dari 430 lowongan kerja data yang dianalisis (349 di antaranya mencantumkan nominal gaji transparan):
+Dari 430 lowongan kerja data yang dianalisis (349 di antaranya mencantumkan estimasi gaji transparan):
 
-1. **Beban Kualifikasi Entry-Level:** Lowongan tingkat pemula (<1 tahun pengalaman) mencatatkan proporsi tuntutan skill teoritis tertinggi: Python (70,6%), Statistik (58,8%), dan Machine Learning (47,1%), dengan median gaji terendah (Rp 4,2 juta). Sebaliknya, posisi Mid/Senior (>3 tahun) lebih terfokus pada integrasi sistem operasional (ETL 41,5%, Power BI/Tableau 35,1%, Cloud 27,7%) dengan median gaji Rp 9,0 – 15,0+ juta.
-2. **Ketersediaan Kerja Remote:** Sebanyak 90,7% lowongan mensyaratkan kerja On-site (WFO). Opsi Full Remote hanya mencakup 3,5% dari total lowongan, namun menawarkan median gaji Rp 12,5 juta berbanding On-site Rp 7,0 juta (+78,6% premi).
-3. **Kebutuhan Tech Stack Industri:** Kebutuhan industri didominasi oleh SQL (428 kemunculan) dan Excel (246 kemunculan). Kebutuhan deep learning dan framework AI spesifik (PyTorch, TensorFlow) hanya muncul pada sebagian kecil posisi riset (<30 kemunculan).
-4. **Pintu Masuk Fresh Graduate:** Hanya 5,8% lowongan yang secara eksplisit menerima kandidat tanpa pengalaman (0 tahun), menegaskan pentingnya portofolio proyek terapan bagi pelamar pemula."""))
+1. **Paradoks Kualifikasi Entry-Level vs Pergeseran Senior:** Hanya **8,4%** lowongan (36 dari 430) yang terbuka bagi *Fresh Graduate* (0 tahun pengalaman), sedangkan **91,6%** mensyaratkan minimal 1 tahun pengalaman (1–2 tahun: 47,7%, 3+ tahun: 43,9%). Lowongan *Fresh Graduate* (<1 tahun) justru menuntut proporsi skill fundamental paling padat: **SQL (88,9%)**, **Python (77,8%)**, **Excel (72,2%)**, **Statistika (66,7%)**, dan **Machine Learning (50,0%)**, dengan **median gaji Rp 5,25 juta/bulan** (Q1 Rp 2,9 juta – Q3 Rp 5,86 juta). Sebaliknya, pada jenjang *Mid/Senior* (3+ tahun), kebutuhan bergeser ke arsitektur data produksi: **ETL / Pipeline melonjak dari 25,0% ke 46,0%** dan **Cloud naik dari 13,9% ke 28,0%**, dengan kompensasi yang melompat ke median **Rp 9,0 juta** (Mid-Level) dan **Rp 17,5 juta** (Senior 5+ tahun).
+2. **Sentralisasi Geografis & Langkanya Kerja Remote (*Double Barrier*):** Pasar kerja data Indonesia sangat tersentralisasi: **93,0%** lowongan mewajibkan **On-site / WFO** (400 lowongan), **4,2% Hybrid** (18 lowongan), dan hanya **2,8% Full Remote** (12 lowongan). Secara geografis, **83,5% lowongan terpusat di Jabodetabek** (Jakarta 65,8%, Tangerang 13,0%, Depok/Bekasi/Bogor 4,7%), diikuti Bandung (4,9%) dan Surabaya (4,4%). Kombinasi ini menciptakan hambatan ganda (*double barrier*) bagi talenta di luar Jabodetabek. Meskipun sangat terbatas (2,8%), lowongan Full Remote menawarkan **median gaji Rp 12,5 juta/bulan**—premi **+78,6%** dibandingkan On-site dan Hybrid (keduanya di angka Rp 7,0 juta/bulan).
+3. **Hierarki Tech Stack Industri (Fondasi Operasional vs Hype AI):** Tiga fondasi utama yang paling banyak diminta adalah **SQL (329 lowongan / 76,5%)**, **Python (243 lowongan / 56,5%)**, dan **Excel (190 lowongan / 44,2%)**. Lapis kedua ditempati ekosistem analytics & data pipeline: **Machine Learning (144 / 33,5%)**, **ETL (139 / 32,3%)**, **Power BI (139 / 32,3%)**, **Tableau (114 / 26,5%)**, dan **Statistika (114 / 26,5%)**. Sebaliknya, framework deep learning spesifik seperti **TensorFlow (20 lowongan / 4,7%)** dan **PyTorch (18 lowongan / 4,2%)** hanya muncul pada kurang dari 5% lowongan.
+4. **Pintu Masuk Fresh Graduate:** Ketiadaan jalur masuk formal bagi 91,6% lowongan menegaskan bahwa portofolio proyek terapan end-to-end (ingestion, cleaning, modeling/dashboarding) adalah instrumen verifikasi mutlak bagi kandidat pemula untuk membuktikan kompetensi praktis."""))
 
     # Cell 2: Setup and Data Loading
     cells.append(nbf.v4.new_markdown_cell("""---
@@ -99,10 +99,8 @@ fig_skill_burden.show()"""))
     # Cell 6: Skill Burden Insight
     cells.append(nbf.v4.new_markdown_cell("""### Analisis Temuan
 
-1. **Beban Teori pada Posisi Pemula:** Posisi pemula mencatatkan tuntutan Python (70,6%), Statistik (58,8%), dan Machine Learning (47,1%) lebih tinggi dibandingkan posisi berpengalaman.
-2. **Pergeseran Kebutuhan pada Posisi Senior:** Pada level pengalaman 3 tahun ke atas, tuntutan Machine Learning turun ke 29,8%, digantikan prioritas pada integrasi sistem: ETL (41,5%), Power BI/Tableau (35,1%), dan arsitektur Cloud (27,7%).
-
-Pola ini menunjukkan kecenderungan organisasi yang baru merintis tim data untuk merekrut satu kandidat yang diharapkan mampu menangani seluruh alur kerja data dengan anggaran staf pemula."""))
+1. **Beban Teori & Multi-role pada Posisi Pemula:** Posisi *Fresh Graduate* (<1 tahun) mencatatkan proporsi tuntutan skill teknis paling padat: SQL (88,9%), Python (77,8%), Excel (72,2%), Statistika (66,7%), dan Machine Learning (50,0%). Pola ini mencerminkan kecenderungan organisasi yang baru merintis kapabilitas data untuk merekrut *single-person data team* dengan alokasi anggaran entry-level.
+2. **Pergeseran Kebutuhan pada Posisi Senior:** Pada jenjang Mid/Senior (3+ tahun), tuntutan pengolahan spreadsheet dasar dan teori menurun tajam (Excel turun dari 72,2% ke 30,2%, Statistika turun dari 66,7% ke 18,5%). Prioritas beralih ke stabilitas sistem data produksi: **ETL / Data Pipeline melonjak dari 25,0% ke 46,0%** dan **arsitektur Cloud (AWS/GCP/Azure) naik dari 13,9% ke 28,0%**."""))
 
     # Cell 7: Salary Curve Intro
     cells.append(nbf.v4.new_markdown_cell("""### Sebaran Kompensasi Aktual Berdasarkan Pengalaman Kerja"""))
@@ -112,7 +110,10 @@ Pola ini menunjukkan kecenderungan organisasi yang baru merintis tim data untuk 
 fig_reality_curve.show()"""))
 
     # Cell 9: Salary Curve Insight
-    cells.append(nbf.v4.new_markdown_cell("""Median gaji posisi pemula berada di angka **Rp 4,2 juta**, dengan sebaran terbanyak di rentang Rp 1,5 – 4,5 juta. Titik percepatan kenaikan gaji riil baru terlihat setelah melewati 2–3 tahun pengalaman kerja, di mana median gaji meningkat ke rentang **Rp 9,0 – 15,0+ juta**."""))
+    cells.append(nbf.v4.new_markdown_cell("""Distribusi gaji memperlihatkan kurva kompensasi riil pasar data Indonesia:
+- **Fresh Graduate (0 tahun):** Median gaji berada di angka **Rp 5,25 juta/bulan** (rentang Q1 Rp 2,9 juta – Q3 Rp 5,86 juta).
+- **Junior (1–2 tahun):** Median gaji naik moderat ke **Rp 6,5 juta/bulan**.
+- **Inflection Point:** Lompatan kompensasi signifikan baru terjadi saat memasuki level **Mid-Level (3 tahun: median Rp 9,0 juta/bulan)** dan **Senior (5+ tahun: median Rp 17,5 juta/bulan)**."""))
 
     # Cell 10: Experience & Education Distribution Intro
     cells.append(nbf.v4.new_markdown_cell("""### Syarat Pengalaman Minimum dan Standar Akademis"""))
@@ -122,7 +123,7 @@ fig_reality_curve.show()"""))
 plot_education_distribution(df).show()"""))
 
     # Cell 12: Experience & Education Insight
-    cells.append(nbf.v4.new_markdown_cell("""Sebanyak 94,2% lowongan mensyaratkan minimal 1 tahun pengalaman kerja. Hanya 5,8% lowongan yang terbuka untuk pelamar dengan pengalaman 0 tahun. Dari sisi pendidikan, ijazah Sarjana (S1) tetap menjadi standar utama industri."""))
+    cells.append(nbf.v4.new_markdown_cell("""Sebanyak **91,6% lowongan** mensyaratkan minimal 1 tahun pengalaman kerja (1–2 tahun: 47,7%, 3+ tahun: 43,9%). Hanya **8,4% lowongan (36 dari 430)** yang terbuka bagi pelamar dengan pengalaman 0 tahun (*Fresh Graduate*). Dari sisi pendidikan, ijazah Sarjana (S1) tetap menjadi syarat utama industri, sedangkan kualifikasi Pascasarjana (S2) hanya muncul pada posisi spesialis riset."""))
 
     # Cell 13: Section 2 Intro
     cells.append(nbf.v4.new_markdown_cell("""---
@@ -138,10 +139,8 @@ fig_remote.show()"""))
     # Cell 15: Remote Comparison Insight
     cells.append(nbf.v4.new_markdown_cell("""### Analisis Temuan
 
-1. **Dominasi On-Site:** Sebanyak 90,7% lowongan mewajibkan kerja On-site (WFO). Skema Hybrid berada di angka 5,8%, dan opsi Full Remote hanya 3,5%.
-2. **Premi Gaji Remote (+78,6%):** Posisi remote mencatatkan median gaji Rp 12,5 juta, dibandingkan On-site sebesar Rp 7,0 juta.
-
-Data menunjukkan bahwa opsi kerja remote di sektor data Indonesia bukan merupakan benefit umum untuk jenjang pemula, melainkan instrumen kompensasi selektif untuk talenta spesialis atau perusahaan skala regional."""))
+1. **Dominasi On-Site & Hambatan Geografis:** Sebanyak **93,0% lowongan** mewajibkan kerja fisik di kantor (On-site / WFO), skema Hybrid hanya **4,2%**, dan opsi Full Remote hanya **2,8%**. Ditambah dengan **83,5% lowongan yang terpusat di Jabodetabek** (Jakarta 65,8%, Tangerang 13,0%, Depok/Bekasi/Bogor 4,7%), talenta di luar wilayah metropolitan menghadapi hambatan ganda (*double barrier*).
+2. **Premi Kompensasi Remote (+78,6%):** Meskipun langka, posisi Full Remote mencatatkan median kompensasi **Rp 12,5 juta/bulan**, berbanding posisi On-site dan Hybrid yang sama-sama memiliki median **Rp 7,0 juta/bulan**. Di industri data Indonesia, opsi kerja remote bukan benefit umum untuk jenjang pemula, melainkan instrumen kompensasi premium bagi talenta spesialis senior atau perusahaan skala regional."""))
 
     # Cell 16: Additional Workplace Charts
     cells.append(nbf.v4.new_code_cell("""plot_workplace_type_distribution(df).show()
@@ -161,9 +160,9 @@ fig_tech_stack.show()"""))
     # Cell 19: Tech Stack Insight
     cells.append(nbf.v4.new_markdown_cell("""### Analisis Kebutuhan Tools
 
-- **Fondasi Utama:** SQL (428 kemunculan) dan Excel (246 kemunculan) merupakan kebutuhan mutlak yang mendominasi bursa kerja.
-- **Data Engineering:** Python (189 kemunculan), ETL (168 kemunculan), dan infrastruktur Cloud memegang peranan krusial untuk pengelolaan pipeline data.
-- **Framework AI:** PyTorch dan TensorFlow hanya muncul pada sebagian kecil lowongan riset spesifik (<30 kemunculan), mengindikasikan bahwa mayoritas bisnis berfokus pada pelaporan dan otomatisasi data sebelum beralih ke machine learning tingkat lanjut."""))
+- **Fondasi Operasional Mutlak:** **SQL (329 lowongan / 76,5%)**, **Python (243 / 56,5%)**, dan **Excel (190 / 44,2%)** merupakan kebutuhan dasar yang mendominasi bursa kerja.
+- **Ekosistem Analytics & Data Pipeline:** Lapis kedua ditempati oleh **Machine Learning (144 / 33,5%)**, **ETL (139 / 32,3%)**, **Power BI (139 / 32,3%)**, **Tableau (114 / 26,5%)**, dan **Statistika (114 / 26,5%)**.
+- **Realitas Adopsi AI:** Di tengah antusiasme publik terhadap AI, framework *Deep Learning* spesifik seperti **TensorFlow (20 lowongan / 4,7%)** dan **PyTorch (18 lowongan / 4,2%)** hanya muncul pada kurang dari 5% lowongan, menegaskan bahwa mayoritas bisnis di Indonesia berfokus pada keandalan pelaporan data operasional dan rekayasa pipeline sebelum mengadopsi AI tingkat lanjut."""))
 
     # Cell 20: Co-occurrence Intro
     cells.append(nbf.v4.new_markdown_cell("""### Struktur Kemunculan Bersama Antar-Skill (Jaccard Index)"""))
@@ -172,10 +171,10 @@ fig_tech_stack.show()"""))
     cells.append(nbf.v4.new_code_cell("""plot_skill_cooccurrence_heatmap(df, top_n=12).show()"""))
 
     # Cell 22: Heatmap Insight
-    cells.append(nbf.v4.new_markdown_cell("""Matriks ko-okurensi memperlihatkan tiga klaster utama:
-1. **Business Intelligence / Analis:** SQL, Excel, Tableau, dan Power BI.
-2. **Data Science:** Python, Pandas, Machine Learning, dan Statistik.
-3. **Data Engineering:** SQL, ETL, Cloud, dan pipeline data."""))
+    cells.append(nbf.v4.new_markdown_cell("""Matriks ko-okurensi memperlihatkan tiga klaster profesi yang jelas:
+1. **Business Intelligence / Analytics:** Keterkaitan kuat antara SQL, Excel, Power BI, dan Tableau.
+2. **Data Science & ML:** Pasangan erat antara Python, Statistika, Machine Learning, dan eksplorasi data.
+3. **Data Engineering:** Integrasi teknis antara SQL, ETL, Cloud (AWS/GCP/Azure), dan pipeline data."""))
 
     # Cell 23: Section 4 Intro
     cells.append(nbf.v4.new_markdown_cell("""---
@@ -188,7 +187,7 @@ plot_role_distribution(df).show()
 plot_top_companies(df, top_n=15).show()"""))
 
     # Cell 25: Section 4 Insight
-    cells.append(nbf.v4.new_markdown_cell("""Posisi Data Analyst dan Data Engineer mendominasi volume rekrutmen di Indonesia. Dari segi premi kompensasi, keahlian arsitektur Cloud dan manajemen data pipeline (ETL) memberikan selisih median kompensasi positif tertinggi di atas rata-rata pasar."""))
+    cells.append(nbf.v4.new_markdown_cell("""Posisi Data Analyst dan Data Engineer mendominasi volume rekrutmen data di Indonesia. Dari segi premi kompensasi, keahlian infrastruktur Cloud dan rekayasa pipeline data (ETL) memberikan selisih median kompensasi positif tertinggi di atas rata-rata pasar."""))
 
     # Cell 26: Conclusion
     cells.append(nbf.v4.new_markdown_cell("""---
@@ -196,13 +195,13 @@ plot_top_companies(df, top_n=15).show()"""))
 ## Kesimpulan dan Implikasi Praktis
 
 ### Untuk Pencari Kerja / Fresh Graduate
-1. **Kuasai Fondasi Terlebih Dahulu:** Prioritaskan kemahiran kueri SQL, Excel lanjutan, dan satu alat visualisasi bisnis (Power BI atau Tableau) sebelum mendalami framework deep learning yang jarang diminta di awal karir.
-2. **Bangun Portofolio Terapan:** Karena mayoritas lowongan mensyaratkan pengalaman, buktikan kompetensi teknis melalui portofolio proyek data end-to-end yang dapat diuji (pipeline ingestion, pembersihan data, dan visualisasi interaktif).
-3. **Fleksibilitas Lokasi Kerja:** Pahami bahwa kesempatan kerja jarak jauh (remote) masih sangat terbatas untuk jenjang awal; bersiaplah untuk model kerja On-site di pusat-pusat bisnis (Jabodetabek).
+1. **Kuasai Fondasi Terlebih Dahulu:** Prioritaskan kemahiran kueri SQL tingkat lanjut, manipulasi data via Python/Pandas, Excel bisnis, dan satu tools BI (Power BI / Tableau) sebelum mempelajari framework deep learning yang jarang diminta di awal karir.
+2. **Bangun Portofolio Terapan Terverifikasi:** Menyadari bahwa 91,6% lowongan mensyaratkan pengalaman, buktikan kompetensi teknis melalui portofolio end-to-end yang dapat diuji (ingestion data mentah, pembersihan, pipeline otomatisasi, dan visualisasi interaktif).
+3. **Antisipasi Hambatan Geografis:** Pahami bahwa kerja remote masih menjadi komoditas langka (2,8%); persiapkan diri untuk penempatan On-site terutama di kawasan Jabodetabek (83,5%).
 
 ### Untuk Tim Perekrut / Hiring Manager
-1. **Sesuaikan Ekspektasi Kualifikasi:** Hindari mencantumkan daftar keahlian multi-role yang tidak realistis untuk posisi pemula dengan standar kompensasi junior.
-2. **Fokus pada Masalah Bisnis Nyata:** Definisikan kebutuhan posisi secara spesifik: apakah membutuhkan pelaporan operasional rutin (Data Analyst) atau penyiapan infrastruktur data (Data Engineer)."""))
+1. **Rasionalisasi Kualifikasi Entry-Level:** Hindari membebankan kualifikasi multi-role (analis, engineer, saintis sekaligus) pada kandidat pemula dengan standar kompensasi junior.
+2. **Perjelas Kebutuhan Posisi:** Bedakan secara tegas antara kebutuhan pelaporan metrik bisnis rutin (Data Analyst) dan kebutuhan arsitektur infrastruktur data (Data Engineer) guna mengoptimalkan efisiensi rekrutmen."""))
 
     nb.cells = cells
     

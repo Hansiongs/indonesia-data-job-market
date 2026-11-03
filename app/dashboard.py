@@ -306,10 +306,10 @@ with tab_overview:
 with tab_kualifikasi:
     st.markdown(
         "<div class='gji-callout'>"
-        "<strong>Disparitas Kualifikasi:</strong> Lowongan tingkat pemula (<1 tahun pengalaman) menuntut proporsi skill teoritis tertinggi "
-        "(Python 70,6%, Statistik 58,8%, Machine Learning 47,1%) dengan median gaji Rp 4,2 juta. "
-        "Sebaliknya, posisi di atas 3 tahun pengalaman lebih memprioritaskan integrasi operasional "
-        "(ETL 41,5%, Power BI/Tableau 35,1%, Cloud 27,7%) dengan median gaji Rp 9,0 – 15,0+ juta."
+        "<strong>Paradoks Kualifikasi Entry-Level:</strong> Hanya 8,4% lowongan terbuka untuk Fresh Graduate (0 tahun pengalaman), "
+        "namun menuntut beban skill fundamental terpadat: SQL (88,9%), Python (77,8%), Excel (72,2%), Statistika (66,7%), "
+        "dan Machine Learning (50,0%) dengan median gaji Rp 5,25 juta/bulan. Sebaliknya pada jenjang Mid/Senior (3+ tahun), tuntutan "
+        "bergeser ke arsitektur data produksi: ETL melonjak ke 46,0% dan Cloud ke 28,0%, dengan median gaji melompat ke Rp 9,0 – 17,5 juta/bulan."
         "</div>",
         unsafe_allow_html=True,
     )
@@ -335,10 +335,9 @@ with tab_kualifikasi:
 with tab_model_kerja:
     st.markdown(
         "<div class='gji-callout'>"
-        "<strong>Ketersediaan Kerja Remote:</strong> Sebanyak 90,7% lowongan mensyaratkan kerja On-site (WFO). "
-        "Opsi Full Remote hanya mencakup 3,5% dari total lowongan, namun menawarkan median gaji Rp 12,5 juta "
-        "dibandingkan On-site Rp 7,0 juta (+78,6% premi). Di pasar lokal, fasilitas remote umumnya diberikan kepada "
-        "posisi spesialis atau perusahaan multinasional/regional."
+        "<strong>Dominasi On-Site & Langkanya Kerja Remote:</strong> Sebanyak 93,0% lowongan mewajibkan On-site (WFO) dan 83,5% terpusat di Jabodetabek, "
+        "menciptakan hambatan ganda bagi talenta luar daerah. Opsi Full Remote hanya mencakup 2,8% lowongan, namun menawarkan premi kompensasi "
+        "signifikan dengan median gaji Rp 12,5 juta/bulan (+78,6% dibanding On-site dan Hybrid sebesar Rp 7,0 juta/bulan)."
         "</div>",
         unsafe_allow_html=True,
     )
@@ -360,8 +359,9 @@ with tab_model_kerja:
 with tab_tech:
     st.markdown(
         "<div class='gji-callout'>"
-        "<strong>Prioritas Kebutuhan Tools:</strong> SQL (428 kemunculan) dan Excel (246 kemunculan) merupakan kebutuhan mutlak "
-        "di hampir seluruh lowongan. Framework deep learning (PyTorch, TensorFlow) hanya muncul pada sebagian kecil posisi riset (<30 kemunculan)."
+        "<strong>Hierarki Tech Stack Industri:</strong> SQL (76,5%), Python (56,5%), dan Excel (44,2%) menjadi fondasi operasional mutlak. "
+        "Lapis kedua dikuasai Machine Learning (33,5%), ETL (32,3%), Power BI (32,3%), Tableau (26,5%), dan Statistika (26,5%). "
+        "Sebaliknya, framework spesifik AI seperti TensorFlow (4,7%) dan PyTorch (4,2%) hanya dibutuhkan pada ceruk riset spesifik (<5% lowongan)."
         "</div>",
         unsafe_allow_html=True,
     )

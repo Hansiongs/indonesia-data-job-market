@@ -72,7 +72,7 @@ def test_pretty_skill_label_strips_either_prefix() -> None:
 def test_palettes_are_nonempty() -> None:
     """The exported palettes must always carry at least one entry."""
     assert len(CATEGORICAL_PALETTE) > 0
-    assert isinstance(SEQUENTIAL_PALETTE, str) and SEQUENTIAL_PALETTE
+    assert len(SEQUENTIAL_PALETTE) > 0
 
 
 def test_top_skills_bar_uses_pretty_labels() -> None:
