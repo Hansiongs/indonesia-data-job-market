@@ -115,13 +115,13 @@ def test_top_skills_bar_uses_pretty_labels() -> None:
 
 def test_new_showcase_charts_return_figures() -> None:
     """The 4 showcase charts must return valid Plotly Figure objects."""
+    import pandas as pd
     from app.charts import (
         plot_real_tech_stack_landscape,
         plot_remote_luxury_comparison,
         plot_salary_reality_curve,
         plot_skill_burden_by_career_stage,
     )
-    import pandas as pd
 
     df = pd.DataFrame(
         {
