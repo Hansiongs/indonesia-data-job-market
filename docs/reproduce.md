@@ -1,14 +1,14 @@
-# Panduan Reproduksi Pipeline Scraping & Analisis Mandiri
+# Panduan Menjalankan Ulang Scraping dan Analisis
 
-Repositori ini telah menyertakan dataset bersih terverifikasi di `data/processed/master_dataset_eda.csv`, sehingga Anda **tidak wajib** melakukan scraping untuk menjalankan dashboard atau membaca laporan analisis.
+Repositori ini sudah menyertakan dataset bersih di `data/processed/master_dataset_eda.csv`. Anda tidak perlu melakukan scraping ulang jika hanya ingin menjalankan dashboard atau membaca laporan analisis.
 
-Panduan ini ditujukan bagi praktisi yang ingin menjalankan pipeline scraping mandiri dari nol langsung dari portal Glints Indonesia.
+Panduan ini ditujukan bagi Anda yang ingin mengambil ulang data mentah dari nol lewat portal Glints Indonesia.
 
 ---
 
 ## 1. Persiapan Dependensi
 
-Pastikan virtual environment telah aktif, lalu pasang dependensi scraper:
+Pastikan virtual environment sudah aktif, lalu pasang paket tambahan untuk scraper.
 
 ```bash
 pip install -r requirements-scraper.txt
@@ -18,89 +18,89 @@ playwright install chromium
 
 ---
 
-## 2. Autentikasi Sesi Glints (Aman & Bebas Blokir Bot)
+## 2. Login Sesi Glints
 
-Google Sign-In dan proteksi Cloudflare memblokir proses otomasi standar seperti `playwright codegen`. Untuk itu, proyek ini menggunakan script autentikasi khusus di `scripts/login.py` yang menghubungkan Playwright ke browser Google Chrome asli Anda via port debugging:
+Proses login Google dan proteksi Cloudflare sering memblokir browser otomatis bawaan seperti `playwright codegen`. Untuk mengatasinya, gunakan script `scripts/login.py` yang menghubungkan Playwright ke browser Google Chrome asli di komputer Anda lewat port debugging.
 
 ```bash
-# Jalankan helper login
+# Jalankan script bantu login
 python scripts/login.py
 ```
 
-### Langkah yang Terjadi:
-1. Skrip akan membuka peramban Google Chrome asli.
-2. Anda dapat melakukan proses masuk (Login) ke akun Glints secara normal (baik melalui Google Sign-In maupun email).
-3. Setelah berhasil masuk ke halaman Glints, tekan tombol **Enter** pada terminal.
-4. Skrip akan secara otomatis mengekstraksi seluruh session cookies ke dalam berkas `secrets/auth.json`.
-5. Berkas `secrets/auth.json` disimpan secara lokal dan **otomatis diabaikan oleh Git** (`.gitignore`). Jangan pernah membagikan atau mengunggah berkas ini ke repositori publik.
+### Cara Kerja Script
+1. Script akan membuka jendela Google Chrome asli.
+2. Silakan login ke akun Glints seperti biasa menggunakan akun Google atau email.
+3. Setelah berhasil masuk ke halaman utama Glints, kembali ke terminal lalu tekan tombol **Enter**.
+4. Script akan menyimpan session cookies ke file `secrets/auth.json`.
+5. File `secrets/auth.json` tersimpan di komputer lokal dan sudah masuk daftar `.gitignore`. Jangan pernah mengunggah atau membagikan file ini ke repositori publik.
 
 ---
 
-## 3. Ekstraksi Data Mentah (Scraping)
+## 3. Pengambilan Data Mentah (Scraping)
 
-Setelah sesi tersimpan di `secrets/auth.json`, jalankan modul scraper:
+Setelah sesi login tersimpan di `secrets/auth.json`, jalankan kedua modul scraper secara berurutan.
 
-### A. Pengambilan Tautan Lowongan Kerja (`links.py`)
+### A. Mengambil Daftar Tautan Lowongan (`links.py`)
 ```bash
 python -m glints_scraper.links
 ```
-Skrip ini akan mencari lowongan untuk 4 kata kunci utama (*data analyst, data scientist, data engineer, machine learning*) di Indonesia dan menyimpannya secara inkremental ke `data/raw/glints_jobs.csv`.
+Script ini mencari lowongan untuk 4 kata kunci utama (*data analyst, data scientist, data engineer, machine learning*) di Indonesia dan menyimpan daftarnya secara bertahap ke `data/raw/glints_jobs.csv`.
 
-### B. Pengambilan Rincian Lowongan Kerja (`details.py`)
+### B. Mengambil Detail Lowongan (`details.py`)
 ```bash
 python -m glints_scraper.details
 ```
-Skrip ini membaca tautan dari `data/raw/glints_jobs.csv`, mengunjungi halaman rincian lowongan kerja, dan mengekstrak deskripsi lengkap, tag kompetensi, serta rentang kompensasi ke `data/raw/job_details.csv`. Skrip dilengkapi mekanisme jeda (*polite rate-limiting*) dan penyimpanan checkpoint berkala.
+Script ini membaca daftar tautan dari `data/raw/glints_jobs.csv`, membuka tiap halaman lowongan, lalu mengambil deskripsi lengkap, tag skill, dan informasi gaji ke `data/raw/job_details.csv`. Proses ini sudah dilengkapi jeda antar-request dan penyimpanan checkpoint berkala agar aman dilanjutkan jika terputus.
 
 ---
 
-## 4. Pembersihan & Rekayasa Fitur Data (`transform.py`)
+## 4. Pembersihan dan Pembuatan Fitur (`transform.py`)
 
-Setelah data mentah terkumpul, jalankan modul transformasi data:
+Setelah pengumpulan data mentah selesai, jalankan modul pembersihan data.
 
 ```bash
 python -m glints_scraper.transform
 ```
 
-### Tahapan Transformasi:
-1. **Validasi Lokasi Ketat:** Memfilter 100% lowongan kerja berbasis di Indonesia dan membuang data lokasi luar negeri/regional (seperti Vietnam).
-2. **Standardisasi Gaji:** Mengurai string gaji IDR menjadi nilai numerik standar (`salary_min`, `salary_max`, `salary_avg`).
-3. **Ekstraksi Skill Flag:** Mengekstrak 32 kolom boolean kompetensi teknis dari deskripsi pekerjaan dan tag skill.
-4. **Pembersihan Metadata:** Menormalisasi jenjang pendidikan, jenis kontrak kerja, dan tipe model kerja (*On-site / Remote / Hybrid*).
-5. **Penyimpanan:** Menghasilkan dataset bersih siap analisis di `data/processed/master_dataset_eda.csv`.
+### Tahapan Pembersihan Data
+1. Menyaring khusus lowongan yang berlokasi di Indonesia dan membuang data luar negeri seperti Vietnam atau Singapura.
+2. Mengubah teks gaji IDR menjadi angka numerik pada kolom `salary_min`, `salary_max`, dan `salary_avg`.
+3. Membuat 32 kolom boolean skill teknis dari hasil pembacaan deskripsi pekerjaan dan tag skill.
+4. Menyeragamkan penulisan jenjang pendidikan, jenis kontrak kerja, dan model kerja (*On-site, Remote, Hybrid*).
+5. Menyimpan hasil akhirnya ke `data/processed/master_dataset_eda.csv`.
 
 ---
 
-## 5. Eksekusi Notebook, Laporan Mandiri & Aset Visual
+## 5. Memperbarui Notebook, Laporan HTML, dan Gambar Grafik
 
-Untuk memperbarui notebook analisis dan laporan HTML mandiri dari dataset yang baru dibuat:
+Untuk memperbarui output notebook, laporan HTML mandiri, dan gambar grafik dari dataset baru, jalankan perintah berikut.
 
 ```bash
-# Eksekusi notebook secara otomatis
+# Menjalankan ulang seluruh sel di notebook
 jupyter nbconvert --execute --to notebook --inplace eda.ipynb
 
-# Ekspor notebook ke laporan HTML mandiri (embed images)
+# Mengekspor notebook ke file HTML mandiri
 jupyter nbconvert --to html eda.ipynb --output eda_report.html --embed-images
 
-# Generate ulang aset grafik resolusi tinggi
+# Membuat ulang gambar grafik di folder assets/charts/
 python scripts/generate_assets.py
 ```
 
 ---
 
-## 6. Pengujian Unit (Test Suite)
+## 6. Menjalankan Unit Test
 
-Jalankan pengujian unit untuk memastikan seluruh parser dan grafik bekerja tanpa kendala:
+Jalankan pengujian otomatis untuk memastikan seluruh fungsi parser, transformasi data, dan grafik berjalan normal.
 
 ```bash
 pytest -v
 ```
 
-Seluruh pengujian berjalan secara offline dan tidak membutuhkan koneksi internet.
+Semua pengujian berjalan secara lokal tanpa koneksi internet.
 
 ---
 
-## ⚠️ Etika Scraping & Keterbatasan Data
+## Etika Scraping dan Batasan Data
 
-- **Etika Scraping:** Hormati aturan robots.txt, batasan frekuensi kueri (*rate limits*), dan ketentuan layanan Glints Indonesia. Jangan menjalankan proses scraping dengan beban konkurensi agresif.
-- **Keterbatasan Data:** Data mencerminkan frekuensi kemunculan kata kunci pada satu rentang waktu snapshot dan bergantung pada keterbukaan perusahaan dalam mencantumkan nominal kompensasi.
+- Patuhi aturan `robots.txt`, batasan frekuensi request (*rate limit*), dan ketentuan layanan Glints Indonesia. Hindari menjalankan scraper secara agresif dalam waktu bersamaan.
+- Dataset ini merupakan potret pada satu waktu pengambilan (*snapshot*). Angka gaji yang dianalisis bergantung pada keterbukaan masing-masing perusahaan saat memasang iklan lowongan.

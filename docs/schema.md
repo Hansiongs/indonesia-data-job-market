@@ -1,48 +1,41 @@
-# Master Dataset Schema
+# Skema Master Dataset
 
-The public cleaned snapshot lives at
-`data/processed/master_dataset_eda.csv`. It contains one row per scraped job
-posting and is the input for both the dashboard and EDA.
+Dataset publik yang sudah dibersihkan tersimpan di `data/processed/master_dataset_eda.csv`. Setiap baris mewakili satu lowongan kerja dan menjadi sumber data utama untuk dashboard maupun notebook analisis (`eda.ipynb`).
 
-Raw descriptions, URLs, salary strings, and session data are not included in
-the public cleaned snapshot. The optional scraping pipeline uses those fields
-before transforming them into this schema.
+Teks deskripsi mentah, tautan asli, format gaji teks, dan data sesi login tidak disertakan di dalam file publik ini. Data mentah tersebut hanya dipakai pada tahap scraping lokal sebelum diolah menjadi skema bersih di bawah ini.
 
-## Public Snapshot Columns
+## Daftar Kolom Dataset Publik
 
-### Identity
+### Identitas Lowongan
 
-| Column | Type | Nullable | Description |
+| Kolom | Tipe | Boleh Kosong | Keterangan |
 |---|---|---|---|
-| `keyword` | string | no | Search keyword that surfaced the posting |
-| `job_title` | string | no | Cleaned job title |
-| `company_name` | string | no | Company name from the posting |
-| `city_clean` | string | yes | Canonical city mapped from the source location |
+| `keyword` | string | tidak | Kata kunci pencarian yang memunculkan lowongan |
+| `job_title` | string | tidak | Judul posisi pekerjaan yang sudah dirapikan |
+| `company_name` | string | tidak | Nama perusahaan pemasang lowongan |
+| `city_clean` | string | ya | Nama kota yang sudah diseragamkan dari lokasi asli |
 
-### Compensation
+### Kompensasi
 
-| Column | Type | Nullable | Description |
+| Kolom | Tipe | Boleh Kosong | Keterangan |
 |---|---|---|---|
-| `salary_avg` | number | yes | Average disclosed salary, IDR/month |
+| `salary_avg` | number | ya | Rata-rata gaji bulanan yang dicantumkan dalam IDR |
 
-Salary is nullable because job boards often allow employers to hide the
-salary. Salary charts and medians ignore null values.
+Kolom gaji bisa bernilai kosong (*null*) karena sebagian perusahaan tidak mencantumkan nominal gaji di iklan lowongan. Perhitungan median dan grafik gaji hanya mengolah baris data yang memiliki nilai gaji.
 
-### Work Pattern
+### Pola Kerja dan Kualifikasi
 
-| Column | Type | Nullable | Description |
+| Kolom | Tipe | Boleh Kosong | Keterangan |
 |---|---|---|---|
-| `exp_min_years` | integer | yes | Minimum experience requested by the posting |
-| `workplace_type` | string | yes | `On-site`, `Remote`, or `Hybrid` |
-| `job_education_clean` | string | yes | Normalised education bucket such as `S1` or `S2` |
+| `exp_min_years` | integer | ya | Batas pengalaman kerja minimal dalam hitungan tahun |
+| `workplace_type` | string | ya | Kategori model kerja (`On-site`, `Remote`, atau `Hybrid`) |
+| `job_education_clean` | string | ya | Kategori pendidikan minimal seperti `S1`, `S2`, `D3`, atau `SMA/SMK` |
 
-### Skills
+### Keahlian Teknis (Skills)
 
-The snapshot contains 32 boolean `skill_<name>` columns. A value of `1` means
-the skill catalogue term was detected in the source description and/or skill
-tags. It measures mentions, not a verified mandatory requirement.
+Dataset ini memiliki 32 kolom boolean dengan format `skill_<nama>`. Nilai `1` menandakan keahlian tersebut ditemukan di dalam deskripsi pekerjaan atau tag skill, sedangkan nilai `0` berarti tidak disebutkan.
 
-Current skill columns include:
+Daftar lengkap ke-32 kolom skill tersebut mencakup item berikut.
 
 ```text
 skill_python, skill_sql, skill_r, skill_tableau, skill_power_bi,
@@ -54,9 +47,6 @@ skill_git, skill_statistics, skill_machine_learning, skill_deep_learning,
 skill_nlp, skill_computer_vision, skill_data_visualization
 ```
 
-## Raw Pipeline Fields
+## Kolom Data Mentah (Lokal)
 
-Before cleaning, `data/raw/job_details.csv` contains fields such as
-`job_description`, `skill_tags`, `job_salary`, `job_education`, `job_method`,
-`job_experience`, and `url`. Those files are local-only and are ignored by
-Git. See [`docs/reproduce.md`](reproduce.md) for the optional scrape flow.
+Sebelum dibersihkan oleh `transform.py`, file mentah `data/raw/job_details.csv` memuat kolom asli seperti `job_description`, `skill_tags`, `job_salary`, `job_education`, `job_method`, `job_experience`, dan `url`. File mentah ini hanya tersimpan di komputer lokal dan diabaikan oleh Git. Panduan lengkap pengambilan data mentah tersedia di [`docs/reproduce.md`](reproduce.md).
