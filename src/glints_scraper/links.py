@@ -140,12 +140,19 @@ def _scrape_keyword(
     cards = selector.xpath('//div[contains(@class, "CompactJobCard")]')
 
     rows: list[dict[str, str | None]] = []
+    seen_urls: set[str] = set()
     for card in cards:
+        if len(card.css('a[class*="JobCardTitle"]')) != 1:
+            continue
         # ``parse_job_card`` produces ``job_url``; rename to the canonical
         # ``url`` column expected by callers.
         record = parse_job_card(card, base_url="https://glints.com")
         record["keyword"] = keyword
-        record["url"] = record.pop("job_url", None)
+        url = record.pop("job_url", None)
+        if not url or url in seen_urls:
+            continue
+        seen_urls.add(url)
+        record["url"] = url
         rows.append(record)
 
     logger.info("Scraped %d card(s) for keyword=%s", len(rows), keyword)
@@ -293,5 +300,5 @@ if __name__ == "__main__":  # pragma: no cover
     from glints_scraper.utils import setup_logging
 
     setup_logging()
-    scrape_job_links()
+    scrape_job_links(resume=False)
 

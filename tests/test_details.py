@@ -272,6 +272,8 @@ def test_checkpoint_saved_every_n_rows(
         save_calls.append(path)
         original_save(df, path)
 
+    ckpt_path = tmp_path / "data" / "raw" / "job_details.csv"
+    monkeypatch.setattr(details_mod, "CHECKPOINT_PATH", ckpt_path)
     monkeypatch.setattr(details_mod, "save_checkpoint", tracking_save)
 
     result = details_mod.scrape_job_details(

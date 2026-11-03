@@ -1,6 +1,6 @@
 # Analisis Pasar Kerja Profesi Data di Indonesia
 
-Proyek ini menganalisis 430 lowongan kerja aktif di bidang data (*Data Analyst, Data Engineer, Data Scientist, ML Engineer*) dari portal Glints Indonesia. Fokus utamanya melihat sebaran gaji, perbandingan syarat masuk untuk pemula dan level senior, serta *tech stack* yang paling banyak dicari perusahaan di Indonesia.
+Proyek ini menganalisis 400 lowongan kerja aktif di bidang data (*Data Analyst, Data Engineer, Data Scientist, ML Engineer*) dari portal Glints Indonesia. Fokus utamanya melihat sebaran gaji, perbandingan syarat masuk untuk pemula dan level senior, serta *tech stack* yang paling banyak dicari perusahaan di Indonesia.
 
 - Dashboard interaktif bisa dijalankan secara lokal lewat `streamlit run app/dashboard.py`
 - Laporan lengkap tersedia di [`eda_report.html`](eda_report.html) dan bisa dibuka langsung di browser tanpa instalasi Python
@@ -12,29 +12,29 @@ Proyek ini menganalisis 430 lowongan kerja aktif di bidang data (*Data Analyst, 
 
 ### 1. Tuntutan Kualifikasi Entry-Level dan Pergeseran di Level Senior
 
-Hanya 8,4% lowongan (36 dari 430) yang terbuka untuk *Fresh Graduate* tanpa pengalaman kerja. Sebanyak 91,6% sisanya mensyaratkan minimal 1 tahun pengalaman, terbagi menjadi 47,7% untuk pengalaman 1 sampai 2 tahun dan 43,9% untuk pengalaman 3 tahun ke atas.
+Hanya 3,5% lowongan (14 dari 400) yang terbuka untuk *Fresh Graduate* tanpa pengalaman kerja. Sebanyak 96,5% sisanya mensyaratkan minimal 1 tahun pengalaman, terbagi menjadi 53,5% untuk pengalaman 1 sampai 2 tahun dan 43,0% untuk pengalaman 3 tahun ke atas.
 
-Lowongan untuk *Fresh Graduate* (kurang dari 1 tahun) justru meminta daftar skill dasar dan teori paling banyak. Permintaan ini mencakup SQL (88,9%), Python (77,8%), Excel (72,2%), Statistika (66,7%), dan Machine Learning (50,0%). Untuk posisi awal ini, median gajinya berada di angka Rp 5,25 juta/bulan (kuartil bawah Rp 2,9 juta sampai kuartil atas Rp 5,86 juta). Di level *Junior* (1 sampai 2 tahun), median gaji naik sedikit ke Rp 6,5 juta/bulan.
+Lowongan untuk *Fresh Graduate* (kurang dari 1 tahun) dan *Junior* (1 sampai 2 tahun) langsung meminta penguasaan teknis inti sejak awal. Di level *Fresh Graduate*, permintaan SQL dan Python sama-sama mencapai 78,6% serta Machine Learning 42,9%. Di level *Junior*, beban kualifikasi melebar ke SQL (78,0%), Python (59,3%), Excel (44,4%), dan Statistika (34,6%). Baik posisi *Fresh Graduate* maupun *Junior* memiliki median gaji yang sama di angka Rp 7,0 juta/bulan.
 
 ![Perbandingan Beban Kualifikasi Skill](assets/charts/01_skill-burden-by-career-stage.png)
 
-Kondisi ini terjadi karena banyak perusahaan yang baru membangun tim data langsung mencari satu orang untuk mengurus semuanya, mulai dari olah data harian sampai pemodelan, tetapi dengan anggaran gaji level pemula.
+Kondisi ini terjadi karena banyak perusahaan yang baru membangun tim data langsung mencari kandidat tingkat awal yang siap mengurus kueri, pelaporan, hingga pengolahan data sekaligus dengan anggaran gaji standar pemula.
 
-Di level *Mid* dan *Senior* (3 tahun ke atas), syarat penguasaan spreadsheet dasar dan teori mulai turun. Permintaan Excel turun dari 72,2% ke 30,2% dan Statistika turun dari 66,7% ke 18,5%. Kebutuhan perusahaan bergeser ke pengelolaan sistem data produksi. Permintaan untuk ETL atau Data Pipeline naik dari 25,0% ke 46,0%, sementara arsitektur Cloud (AWS, GCP, atau Azure) naik dari 13,9% ke 28,0%. Kenaikan gaji yang signifikan baru terlihat saat masuk ke level *Mid-Level* (pengalaman 3 tahun dengan median Rp 9,0 juta/bulan) dan *Senior* (pengalaman 5 tahun ke atas dengan median Rp 17,5 juta/bulan).
+Di level *Mid* dan *Senior* (3 tahun ke atas), syarat penguasaan spreadsheet dan statistika dasar mulai turun dibanding level *Junior*. Permintaan Excel turun dari 44,4% ke 20,3% dan Statistika turun dari 34,6% ke 12,2%. Kebutuhan perusahaan bergeser ke pengelolaan infrastruktur data produksi, terlihat dari permintaan ETL atau Data Pipeline yang naik dua kali lipat dari 18,2% di level *Junior* menjadi 37,8% di level *Senior*. Kenaikan gaji baru terasa saat masuk ke pengalaman minimal 3 tahun (median Rp 8,6 juta/bulan) dan pengalaman 5 tahun ke atas (median Rp 13,5 juta/bulan).
 
 ![Distribusi Gaji vs Pengalaman](assets/charts/02_salary-reality-curve.png)
 
 ---
 
-### 2. Terpusatnya Lokasi Kerja dan Minimnya Posisi Remote
+### 2. Terpusatnya Lokasi Kerja dan Perbandingan Model Kerja
 
-Lowongan kerja data di Indonesia masih didominasi sistem kerja di kantor. Sebanyak 93,0% lowongan (400 posisi) mewajibkan kehadiran penuh di kantor (On-site atau WFO), sedangkan skema Hybrid hanya 4,2% (18 lowongan) dan Full Remote cuma 2,8% (12 lowongan).
+Lowongan kerja data di Indonesia masih didominasi sistem kerja di kantor. Sebanyak 83,2% lowongan (333 posisi) mewajibkan kehadiran penuh di kantor (On-site atau WFO), diikuti skema Hybrid sebesar 11,8% (47 lowongan) dan Full Remote sebesar 5,0% (20 lowongan).
 
-Dari sisi wilayah, 83,5% lowongan menumpuk di area Jabodetabek (Jakarta 65,8%, Tangerang 13,0%, serta Depok, Bekasi, dan Bogor 4,7%), diikuti Bandung (4,9%) dan Surabaya (4,4%). Wajibnya WFO dan terpusatnya lowongan di Jabodetabek membuat pelamar dari luar daerah harus siap pindah domisili jika mencari kerja.
+Dari sisi wilayah, 78,0% lowongan menumpuk di area Jabodetabek (Jakarta 66,8%, Tangerang 9,8%, serta Bekasi dan Depok 1,5%), diikuti Bandung (6,0%), Surabaya (3,8%), Denpasar (3,5%), dan Yogyakarta (3,5%). Wajibnya WFO dan terpusatnya lowongan di Jabodetabek membuat pelamar dari luar daerah harus siap pindah domisili jika mencari kerja.
 
 ![Porsi Model Kerja dan Median Gaji](assets/charts/03_remote-luxury-comparison.png)
 
-Meski jumlahnya cuma 2,8%, posisi Full Remote menawarkan median gaji Rp 12,5 juta/bulan. Angka ini 78,6% lebih tinggi dibanding posisi On-site dan Hybrid yang sama-sama memiliki median Rp 7,0 juta/bulan. Di pasar kerja lokal, skema remote umumnya diberikan untuk posisi spesialis level senior atau berasal dari perusahaan berskala regional.
+Dari sisi kompensasi, skema Hybrid menawarkan median gaji tertinggi di angka Rp 7,8 juta/bulan, disusul posisi On-site dengan median Rp 7,5 juta/bulan. Sementara itu, posisi Full Remote memiliki median Rp 5,9 juta/bulan karena sebagian lowongan remote yang mencantumkan gaji didominasi posisi kontrak dan paruh waktu.
 
 ---
 
@@ -44,9 +44,9 @@ Kebutuhan operasional harian untuk posisi data di Indonesia masih berfokus pada 
 
 ![Kebutuhan Tech Stack Industri Data](assets/charts/04_real-tech-stack-landscape.png)
 
-- Tiga tool utama yang paling banyak diminta adalah SQL (329 lowongan atau 76,5%), Python (243 lowongan atau 56,5%), dan Excel (190 lowongan atau 44,2%).
-- Kelompok berikutnya diisi oleh kebutuhan pipeline dan visualisasi data seperti Machine Learning (144 lowongan atau 33,5%), ETL (139 lowongan atau 32,3%), Power BI (139 lowongan atau 32,3%), Tableau (114 lowongan atau 26,5%), dan Statistika (114 lowongan atau 26,5%).
-- Framework *Deep Learning* seperti TensorFlow (20 lowongan atau 4,7%) dan PyTorch (18 lowongan atau 4,2%) hanya muncul di bawah 5% dari total lowongan. Mayoritas perusahaan masih fokus merapikan metrik dan alur data operasional sebelum masuk ke penerapan machine learning tingkat lanjut.
+- Lima tool utama yang paling banyak diminta adalah SQL (303 lowongan atau 75,8%), Python (213 lowongan atau 53,2%), Power BI (144 lowongan atau 36,0%), Excel (132 lowongan atau 33,0%), dan Tableau (120 lowongan atau 30,0%).
+- Kelompok berikutnya diisi oleh kebutuhan infrastruktur dan analitik seperti Redis (107 lowongan atau 26,8%), ETL (104 lowongan atau 26,0%), Statistika (95 lowongan atau 23,8%), Data Visualization (93 lowongan atau 23,2%), dan Machine Learning (75 lowongan atau 18,8%).
+- Framework *Deep Learning* seperti PyTorch (20 lowongan atau 5,0%) dan TensorFlow (19 lowongan atau 4,8%) hanya muncul di kisaran 5% dari total lowongan. Mayoritas perusahaan masih fokus merapikan metrik dan alur data operasional sebelum masuk ke penerapan pemodelan tingkat lanjut.
 
 ---
 
@@ -68,14 +68,14 @@ Data Cleaning & Feature Engineering (src/glints_scraper/transform.py)
   └── Normalisasi pengalaman, pendidikan, dan model kerja
        │
        ▼
-data/processed/master_dataset_eda.csv (430 lowongan terverifikasi)
+data/processed/master_dataset_eda.csv (400 lowongan terverifikasi)
        │
        ├── eda_report.html & eda.ipynb
        └── Streamlit Interactive Dashboard
 ```
 
-- Sampel akhir terdiri dari 430 lowongan kerja data (162 Data Analyst, 127 Data Engineer, 103 Data Scientist, dan 38 Machine Learning).
-- Sebanyak 349 lowongan (81,2%) mencantumkan angka estimasi gaji. Analisis gaji dihitung langsung dari data yang tersedia tanpa pengisian nilai kosong secara buatan.
+- Sampel akhir terdiri dari 400 lowongan kerja data (138 Data Analyst, 121 Data Engineer, 108 Data Scientist, dan 33 Machine Learning).
+- Sebanyak 253 lowongan (63,2%) mencantumkan angka estimasi gaji. Analisis gaji dihitung langsung dari data yang tersedia tanpa pengisian nilai kosong secara buatan.
 - Seluruh sesi browser dan token lokal (`secrets/auth.json`) otomatis diabaikan oleh Git melalui `.gitignore`.
 
 ---

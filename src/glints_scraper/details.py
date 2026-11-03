@@ -112,7 +112,15 @@ def _scrape_url(
 
     timeout_ms = settings.page_timeout_ms
     page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-    polite_delay(0.5)
+    try:
+        if hasattr(page, "wait_for_selector"):
+            page.wait_for_selector(
+                'div[class*="JobOverViewInfoContainer"]',
+                timeout=3000,
+            )
+    except Exception:
+        pass
+    polite_delay(min(0.2, settings.delay_sec))
 
     html = page.content()
     selector = _make_selector(html)
@@ -216,40 +224,61 @@ def scrape_job_details(
                 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             )
             page = context.new_page()
+            base_url_cache: dict[str, dict[str, Any]] = {}
+            detail_fields = (
+                "job_description",
+                "skill_tags",
+                "job_salary",
+                "job_education",
+                "job_method",
+                "job_experience",
+            )
             try:
                 for i, (_, row) in enumerate(rows_to_process, start=1):
                     row_dict = row.to_dict()
                     url = row_dict.get("url")
                     company = row_dict.get("company_name") or "<unknown>"
-                    try:
-                        scraped = _scrape_url(page, row_dict, settings)
-                    except PlaywrightTimeoutError as exc:
-                        logger.warning(
-                            "Timeout while scraping %s (%s): %s",
-                            url,
-                            company,
-                            exc,
-                        )
-                        continue
-                    except PlaywrightError as exc:
-                        logger.warning(
-                            "Playwright error while scraping %s (%s): %s",
-                            url,
-                            company,
-                            exc,
-                        )
-                        continue
-                    except Exception as exc:
-                        logger.warning(
-                            "Generic error while scraping %s (%s): %s",
-                            url,
-                            company,
-                            exc,
-                        )
-                        continue
+                    base_url = str(url or "").split("?")[0]
+                    if base_url and base_url in base_url_cache:
+                        scraped = dict(row_dict)
+                        scraped.update(base_url_cache[base_url])
+                        was_cached = True
+                    else:
+                        was_cached = False
+                        try:
+                            scraped = _scrape_url(page, row_dict, settings)
+                        except PlaywrightTimeoutError as exc:
+                            logger.warning(
+                                "Timeout while scraping %s (%s): %s",
+                                url,
+                                company,
+                                exc,
+                            )
+                            continue
+                        except PlaywrightError as exc:
+                            logger.warning(
+                                "Playwright error while scraping %s (%s): %s",
+                                url,
+                                company,
+                                exc,
+                            )
+                            continue
+                        except Exception as exc:
+                            logger.warning(
+                                "Generic error while scraping %s (%s): %s",
+                                url,
+                                company,
+                                exc,
+                            )
+                            continue
 
                     if scraped is None:
                         continue
+
+                    if base_url and not was_cached:
+                        base_url_cache[base_url] = {
+                            k: scraped.get(k) for k in detail_fields
+                        }
 
                     logger.debug(
                         "Scraped %s [%d/%d] %s",
@@ -270,7 +299,8 @@ def scrape_job_details(
                             len(new_results),
                         )
 
-                    polite_delay(settings.delay_sec)
+                    if not was_cached:
+                        polite_delay(settings.delay_sec)
             finally:
                 context.close()
                 browser.close()
@@ -320,8 +350,63 @@ __all__ = [
 
 
 if __name__ == "__main__":  # pragma: no cover
+    from glints_scraper.transform import extract_city
     from glints_scraper.utils import setup_logging
 
     setup_logging()
-    scrape_job_details(input_df=Path("data/raw/glints_jobs.csv"))
+    raw_links = pd.read_csv(Path("data/raw/glints_jobs.csv"))
+    raw_links = raw_links.drop_duplicates(subset=["url"], keep="first")
+
+    inc_kw = (
+        "data analyst",
+        "data analis",
+        "business analyst",
+        "business intelligence",
+        "power bi",
+        "data scientist",
+        "data science",
+        "data engineer",
+        "analytics engineer",
+        "machine learning",
+        "ai engineer",
+        "artificial intelligence",
+        "data governance",
+        "data quality",
+        "big data",
+        "etl",
+        "tableau",
+        "bi developer",
+        "bi analyst",
+        "data architect",
+        "data specialist",
+        "data lead",
+        "data head",
+        "data management",
+    )
+    exc_kw = (
+        "intern",
+        "magang",
+        " sales",
+        "sales ",
+        "marketing",
+        "admin",
+        "hr ",
+        "human resource",
+        "audit",
+        "lương",
+    )
+    titles_lower = raw_links["job_title"].fillna("").astype(str).str.lower()
+    mask_title = titles_lower.apply(
+        lambda t: any(k in t for k in inc_kw) and not any(x in t for x in exc_kw)
+    )
+    mask_city = raw_links["job_location"].apply(extract_city).notna()
+    filtered_links = raw_links.loc[mask_title & mask_city].reset_index(drop=True)
+    filtered_links.to_csv(Path("filtered_links.csv"), index=False)
+    logger.info(
+        "Filtered %d raw link(s) down to %d relevant Indonesian data job link(s).",
+        len(raw_links),
+        len(filtered_links),
+    )
+    fast_settings = Settings(delay_sec=0.15)
+    scrape_job_details(input_df=filtered_links, settings=fast_settings, resume=False)
 

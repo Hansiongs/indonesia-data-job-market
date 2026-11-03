@@ -111,7 +111,7 @@ def _strip_company_aria_label(label: str | None) -> str:
 
 
 def overview_field(selector: Selector, label: str) -> str:
-    """Find an overview field by its visible label text."""
+    """Find an overview field by its visible label text or live Glints overview item."""
     if not label:
         return ""
     container = selector.css(OVERVIEW_CONTAINER_SELECTOR)
@@ -124,6 +124,66 @@ def overview_field(selector: Selector, label: str) -> str:
         value_div = label_span.xpath("following-sibling::div[1]")
         if value_div:
             return clean_text("".join(value_div.css("::text").getall()))
+
+    # Fallback for live Glints DOM where each item is a div[class*="JobOverViewInfo-"]
+    # without a preceding label <span>.
+    info_divs = container.css('div[class*="JobOverViewInfo-"]')
+    if not info_divs:
+        return ""
+
+    edu_markers = (
+        "minimal ",
+        "minimum ",
+        "sarjana",
+        "diploma",
+        "bachelor",
+        "master",
+        "college degree",
+        "associate degree",
+        "high school",
+        "sma",
+        "smk",
+        "s1",
+        "s2",
+        "s3",
+        "d3",
+        "d4",
+    )
+    method_markers = (
+        "penuh waktu",
+        "paruh waktu",
+        "kontrak",
+        "magang",
+        "harian",
+        "freelance",
+        "full-time",
+        "full time",
+        "part-time",
+        "part time",
+        "contract",
+        "intern",
+    )
+    exp_markers = (
+        "pengalaman",
+        "experience",
+        "tahun",
+        "year",
+        "fresh graduate",
+        "telah ditutup",
+    )
+
+    for info in info_divs:
+        text = join_texts(info.css("::text").getall())
+        low = text.lower()
+        if not low:
+            continue
+        if target == OVERVIEW_LABELS["education"].lower() and any(m in low for m in edu_markers):
+            return text
+        if target == OVERVIEW_LABELS["work_method"].lower() and any(m in low for m in method_markers):
+            return text
+        if target == OVERVIEW_LABELS["experience"].lower() and any(m in low for m in exp_markers):
+            return text
+
     return ""
 
 

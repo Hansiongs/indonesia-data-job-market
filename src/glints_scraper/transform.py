@@ -391,8 +391,13 @@ def transform(df: pd.DataFrame) -> pd.DataFrame:
 
     # 7. Workplace type.
     work["workplace_type"] = [
-        parse_workplace(title, desc)
-        for title, desc in zip(work["job_title"].fillna(""), work["job_description"].fillna(""), strict=False)
+        parse_workplace(title, f"{desc} {method}")
+        for title, desc, method in zip(
+            work["job_title"].fillna(""),
+            work["job_description"].fillna(""),
+            work["job_method"].fillna(""),
+            strict=False,
+        )
     ]
 
     # 8. City extraction and strict Indonesia location filter.

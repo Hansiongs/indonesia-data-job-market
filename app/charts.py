@@ -548,7 +548,10 @@ def plot_skill_vs_salary(df: pd.DataFrame, top_n: int = 15) -> go.Figure:
     if not rows:
         return _empty_figure("Insufficient skill data")
 
-    table = pd.DataFrame(rows).sort_values("premium", ascending=False).head(top_n)
+    table = pd.DataFrame(rows)
+    if (table["premium"] > 0).any():
+        table = table[table["premium"] > 0]
+    table = table.sort_values("premium", ascending=False).head(top_n)
     if table.empty:
         return _empty_figure("Insufficient skill data")
 
@@ -711,7 +714,7 @@ def plot_skill_burden_by_career_stage(df: pd.DataFrame) -> go.Figure:
         y="Persentase",
         color="Tier",
         barmode="group",
-        color_discrete_sequence=["#F59E0B", "#38BDF8", "#10B981"],
+        color_discrete_sequence=["#38BDF8", "#0284C7", "#6366F1"],
         text="Persentase",
     )
     fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside", cliponaxis=False, marker_line_width=0)

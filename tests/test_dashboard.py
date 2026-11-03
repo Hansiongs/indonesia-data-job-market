@@ -449,9 +449,9 @@ def test_dashboard_processed_dataset_loads_and_has_valid_schema() -> None:
     df = load_master_dataset()
     assert isinstance(df, pd.DataFrame)
     assert not df.empty
-    assert len(df) == 430
+    assert len(df) == 400
     df, skill_cols = build_skill_columns(df)
     assert len(skill_cols) >= 30
     stats = compute_summary_stats(df)
-    assert stats["total_jobs"] == 430
+    assert stats["total_jobs"] == 400
 
